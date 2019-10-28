@@ -11,7 +11,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{AACD71E3-042C-84AF-9222-7E76FCBF8673}</ProjectGuid>
+    <ProjectGuid>{5369B498-454D-2174-FA2B-407BD2DE2F4A}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -185,61 +185,61 @@
      <None Include="Assets\UnityARKitPlugin\Examples\Common\Shaders\InstancedSurfaceShader.shader" />
      <None Include="Assets\UnityARKitPlugin\Plugins\iOS\UnityARKit\Shaders\YUVShader.shader" />
  <Reference Include="Unity.Timeline.Editor">
- <HintPath>/Users/crabbage/Documents/golan-AR foundation/unity-arkit-plugin-old/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
+ <HintPath>/Users/crabbage/Documents/golan-AR foundation/Arkit-github/unity-arkit/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
  </Reference>
  <Reference Include="com.unity.multiplayer-hlapi.Editor">
- <HintPath>/Users/crabbage/Documents/golan-AR foundation/unity-arkit-plugin-old/Library/ScriptAssemblies/com.unity.multiplayer-hlapi.Editor.dll</HintPath>
+ <HintPath>/Users/crabbage/Documents/golan-AR foundation/Arkit-github/unity-arkit/Library/ScriptAssemblies/com.unity.multiplayer-hlapi.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.VSCode.Editor">
- <HintPath>/Users/crabbage/Documents/golan-AR foundation/unity-arkit-plugin-old/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
+ <HintPath>/Users/crabbage/Documents/golan-AR foundation/Arkit-github/unity-arkit/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.TextMeshPro.Editor">
- <HintPath>/Users/crabbage/Documents/golan-AR foundation/unity-arkit-plugin-old/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+ <HintPath>/Users/crabbage/Documents/golan-AR foundation/Arkit-github/unity-arkit/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.UI">
- <HintPath>/Users/crabbage/Documents/golan-AR foundation/unity-arkit-plugin-old/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
+ <HintPath>/Users/crabbage/Documents/golan-AR foundation/Arkit-github/unity-arkit/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Timeline">
- <HintPath>/Users/crabbage/Documents/golan-AR foundation/unity-arkit-plugin-old/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
+ <HintPath>/Users/crabbage/Documents/golan-AR foundation/Arkit-github/unity-arkit/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
  </Reference>
  <Reference Include="Unity.CollabProxy.Editor">
- <HintPath>/Users/crabbage/Documents/golan-AR foundation/unity-arkit-plugin-old/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
+ <HintPath>/Users/crabbage/Documents/golan-AR foundation/Arkit-github/unity-arkit/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
  </Reference>
  <Reference Include="com.unity.multiplayer-weaver.Editor">
- <HintPath>/Users/crabbage/Documents/golan-AR foundation/unity-arkit-plugin-old/Library/ScriptAssemblies/com.unity.multiplayer-weaver.Editor.dll</HintPath>
+ <HintPath>/Users/crabbage/Documents/golan-AR foundation/Arkit-github/unity-arkit/Library/ScriptAssemblies/com.unity.multiplayer-weaver.Editor.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.XR.LegacyInputHelpers">
- <HintPath>/Users/crabbage/Documents/golan-AR foundation/unity-arkit-plugin-old/Library/ScriptAssemblies/UnityEngine.XR.LegacyInputHelpers.dll</HintPath>
+ <HintPath>/Users/crabbage/Documents/golan-AR foundation/Arkit-github/unity-arkit/Library/ScriptAssemblies/UnityEngine.XR.LegacyInputHelpers.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Rider.Editor">
- <HintPath>/Users/crabbage/Documents/golan-AR foundation/unity-arkit-plugin-old/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
+ <HintPath>/Users/crabbage/Documents/golan-AR foundation/Arkit-github/unity-arkit/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.2D.Sprite.Editor">
- <HintPath>/Users/crabbage/Documents/golan-AR foundation/unity-arkit-plugin-old/Library/ScriptAssemblies/Unity.2D.Sprite.Editor.dll</HintPath>
+ <HintPath>/Users/crabbage/Documents/golan-AR foundation/Arkit-github/unity-arkit/Library/ScriptAssemblies/Unity.2D.Sprite.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.2D.Tilemap.Editor">
- <HintPath>/Users/crabbage/Documents/golan-AR foundation/unity-arkit-plugin-old/Library/ScriptAssemblies/Unity.2D.Tilemap.Editor.dll</HintPath>
+ <HintPath>/Users/crabbage/Documents/golan-AR foundation/Arkit-github/unity-arkit/Library/ScriptAssemblies/Unity.2D.Tilemap.Editor.dll</HintPath>
  </Reference>
  <Reference Include="UnityEditor.SpatialTracking">
- <HintPath>/Users/crabbage/Documents/golan-AR foundation/unity-arkit-plugin-old/Library/ScriptAssemblies/UnityEditor.SpatialTracking.dll</HintPath>
+ <HintPath>/Users/crabbage/Documents/golan-AR foundation/Arkit-github/unity-arkit/Library/ScriptAssemblies/UnityEditor.SpatialTracking.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.SpatialTracking">
- <HintPath>/Users/crabbage/Documents/golan-AR foundation/unity-arkit-plugin-old/Library/ScriptAssemblies/UnityEngine.SpatialTracking.dll</HintPath>
+ <HintPath>/Users/crabbage/Documents/golan-AR foundation/Arkit-github/unity-arkit/Library/ScriptAssemblies/UnityEngine.SpatialTracking.dll</HintPath>
  </Reference>
  <Reference Include="Unity.TextMeshPro">
- <HintPath>/Users/crabbage/Documents/golan-AR foundation/unity-arkit-plugin-old/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+ <HintPath>/Users/crabbage/Documents/golan-AR foundation/Arkit-github/unity-arkit/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Analytics.DataPrivacy">
- <HintPath>/Users/crabbage/Documents/golan-AR foundation/unity-arkit-plugin-old/Library/ScriptAssemblies/Unity.Analytics.DataPrivacy.dll</HintPath>
+ <HintPath>/Users/crabbage/Documents/golan-AR foundation/Arkit-github/unity-arkit/Library/ScriptAssemblies/Unity.Analytics.DataPrivacy.dll</HintPath>
  </Reference>
  <Reference Include="UnityEditor.XR.LegacyInputHelpers">
- <HintPath>/Users/crabbage/Documents/golan-AR foundation/unity-arkit-plugin-old/Library/ScriptAssemblies/UnityEditor.XR.LegacyInputHelpers.dll</HintPath>
+ <HintPath>/Users/crabbage/Documents/golan-AR foundation/Arkit-github/unity-arkit/Library/ScriptAssemblies/UnityEditor.XR.LegacyInputHelpers.dll</HintPath>
  </Reference>
  <Reference Include="UnityEditor.UI">
- <HintPath>/Users/crabbage/Documents/golan-AR foundation/unity-arkit-plugin-old/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
+ <HintPath>/Users/crabbage/Documents/golan-AR foundation/Arkit-github/unity-arkit/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
  </Reference>
  <Reference Include="com.unity.multiplayer-hlapi.Runtime">
- <HintPath>/Users/crabbage/Documents/golan-AR foundation/unity-arkit-plugin-old/Library/ScriptAssemblies/com.unity.multiplayer-hlapi.Runtime.dll</HintPath>
+ <HintPath>/Users/crabbage/Documents/golan-AR foundation/Arkit-github/unity-arkit/Library/ScriptAssemblies/com.unity.multiplayer-hlapi.Runtime.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.AIModule">
  <HintPath>/Applications/2019.2.3f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
@@ -413,13 +413,13 @@
  <HintPath>/Applications/2019.2.3f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.XRModule.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Analytics.Tracker">
- <HintPath>/Users/crabbage/Documents/golan-AR foundation/unity-arkit-plugin-old/Library/PackageCache/com.unity.analytics@3.3.2/Unity.Analytics.Tracker.dll</HintPath>
+ <HintPath>/Users/crabbage/Documents/golan-AR foundation/Arkit-github/unity-arkit/Library/PackageCache/com.unity.analytics@3.3.2/Unity.Analytics.Tracker.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Analytics.Editor">
- <HintPath>/Users/crabbage/Documents/golan-AR foundation/unity-arkit-plugin-old/Library/PackageCache/com.unity.analytics@3.3.2/Unity.Analytics.Editor.dll</HintPath>
+ <HintPath>/Users/crabbage/Documents/golan-AR foundation/Arkit-github/unity-arkit/Library/PackageCache/com.unity.analytics@3.3.2/Unity.Analytics.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Analytics.StandardEvents">
- <HintPath>/Users/crabbage/Documents/golan-AR foundation/unity-arkit-plugin-old/Library/PackageCache/com.unity.analytics@3.3.2/Unity.Analytics.StandardEvents.dll</HintPath>
+ <HintPath>/Users/crabbage/Documents/golan-AR foundation/Arkit-github/unity-arkit/Library/PackageCache/com.unity.analytics@3.3.2/Unity.Analytics.StandardEvents.dll</HintPath>
  </Reference>
  <Reference Include="UnityEditor.iOS.Extensions.Xcode">
  <HintPath>/Applications/2019.2.3f1/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
