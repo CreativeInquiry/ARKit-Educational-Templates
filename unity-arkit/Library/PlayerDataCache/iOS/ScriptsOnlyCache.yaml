@@ -1,16 +1,11 @@
 ScriptsOnlyBuild:
   usedScripts:
     Assembly-CSharp.dll:
-    - PointCloudIds
-    - PointCloudIdsExample
-    - PointCloudParticleExample
-    - PointCloudPositions
-    - UnityARCameraManager
-    - UnityARCameraNearFar
     - UnityARKitPluginSettings
-    - UnityEngine.XR.iOS.UnityARAmbient
+    - UnityEngine.XR.iOS.ConnectToEditor
     - UnityEngine.XR.iOS.UnityARUserAnchorComponent
     - UnityEngine.XR.iOS.UnityARVideo
+    - UnityEngine.XR.iOS.UnityRemoteVideo
     Unity.2D.Tilemap.Editor.dll:
     - UnityEditor.Tilemaps.GridPaintingState
     - UnityEditor.Tilemaps.GridPaletteBrushes
@@ -24,7 +19,7 @@ ScriptsOnlyBuild:
     - UnityEngine.Networking.NetworkCallbacks
     - UnityEngine.Networking.NetworkIdentity
   sceneClasses:
-    Assets/UnityARKitPlugin/C-Samples/PointCloud/PointCloud.unity:
+    Assets/UnityARKitPlugin/ARKitRemote/UnityARKitRemote.unity:
     - Class: 1
       Script: {instanceID: 0}
     - Class: 4
@@ -56,8 +51,6 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 9756}
-    - Class: 114
       Script: {instanceID: 9762}
     - Class: 114
       Script: {instanceID: 9870}
@@ -68,15 +61,11 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 9974}
     - Class: 114
-      Script: {instanceID: 10072}
-    - Class: 114
-      Script: {instanceID: 10126}
-    - Class: 114
-      Script: {instanceID: 10158}
-    - Class: 114
       Script: {instanceID: 10220}
     - Class: 114
-      Script: {instanceID: 10852}
+      Script: {instanceID: 10666}
+    - Class: 114
+      Script: {instanceID: 10766}
     - Class: 114
       Script: {instanceID: 10908}
     - Class: 114
@@ -87,10 +76,6 @@ ScriptsOnlyBuild:
       Script: {instanceID: 11462}
     - Class: 114
       Script: {instanceID: 11656}
-    - Class: 114
-      Script: {instanceID: 12192}
-    - Class: 114
-      Script: {instanceID: 12232}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 124
@@ -102,10 +87,6 @@ ScriptsOnlyBuild:
     - Class: 136
       Script: {instanceID: 0}
     - Class: 157
-      Script: {instanceID: 0}
-    - Class: 198
-      Script: {instanceID: 0}
-    - Class: 199
       Script: {instanceID: 0}
   scriptHashData:
   - hash:
@@ -551,7 +532,7 @@ ScriptsOnlyBuild:
       Hash: 488df1291f6bbfb2d6187e3e5f71a619
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
-    className: AddAnchorsEverywhereAlternative
+    className: AddAnchorsEverywhere
   - hash:
       serializedVersion: 2
       Hash: 97ace6213ad0f149b0917a4c669c6ca3
@@ -992,12 +973,6 @@ ScriptsOnlyBuild:
     className: TMP_ColorGradient
   - hash:
       serializedVersion: 2
-      Hash: 488df1291f6bbfb2d6187e3e5f71a619
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: AddAnchorsEverywhere
-  - hash:
-      serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: UnityEngine.TestRunner.dll
     namespaceName: UnityEngine.TestTools.TestRunner.Callbacks
@@ -1142,5 +1117,5 @@ ScriptsOnlyBuild:
     className: PrimitivesOnFace
   platform: 9
   scenePathNames:
-  - Assets/UnityARKitPlugin/C-Samples/PointCloud/PointCloud.unity
-  playerPath: /Users/crabbage/Documents/golan-AR foundation/planemesh
+  - Assets/UnityARKitPlugin/ARKitRemote/UnityARKitRemote.unity
+  playerPath: /Users/crabbage/Documents/golan-AR foundation/remote-original

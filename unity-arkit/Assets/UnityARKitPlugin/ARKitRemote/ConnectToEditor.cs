@@ -72,6 +72,19 @@ namespace UnityEngine.XR.iOS
 			UnityARSessionNativeInterface.ARAnchorUpdatedEvent += ARAnchorUpdated;
 			UnityARSessionNativeInterface.ARAnchorRemovedEvent += ARAnchorRemoved;
 			#endif
+			// #if !UNITY_EDITOR
+			// //get the config and runoption from editor and use them to initialize arkit on device
+			// Application.targetFrameRate = 60;
+			// m_session = UnityARSessionNativeInterface.GetARSessionNativeInterface();
+			// ARKitWorldTrackingSessionConfiguration config = sai.config;
+			// UnityARSessionRunOption runOptions = sai.runOption;
+			// m_session.RunWithConfigAndOptions(config, runOptions);
+
+		 	// UnityARSessionNativeInterface.ARFrameUpdatedEvent += ARFrameUpdated;
+			// UnityARSessionNativeInterface.ARAnchorAddedEvent += ARAnchorAdded;
+			// UnityARSessionNativeInterface.ARAnchorUpdatedEvent += ARAnchorUpdated;
+			// UnityARSessionNativeInterface.ARAnchorRemovedEvent += ARAnchorRemoved;
+			// #endif
 		}
 
 		void InitializeARKitFaceTracking(serializableARKitInit sai)

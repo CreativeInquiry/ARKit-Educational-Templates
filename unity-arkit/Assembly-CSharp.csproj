@@ -2,8 +2,6 @@
 <Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <LangVersion>latest</LangVersion>
-    <CscToolPath>/Applications/2019.2.3f1/Unity.app/Contents/Tools/RoslynScripts</CscToolPath>
-    <CscToolExe>unity_csc.sh</CscToolExe>
   </PropertyGroup>
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -67,7 +65,6 @@
      <Compile Include="Assets\UnityARKitPlugin\ARKitRemote\SerializableObjects.cs" />
      <Compile Include="Assets\UnityARKitPlugin\ARKitRemote\UnityRemoteVideo.cs" />
      <Compile Include="Assets\UnityARKitPlugin\C-Samples\AddAnchorsEverywhere\AddAnchorsEverywhere.cs" />
-     <Compile Include="Assets\UnityARKitPlugin\C-Samples\AddAnchorsEverywhere\AddAnchorsEverywhereAlternative.cs" />
      <Compile Include="Assets\UnityARKitPlugin\C-Samples\AddAnchorToPlane\ARAddAnchorToPlane.cs" />
      <Compile Include="Assets\UnityARKitPlugin\C-Samples\ChangeBasedOnDistance\ChangeBasedOnDistance.cs" />
      <Compile Include="Assets\UnityARKitPlugin\C-Samples\FaceMesh\MeshManager.cs" />
