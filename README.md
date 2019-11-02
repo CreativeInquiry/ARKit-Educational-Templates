@@ -1,5 +1,20 @@
 # Arkit tutorials
 
+## Table of Contents
+1. [Downloading Unity Hub](https://github.com/khanniie/Arkit-github#download-unity-hub)
+2. [ARkit 2](https://github.com/khanniie/Arkit-github#unity-arkit-2)
+    - [General Notes](https://github.com/khanniie/Arkit-github#general-notes)
+    - [ARkit Remote](https://github.com/khanniie/Arkit-github#arkit-remote)
+    - [Add Anchors Everywhere demo](https://github.com/khanniie/Arkit-github#add-anchors-everywheres)
+    - [Add Anchors to Plane demo](https://github.com/khanniie/Arkit-github#add-anchors-to-plane)
+    - [Image Anchors demo](https://github.com/khanniie/Arkit-github#image-anchors)
+    - [Change Based on Distance demo](https://github.com/khanniie/Arkit-github#change-based-on-distance-from-camera)
+    - [Points of Interest demo](https://github.com/khanniie/Arkit-github#particles-on-points-of-interest)
+    - [Plane Mesh demo](https://github.com/khanniie/Arkit-github#plane-mesh)
+    - [Face Mesh demo](https://github.com/khanniie/Arkit-github#face-mesh)
+    - [Face Anchors demo](https://github.com/khanniie/Arkit-github#face-anchors)
+    - [Feature Detector demo](https://github.com/khanniie/Arkit-github#feature-detector)
+
 # download unity hub #
 <!-- -> install liscence if they ask
 ![1]( tutorial_assets/note1.png)
@@ -29,7 +44,7 @@ These demos are built with [Unity's Arkit2 Plugin. Their code repository](https:
 - Apple Xcode 10.0+ with latest iOS SDK that contains ARKit Framework
 - Apple iOS device that supports ARKit (iPhone 6S or later, iPad (2017) or later)
 - Apple iOS 12+ installed on device
-- For iOS 13+, you will need the latest Xcode build.
+- For iOS 13+, you will need the latest Xcode build. However, be warned that Arkit's remote tool breaks on iOS 13.1.3.
 
 ### Common GameObjects
 - **CameraParent:** A container for the main camera object.
@@ -45,6 +60,9 @@ The [Issues section](https://bitbucket.org/Unity-Technologies/unity-arkit-plugin
 - GeneratePlanes: Generates the debug plane view, showing you the planes that the AR plugin has found.
 
 ## ARKit Remote
+
+### What is Arkit Remote? 
+Arkit remote allows you to test your AR code in the Unity editor, without having to build the entire app. Building an app might take a few minutes, so having a remote tool saves you a lot of time while developing! With Arkit remote, you build the app to your phone, and open the app to stream your phone's camera view to Unity. Then, the editor shows the AR view using the camera information. 
 
 ### Building the app
 1. Open the “Assets/UnityARKitPlugin/ARKitRemote/UnityARKitRemote” scene.
@@ -84,7 +102,7 @@ Places a GameObject upon user click/touch. The oldest GameObject will be deleted
     ![showscript image](tutorial_assets/showscript.png)
 
 
-### Scene Ojects
+### Scene Objects
 - **Directional Light:** Adds light to the scene. This illuminates the GameObjects that you put in the scene.
 - **CameraParent:** A container for the main camera object.
     - **Main Camera:** The camera that renders the scene view, contains two AR scripts that you don't need to worry about.
@@ -96,6 +114,7 @@ Places a GameObject upon user click/touch. The oldest GameObject will be deleted
 
 ## Add Anchors to Plane
 ![placeonplane demo gif](./tutorial_assets/placeonplane.gif)
+Detects horizontal planes in the scene, draws those planes, and upon tap/click, uses [raycasting](https://docs.unity3d.com/ScriptReference/Physics.Raycast.html) to check if and where your tap collides with the AR planes. If there is a collision, it places a new GameObject at that point. 
 
 ## Image Anchors
 ![imageanchors demo gif](./tutorial_assets/imageanchors.gif)
@@ -104,14 +123,14 @@ Places a GameObject upon user click/touch. The oldest GameObject will be deleted
 ## Change Based on Distance from Camera
 ![distance demo gif](./tutorial_assets/distance.gif) ![rotate demo gif](./tutorial_assets/rotate.gif)
 
-## Face Mesh
-![facemesh demo gif](./tutorial_assets/facemesh.gif)
-
 ## Particles on Points of Interest
 ![points1 demo gif](./tutorial_assets/points1.gif)![points2 demo gif](./tutorial_assets/points2.gif)
 
 ## Plane Mesh
 ![planemesh demo gif](./tutorial_assets/planemesh.gif)
+
+## Face Mesh
+![facemesh demo gif](./tutorial_assets/facemesh.gif)
 
 ## Face Anchors
 ![faceanchors demo gif](./tutorial_assets/faceanchors.gif)
