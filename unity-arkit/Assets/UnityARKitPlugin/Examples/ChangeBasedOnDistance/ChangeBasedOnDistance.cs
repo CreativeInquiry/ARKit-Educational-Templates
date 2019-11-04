@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 using UnityEngine;
 using UnityEngine.XR.iOS;
 
-
+/* The prefab in the scene changes size, color and rotation based on the distance between it and the camera. */
 public class ChangeBasedOnDistance : MonoBehaviour
 {
 
-    public GameObject prefabToChange; 
+    public GameObject prefabToChange;
     private Transform mainCamera;
     private Quaternion originalRotation;
     private Quaternion maxRotation;
@@ -18,11 +18,9 @@ public class ChangeBasedOnDistance : MonoBehaviour
     void Start()
     {
         mainCamera = Camera.main.gameObject.transform;
-        originalRotation = prefabToChange.transform.rotation;
-        maxRotation = Quaternion.identity;
-        maxRotation.eulerAngles = new Vector3(180f, 0f, 0f);
-
-        Debug.Log(maxRotation.eulerAngles + ", " + originalRotation.eulerAngles);
+        originalRotation = prefabToChange.transform.rotation; //we save the original rotation to interpolate rotation correctly
+        maxRotation = Quaternion.identity; //make new rotation object
+        maxRotation.eulerAngles = new Vector3(180f, 0f, 0f); //set new rotation object's rotation to 180
     }
 
     // Update is called once per frame
@@ -34,7 +32,7 @@ public class ChangeBasedOnDistance : MonoBehaviour
 
         //below is code to change the color of the cube from red to blue
         float newRedValue = map(dist, 0.5f, 0.1f, 0f, 1f); //note that the "start" of the original values is larger than the "stop" - this inverts the lerping
-        float newBlueValue = map(dist, 0.1f, 0.5f, 0f, 1f); 
+        float newBlueValue = map(dist, 0.1f, 0.5f, 0f, 1f);
         prefabToChange.GetComponent<Renderer>().material.color = new Color(newRedValue, 0f, newBlueValue);
 
         //below is code to change the rotation of the cube based on distance; it is commented out so the demo scene will be more clear, but try uncommenting it!
@@ -48,7 +46,8 @@ public class ChangeBasedOnDistance : MonoBehaviour
     }
 
     // simple value mapping function 
-    private float map(float value, float start1, float stop1, float start2, float stop2){
+    private float map(float value, float start1, float stop1, float start2, float stop2)
+    {
         //map the value
         float res = start2 + (stop2 - start2) * ((value - start1) / (stop1 - start1));
 
