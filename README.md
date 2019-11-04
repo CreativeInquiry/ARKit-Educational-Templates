@@ -2,7 +2,8 @@
 
 ## Table of Contents
 1. [Downloading Unity Hub](https://github.com/khanniie/Arkit-github#download-unity-hub)
-2. [ARkit 2](https://github.com/khanniie/Arkit-github#unity-arkit-2)
+2. Building to Xcode 
+3. [ARkit 2](https://github.com/khanniie/Arkit-github#unity-arkit-2)
     - [General Notes](https://github.com/khanniie/Arkit-github#general-notes)
     - [ARkit Remote](https://github.com/khanniie/Arkit-github#arkit-remote)
     - [Add Anchors Everywhere demo](https://github.com/khanniie/Arkit-github#add-anchors-everywheres)
@@ -15,7 +16,7 @@
     - [Face Anchors demo](https://github.com/khanniie/Arkit-github#face-anchors)
     - [Feature Detector demo](https://github.com/khanniie/Arkit-github#feature-detector)
 
-# download unity hub #
+# Downloading This Project #
 <!-- -> install liscence if they ask
 ![1]( tutorial_assets/note1.png)
 ->I would put the install location as Applications if on mac
@@ -27,11 +28,35 @@ git clone https://github.com/khanniie/arfoundation-samples
 ![1]( tutorial_assets/note4.png)
 ![1]( tutorial_assets/note5.gif) -->
 
-After install 
-Open project
-(may take a while)
+Download the package from Github,
 
-you should now see
+Or, in the terminal, run
+```
+git clone https://github.com/khanniie/Arkit-github
+```
+Then, open the `unity-arkit` folder within the downloaded folder using Unity Hub.
+
+# Building to Xcode
+When you're done developing in Unity and want to build the app to your phone, you need to use Xcode to actually build the app on your phone. Xcode is Apple's development tool for their products. Unity can build you an Xcode project, and you can open the folder that is built, open the Xcode project, and build using Xcode, signing with your free account.
+
+These are the steps you will roughly follow:
+1. Open the scene you want to build.
+2. Open File->Build Settings, and navigate to the iOS panel.
+3. Make sure your scene is checked (it should probably be the only one checked, unless you have some sort of navigation between scenes already built.) If you can't find it in the list, try clicking "Add Open Scenes."
+4. Then, hit Build on the bottom right.
+5. Once your project has been built to a folder, open the file with the .xcodeproj extension.
+6. Xcode should launch! 
+7. Look for the Signing and Capabilities section of Xcode, and sign for your app by selecting Team->[your team]. You may need to register a developer team ("Add an Account") if you don't have one yet.
+8. If you encounter any "bundle identifier" errors while signing, try changing your bundle identifier to something more distinctive. It should be of the format com.[company name].[appname]. For example, com.crabbage.arkitdemo
+
+Note: If you want to try the "Build and Run" option, you may be able to, but you need a team ID, which is typically only easy to find if you're using a paid account. There's a [supposed solution here](https://stackoverflow.com/questions/18727894/how-can-i-find-my-apple-developer-team-id-and-team-agent-apple-id), but I haven't verified that it works.
+
+### Player Settings
+1. You may want to change the App name and bundle identifier through the Unity Player Settings. These values can also be changed in Xcode.
+
+### Xcode troubleshooting
+- When you first install your app to your phone, it may not open until you Verify your developer team through General->Device Management on your phone's settings.
+- There's a maximum number of bundle names you can register weekly with a free account.
 
 # Unity ARkit 2 
 
@@ -40,6 +65,8 @@ you should now see
 These demos are built with [Unity's Arkit2 Plugin. Their code repository](https://bitbucket.org/Unity-Technologies/unity-arkit-plugin/src/default/) contains detailed information about the API, which events you can subscribe to, and has more complicated demos. The demos presented in this repository are simple, isolated examples of one single functionality. See their repository for examples of other features not explored here, such as world mapping and 3d object tracking.
 
 A lot of demos use anchors, which are defined by Apple's documentation as "A position and orientation of something of interest in the physical environment."
+
+These demos exist with the acknowledgement that the ARkit 2 Plugin is deprecated in favor of AR Foundation; however, Arkit 2 has a functional AR Remote tool, and AR Foundation does not have a reliable one yet, so we are using ARkit 2 here for ease of development. See these slides for [a more complete analysis](https://docs.google.com/presentation/d/1n9gmlFR2trCwu9m41-IdlOhBGr88aBHQTgWS3Q7y8ZU/edit?usp=sharing).
 
 ### Requirements
 - Unity v2017.4+
@@ -57,9 +84,6 @@ A lot of demos use anchors, which are defined by Apple's documentation as "A pos
 
 ### Troubleshooting
 The [Issues section](https://bitbucket.org/Unity-Technologies/unity-arkit-plugin/issues?status=new&status=open) of the Unity AR plugin contains a lot of useful information that's useful to read through when you're troubleshooting.
-
-### Scripts useful for debugging
-- GeneratePlanes: Generates the debug plane view, showing you the planes that the AR plugin has found.
 
 ## ARKit Remote
 
@@ -92,6 +116,7 @@ There is more detailed information, along with videos, on the [Unity site](https
 3. Arkit remote passes info from the ar camera on your phone back to the unity editor; however, IT DOES NOT PASS ALL OF THE INFORMATION to the editor. This means that something could look like it's broken when you're testing in the Unity editor with Arkit remote but not actually be broken. For example, the Image Anchors scene will not work in Arkit remote because image anchor information is not passed through the remote tool. If your app is mysteriously not working or AR objects from the interface have null values, I would build the app and see if it works built on the phone. 
 4. I noticed that ARkit Remote broke on iOS 13.1.3, although it works on 13.1.2. If the remote tool is already working on the phone, if possible, I would avoid updating your phone for the duration of the project in case it breaks after you update.
 5. When the ArKit remote app is connected, it acts only as a camera. **To interface with your app and see any of the AR, look the Unity Editor on your computer!** Specifically, your "tap" interactions will be click actions on your editor screen, and any gameobjects in your scene will also only show up on the editor screen.
+6. Sometimes if I can't find the right device in the editor, I quit the Remote app on my phone and reopen it, repeating until it works.
 
 ## Add Anchors Everywhere
 ![everywhere demo gif](./tutorial_assets/everywhere.gif)
