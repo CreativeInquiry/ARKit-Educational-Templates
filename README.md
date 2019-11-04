@@ -120,13 +120,13 @@ There is more detailed information, along with videos, on the [Unity site](https
 5. When the ArKit remote app is connected, it acts only as a camera. **To interface with your app and see any of the AR, look the Unity Editor on your computer!** Specifically, your "tap" interactions will be click actions on your editor screen, and any gameobjects in your scene will also only show up on the editor screen.
 6. Sometimes if I can't find the right device in the editor, I quit the Remote app on my phone and reopen it, repeating until it works.
 
-## Add Anchors Everywhere
+## [Add Anchors Everywhere](https://github.com/khanniie/Arkit-github/tree/master/unity-arkit/Assets/UnityARKitPlugin/Examples/AddAnchorsEverywhere)
 ![everywhere demo gif](./tutorial_assets/everywhere.gif)
 
 Places a GameObject upon user click/touch. The oldest GameObject will be deleted after "timeuntilremove" number of seconds, which is set to 10 as the default.
 
 ### Scripts
-- **AddAnchorsEverywhere.cs:** Clones the specified PrefabOject a distance of distanceFromCamera meters forwards, tracks existing objects, and then deletes the oldest one after 10 seconds of inactivity. See inline comments for more specific implementation details. 
+- **[AddAnchorsEverywhere.cs:](https://github.com/khanniie/Arkit-github/blob/master/unity-arkit/Assets/UnityARKitPlugin/Examples/AddAnchorsEverywhere/AddAnchorsEverywhere.cs)** Clones the specified PrefabOject a distance of distanceFromCamera meters forwards, tracks existing objects, and then deletes the oldest one after 10 seconds of inactivity. See inline comments for more specific implementation details. 
 
 ### Scene Objects
 - **Directional Light:** Adds light to the scene. This illuminates the GameObjects that you put in the scene.
@@ -141,13 +141,13 @@ Places a GameObject upon user click/touch. The oldest GameObject will be deleted
 ### Possible Next Steps
 - Try changing out the Prefab Object with your own 3d object in AddAnchorsEverywhere! [To make a prefab](https://docs.unity3d.com/Manual/CreatingPrefabs.html), drag and drop a scene gameobject into the project folder view.
 
-## Add Anchors to Plane
+## [Add Anchors to Plane](https://github.com/khanniie/Arkit-github/tree/master/unity-arkit/Assets/UnityARKitPlugin/Examples/AddAnchorToPlane)
 ![placeonplane demo gif](./tutorial_assets/placeonplane.gif)
 
 Detects horizontal planes in the scene, draws those planes, and upon tap/click, uses [raycasting](https://docs.unity3d.com/ScriptReference/Physics.Raycast.html) to check if and where your tap collides with the AR planes. If there is a collision, it places a new GameObject at that point. 
 
 ### Scripts
-- **ArAddAnchorToPlane.cs:** Upon tap/click, it shoots out a ray into the scene; if this ray colldies with an AR plane, it creates a new instance of the prefab object and places it upon the spot of collision.
+- **[ArAddAnchorToPlane.cs:](https://github.com/khanniie/Arkit-github/blob/master/unity-arkit/Assets/UnityARKitPlugin/Examples/AddAnchorToPlane/ARAddAnchorToPlane.cs)** Upon tap/click, it shoots out a ray into the scene; if this ray colldies with an AR plane, it creates a new instance of the prefab object and places it upon the spot of collision.
 
 ### Scene Objects
 - **Directional Light:** Adds light to the scene. This illuminates the GameObjects that you put in the scene.
@@ -160,7 +160,7 @@ Detects horizontal planes in the scene, draws those planes, and upon tap/click, 
 ### Possible Next Steps
 - Try changing out the Prefab Object with your own 3d object in AddAnchorToPlane. [To make a prefab](https://docs.unity3d.com/Manual/CreatingPrefabs.html), drag and drop a scene gameobject into the project folder view.
 
-## Image Anchors
+## [Image Anchors](https://github.com/khanniie/Arkit-github/tree/master/unity-arkit/Assets/UnityARKitPlugin/Examples/ImageAnchor)
 ![imageanchors demo gif](./tutorial_assets/imageanchors.gif)
 
 Watches for two specific images, and places game objects upon them if found in camera view.
@@ -178,7 +178,7 @@ IMPORTANT NOTE: This demo does not work in the remote tool! You will need to bui
 5. The reference images should then be used as values for SetImageAnchor.cs, while the reference image set is used in ARCameraManager.
 
 ### Scripts
-- **SetImageAnchor.cs:** Upon the AddImageAnchor event, it checks if the image anchor added is equal to referenceImage, and if so, it clones prefabToGenerate and puts the new object upon the image anchor.
+- **[SetImageAnchor.cs:](https://github.com/khanniie/Arkit-github/blob/master/unity-arkit/Assets/UnityARKitPlugin/Examples/ImageAnchor/SetImageAnchor.cs)** Upon the AddImageAnchor event, it checks if the image anchor added is equal to referenceImage, and if so, it clones prefabToGenerate and puts the new object upon the image anchor.
 
 ### Scene Objects
 - **Directional Light:** Adds light to the scene. This illuminates the GameObjects that you put in the scene.
@@ -194,13 +194,13 @@ IMPORTANT NOTE: This demo does not work in the remote tool! You will need to bui
 - Try changing out the Prefab Object with your own 3d object. [To make a prefab](https://docs.unity3d.com/Manual/CreatingPrefabs.html), drag and drop a scene gameobject into the project folder view.
 - Make your own custom reference images, as described above.
 
-## Change Based on Distance from Camera
+## [Change Based on Distance from Camera](https://github.com/khanniie/Arkit-github/tree/master/unity-arkit/Assets/UnityARKitPlugin/Examples/ChangeBasedOnDistance)
 ![distance demo gif](./tutorial_assets/distance.gif) ![rotate demo gif](./tutorial_assets/rotate.gif)
 
 The cube in the scene changes size, color and rotation (in the second gif) based on the distance between it and the camera.
 
 ### Scripts
-- **ChangeBasedOnDistance.cs:** Calculates the distance between the cube and the main camera, and sets the cube's rotation/size/color according to that value.
+- **[ChangeBasedOnDistance.cs:](https://github.com/khanniie/Arkit-github/blob/master/unity-arkit/Assets/UnityARKitPlugin/Examples/ChangeBasedOnDistance/ChangeBasedOnDistance.cs)** Calculates the distance between the cube and the main camera, and sets the cube's rotation/size/color according to that value.
 
 ### Scene Objects
 - **Directional Light:** Adds light to the scene. This illuminates the GameObjects that you put in the scene.
@@ -217,14 +217,14 @@ The cube in the scene changes size, color and rotation (in the second gif) based
 - Use a different object.
 - Instead of using the distance as a gradient, set a threshold value at which an event is triggered.
 
-## Points of Interest
+## [Points of Interest](https://github.com/khanniie/Arkit-github/tree/master/unity-arkit/Assets/UnityARKitPlugin/Examples/PointCloud)
 ![points1 demo gif](./tutorial_assets/points1.gif)![points2 demo gif](./tutorial_assets/points2.gif)
 
 Places glowing points on [points in the world space found through scene analysis during the AR Session](https://developer.apple.com/documentation/arkit/arpointcloud). 
 
 ### Scripts
-- **PointCloudIds.cs:** Displays the point information on the top left.
-- **PointCloudPositions.cs:** Watches the AR Point Cloud data, and feeds it into Point Cloud Particle Prefab to be rendered.
+- **[PointCloudIds.cs](https://github.com/khanniie/Arkit-github/blob/master/unity-arkit/Assets/UnityARKitPlugin/Examples/PointCloud/PointCloudIds.cs):** Displays the point information on the top left.
+- **[PointCloudPositions.cs](https://github.com/khanniie/Arkit-github/blob/master/unity-arkit/Assets/UnityARKitPlugin/Examples/PointCloud/PointCloudPositions.cs):** Watches the AR Point Cloud data, and feeds it into Point Cloud Particle Prefab to be rendered.
 
 ### Scene Objects
 - **Directional Light:** Adds light to the scene. This illuminates the GameObjects that you put in the scene.
@@ -238,7 +238,7 @@ Places glowing points on [points in the world space found through scene analysis
 - Use a different particle system to visualize the points.
 - Use the raw position data for something else, rather than feeding the information into a particle system.
 
-## Plane Mesh
+## [Plane Mesh](https://github.com/khanniie/Arkit-github/tree/master/unity-arkit/Assets/UnityARKitPlugin/Examples/PlaneMesh)
 ![planemesh demo gif](./tutorial_assets/planemesh.gif)
 
 ### Scene Objects
@@ -252,12 +252,12 @@ Places glowing points on [points in the world space found through scene analysis
 - Change the plane mesh, change the materials on it or modify it somehow with a vertex shader.
 - Place items upon the plane, as demonstrated in the [Add Anchors to Plane demo](https://github.com/khanniie/Arkit-github#add-anchors-to-plane).
 
-## Face Mesh
+## [Face Mesh](https://github.com/khanniie/Arkit-github/tree/master/unity-arkit/Assets/UnityARKitPlugin/Examples/FaceMesh)
 ![facemesh demo gif](./tutorial_assets/facemesh.gif)
 
 Places a mesh upon your face.
 ### Scripts
-- **MeshManager.cs:** Takes in information about the [ARFaceGeometry](https://developer.apple.com/documentation/arkit/arfacegeometry), and then passes it to a [Mesh Filter](https://docs.unity3d.com/Manual/class-MeshFilter.html), which passes it to a Mesh Renderer to be rendered. Also grabs vertex 9, which is a point on the nose out of the 1220 vertices given for the face, and places a red sphere at the position of vertex 9. (Some discussion about vertices and hardcoded values is found in this [article.](https://www.raywenderlich.com/5491-ar-face-tracking-tutorial-for-ios-getting-started))
+- **[MeshManager.cs:](https://github.com/khanniie/Arkit-github/blob/master/unity-arkit/Assets/UnityARKitPlugin/Examples/FaceMesh/MeshManager.cs)** Takes in information about the [ARFaceGeometry](https://developer.apple.com/documentation/arkit/arfacegeometry), and then passes it to a [Mesh Filter](https://docs.unity3d.com/Manual/class-MeshFilter.html), which passes it to a Mesh Renderer to be rendered. Also grabs vertex 9, which is a point on the nose out of the 1220 vertices given for the face, and places a red sphere at the position of vertex 9. (Some discussion about vertices and hardcoded values is found in this [article.](https://www.raywenderlich.com/5491-ar-face-tracking-tutorial-for-ios-getting-started))
 
 ### Scene Objects
 - **Directional Light:** Adds light to the scene. This illuminates the GameObjects that you put in the scene.
@@ -271,7 +271,7 @@ Places a mesh upon your face.
 - Change the face mesh somehow, perhaps with a vertex shader or by applying a different material to the mesh under FaceMeshManager->Mesh Renderer.
 - Find other vertices of interest upon the face and use their positions for something.
 
-## Primitives On Face (Face Anchors)
+## [Primitives On Face (Face Anchors)](https://github.com/khanniie/Arkit-github/tree/master/unity-arkit/Assets/UnityARKitPlugin/Examples/PrimitivesOnFace)
 ![faceanchors demo gif](./tutorial_assets/faceanchors.gif)
 
 Places anchors upon the "center" of the face, and the eyes. 
@@ -279,7 +279,7 @@ Places anchors upon the "center" of the face, and the eyes.
 IMPORTANT NOTE: The eye transforms will not work in the remote tool, so you will need to build to see that part of the app work.
 
 ### Scripts
-- **PrimitivesOnFace.cs:** Uses face anchor data; grabs leftEyePose, rightEyePose, and the anchorData's transform value (representing the center of the face), and places anchors at those points.
+- **[PrimitivesOnFace.cs:](https://github.com/khanniie/Arkit-github/blob/master/unity-arkit/Assets/UnityARKitPlugin/Examples/PrimitivesOnFace/PrimitivesOnFace.cs)** Uses face anchor data; grabs leftEyePose, rightEyePose, and the anchorData's transform value (representing the center of the face), and places anchors at those points.
 
 ### Scene Objects
 - **Directional Light:** Adds light to the scene. This illuminates the GameObjects that you put in the scene.
@@ -291,7 +291,7 @@ IMPORTANT NOTE: The eye transforms will not work in the remote tool, so you will
 ### Possible Next Steps
 - Switch out the anchors for other objects.
 
-## Feature Detector
+## [Feature Detector](https://github.com/khanniie/Arkit-github/tree/master/unity-arkit/Assets/UnityARKitPlugin/Examples/FeatureDetector)
 
 ![cheek demo gif](./tutorial_assets/cheek.gif) ![pucker demo gif](./tutorial_assets/pucker.gif) ![tongue demo gif](./tutorial_assets/tongue.gif) ![nose demo gif](./tutorial_assets/nose.gif) 
 
@@ -300,9 +300,9 @@ IMPORTANT NOTE: The eye transforms will not work in the remote tool, so you will
 If the [Blendshape](https://developer.apple.com/documentation/arkit/arfaceanchor/2928251-blendshapes) coefficient for the watched feature passes a threshold, a red oval shows up. For example, if the someone puffs their cheeks, and the app is watching the CheekPuff coefficient, a red oval will appear.
 
 ### Scripts
-- **FeatureDetector.cs:** Checks the value of the feature we are watching; if it is past a threshold, it makes the red oval image visible.
-- **BlendShapeGUI.cs:** Prints out the current blendshape coefficients on the top left corner.
-- **ARAnchorManager.cs:** Uses the anchorData's transform value (representing the center of the face) to place an anchor object at that position.
+- **[FeatureDetector.cs](https://github.com/khanniie/Arkit-github/blob/master/unity-arkit/Assets/UnityARKitPlugin/Examples/FeatureDetector/FeatureDetector.cs):** Checks the value of the feature we are watching; if it is past a threshold, it makes the red oval image visible.
+- **[BlendShapeGUI.cs:](https://github.com/khanniie/Arkit-github/blob/master/unity-arkit/Assets/UnityARKitPlugin/Examples/FeatureDetector/BlendShapeGUI.cs)** Prints out the current blendshape coefficients on the top left corner.
+- **[ARAnchorManager.cs:](https://github.com/khanniie/Arkit-github/blob/master/unity-arkit/Assets/UnityARKitPlugin/Examples/FeatureDetector/ARAnchorManager.cs)** Uses the anchorData's transform value (representing the center of the face) to place an anchor object at that position.
 
 ### Scene Objects
 - **FeatureDetector:** Adds light to the scene. This illuminates the GameObjects that you put in the scene.
@@ -316,6 +316,9 @@ If the [Blendshape](https://developer.apple.com/documentation/arkit/arfaceanchor
 - **EventSystem:** Manages the event system for the UI (I'm not sure that it does anything in this case).
 - **AnchorManager:** Contains the script ARAnchorManager.cs, which places the anchor at the center of the face.
 - **BlendShape GUI:** Contains the script, BlendShapeGUI.cs, which shows the GUI on the top left listing the realtime coefficient values.
+
+### Possible Next Steps
+- Change which blendshape/shapes trigger the interaction: see a [complete list here](https://developer.apple.com/documentation/arkit/arfaceanchor/blendshapelocation).
 
 # Credit #
 
