@@ -34,15 +34,20 @@ These are the steps you will roughly follow:
 2. Open File->Build Settings, and navigate to the iOS panel.
 3. Make sure your scene is checked (it should probably be the only one checked, unless you have some sort of navigation between scenes already built.) If you can't find it in the list, try clicking "Add Open Scenes."
 4. Then, hit Build on the bottom right.
+![remote button](tutorial_assets/buildpage.png)
 5. Once your project has been built to a folder, open the file with the .xcodeproj extension.
 6. Xcode should launch! 
 7. Look for the Signing and Capabilities section of Xcode, and sign for your app by selecting Team->[your team]. You may need to register a developer team ("Add an Account") if you don't have one yet.
+![remote button](tutorial_assets/signing.png)
 8. If you encounter any "bundle identifier" errors while signing, try changing your bundle identifier to something more distinctive. It should be of the format com.[company name].[appname]. For example, com.crabbage.arkitdemo
+9. Click on the run button to build, after selecting your USB connected device from the top left device menu.
+![remote button](tutorial_assets/build-button.png)
 
 Note: If you want to try the "Build and Run" option, you may be able to, but you need a team ID, which is typically only easy to find if you're using a paid account. There's a [supposed solution here](https://stackoverflow.com/questions/18727894/how-can-i-find-my-apple-developer-team-id-and-team-agent-apple-id), but I haven't verified that it works.
 
 ### Player Settings
-1. You may want to change the App name and bundle identifier through the Unity Player Settings. These values can also be changed in Xcode.
+1. You may want to change the App name and bundle identifier through the Unity Player Settings. These values can also be changed in Xcode on the general page.
+![remote button](tutorial_assets/appsettings.png)
 
 ### Xcode troubleshooting
 - When you first install your app to your phone, it may not open until you Verify your developer team through General->Device Management on your phone's settings.
@@ -80,13 +85,15 @@ The [Issues section](https://bitbucket.org/Unity-Technologies/unity-arkit-plugin
 ### What is Arkit Remote? 
 Arkit remote allows you to test your AR code in the Unity editor, without having to build the entire app. Building an app might take a few minutes, so having a remote tool saves you a lot of time while developing! With Arkit remote, you build the app to your phone, and open the app to stream your phone's camera view to Unity. Then, the editor shows the AR view using the camera information. 
 
+![remote button](tutorial_assets/remote.jpg)
+
 ### Building the app
 1. Open the “Assets/UnityARKitPlugin/ARKitRemote/UnityARKitRemote” scene.
 2. If you are using facetracking, make sure that "uses facetracking" is checked in the ARKit Settings. Select the “Assets/UnityARKitPlugin/Resources/UnityARKitPlugin/ARKitSettings” file and activate the “ARKit Uses Facetracking” check box.
 3. Select PlayerSettings (in the menu: Edit/Project Settings/Player) and make sure you have some text in the entry “Camera Usage Description.”
 4. Add this scene to the build.
 5. Before building, in build settings, turn on development build. Select BuildSettings (in menu File/Build Settings…) and check the Development Build checkbox.
-6. Build for iOS! Then build on xCode.
+6. Build for iOS as described in the [Building to Xcode](https://github.com/khanniie/Arkit-github#building-to-xcode)!
 7. You should now have an app on your phone. When you open it, you will see a flashing black view and nothing else.
 
 There is more detailed information, along with videos, on the [Unity site](https://blogs.unity3d.com/2018/01/16/arkit-remote-now-with-face-tracking/), and [Unity forum](https://forum.unity.com/threads/arkit-support-for-ios-via-unity-arkit-plugin.474385/page-13?_ga=2.253381514.2001220102.1572149175-1852576001.1567539614#post-3153415).
@@ -94,9 +101,14 @@ There is more detailed information, along with videos, on the [Unity site](https
 ### Using the remote tool
 1. Connect the iPhone X to your Mac development machine via USB.
 2. Start up the ARKit Remote app on the device.  You should see a “Waiting for connection..” screen.
-3. In the Unity Editor, connect to your iPhone X by going to your Console Window and selecting the iPhone X connected via USB.
+![remote button](tutorial_assets/remote-start.png)
+3. In the Unity Editor, connect to your iPhone X by going to your Console Window and selecting the iPhone X connected via USB. The option that works for me usually is iPhone Player, but on a different phone it was iPhone X, so try both and see which one works.
+![remote button](tutorial_assets/remote-options.png)
 4. Load up one of the examples in the project and press Play in the Editor.
-5. You should see a green screen with a button on top that says “Start ARKit Session.” Press that button and you should see your camera video feed in your Editor “Game” window.  If your face is in the view it will be sending ARKit Face Tracking data from the device to the Editor as well.
+5. You should see a green screen with a button on top that says “Start ARKit Session.” 
+![remote button](tutorial_assets/remote-button.png)
+6. Press that button and you should see your camera video feed in your Editor “Game” window.  If your face is in the view it will be sending ARKit Face Tracking data from the device to the Editor as well.
+![remote button](tutorial_assets/remote-last.png)
 
 There is more detailed information, along with videos, on the [Unity site](https://blogs.unity3d.com/2018/01/16/arkit-remote-now-with-face-tracking/) and [Unity Forum](https://forum.unity.com/threads/arkit-support-for-ios-via-unity-arkit-plugin.474385/page-13?_ga=2.253381514.2001220102.1572149175-1852576001.1567539614#post-3153415).
 
@@ -153,7 +165,7 @@ Detects horizontal planes in the scene, draws those planes, and upon tap/click, 
 
 Watches for two specific images, and places game objects upon them if found in camera view.
 
-IMPORTANT NOTE: This demo does not work in the remote tool! You will need to build it to see it work, and to develop with image anchors generally.
+IMPORTANT NOTE: This demo does not work in the remote tool! You will need to build it to see it work.
 
 ### Generating Custom Reference Image Objects
 1. To generate reference images, go to Assets->Create->UnityArkitPlugin-> ArReferenceImage
