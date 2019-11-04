@@ -53,6 +53,8 @@ Note: If you want to try the "Build and Run" option, you may be able to, but you
 - When you first install your app to your phone, it may not open until you Verify your developer team through General->Device Management on your phone's settings.
 - There's a maximum number of bundle names you can register weekly with a free account.
 
+___________________
+
 # Unity ARkit 2 
 
 ## General Notes
@@ -79,6 +81,8 @@ These demos exist with the acknowledgement that the ARkit 2 Plugin is deprecated
 
 ### Troubleshooting
 The [Issues section](https://bitbucket.org/Unity-Technologies/unity-arkit-plugin/issues?status=new&status=open) of the Unity AR plugin contains a lot of useful information that's useful to read through when you're troubleshooting.
+
+___________________
 
 ## ARKit Remote
 
@@ -120,6 +124,8 @@ There is more detailed information, along with videos, on the [Unity site](https
 5. When the ArKit remote app is connected, it acts only as a camera. **To interface with your app and see any of the AR, look the Unity Editor on your computer!** Specifically, your "tap" interactions will be click actions on your editor screen, and any gameobjects in your scene will also only show up on the editor screen.
 6. Sometimes if I can't find the right device in the editor, I quit the Remote app on my phone and reopen it, repeating until it works.
 
+___________________
+
 ## [Add Anchors Everywhere](https://github.com/khanniie/Arkit-github/tree/master/unity-arkit/Assets/UnityARKitPlugin/Examples/AddAnchorsEverywhere)
 ![everywhere demo gif](./tutorial_assets/everywhere.gif)
 
@@ -141,6 +147,8 @@ Places a GameObject upon user click/touch. The oldest GameObject will be deleted
 ### Possible Next Steps
 - Try changing out the Prefab Object with your own 3d object in AddAnchorsEverywhere! [To make a prefab](https://docs.unity3d.com/Manual/CreatingPrefabs.html), drag and drop a scene gameobject into the project folder view.
 
+___________________
+
 ## [Add Anchors to Plane](https://github.com/khanniie/Arkit-github/tree/master/unity-arkit/Assets/UnityARKitPlugin/Examples/AddAnchorToPlane)
 ![placeonplane demo gif](./tutorial_assets/placeonplane.gif)
 
@@ -159,6 +167,8 @@ Detects horizontal planes in the scene, draws those planes, and upon tap/click, 
 
 ### Possible Next Steps
 - Try changing out the Prefab Object with your own 3d object in AddAnchorToPlane. [To make a prefab](https://docs.unity3d.com/Manual/CreatingPrefabs.html), drag and drop a scene gameobject into the project folder view.
+
+___________________
 
 ## [Image Anchors](https://github.com/khanniie/Arkit-github/tree/master/unity-arkit/Assets/UnityARKitPlugin/Examples/ImageAnchor)
 ![imageanchors demo gif](./tutorial_assets/imageanchors.gif)
@@ -194,6 +204,8 @@ IMPORTANT NOTE: This demo does not work in the remote tool! You will need to bui
 - Try changing out the Prefab Object with your own 3d object. [To make a prefab](https://docs.unity3d.com/Manual/CreatingPrefabs.html), drag and drop a scene gameobject into the project folder view.
 - Make your own custom reference images, as described above.
 
+___________________
+
 ## [Change Based on Distance from Camera](https://github.com/khanniie/Arkit-github/tree/master/unity-arkit/Assets/UnityARKitPlugin/Examples/ChangeBasedOnDistance)
 ![distance demo gif](./tutorial_assets/distance.gif) ![rotate demo gif](./tutorial_assets/rotate.gif)
 
@@ -217,6 +229,8 @@ The cube in the scene changes size, color and rotation (in the second gif) based
 - Use a different object.
 - Instead of using the distance as a gradient, set a threshold value at which an event is triggered.
 
+___________________
+
 ## [Points of Interest](https://github.com/khanniie/Arkit-github/tree/master/unity-arkit/Assets/UnityARKitPlugin/Examples/PointCloud)
 ![points1 demo gif](./tutorial_assets/points1.gif)![points2 demo gif](./tutorial_assets/points2.gif)
 
@@ -238,6 +252,8 @@ Places glowing points on [points in the world space found through scene analysis
 - Use a different particle system to visualize the points.
 - Use the raw position data for something else, rather than feeding the information into a particle system.
 
+___________________
+
 ## [Plane Mesh](https://github.com/khanniie/Arkit-github/tree/master/unity-arkit/Assets/UnityARKitPlugin/Examples/PlaneMesh)
 ![planemesh demo gif](./tutorial_assets/planemesh.gif)
 
@@ -251,6 +267,8 @@ Places glowing points on [points in the world space found through scene analysis
 ### Possible Next Steps
 - Change the plane mesh, change the materials on it or modify it somehow with a vertex shader.
 - Place items upon the plane, as demonstrated in the [Add Anchors to Plane demo](https://github.com/khanniie/Arkit-github#add-anchors-to-plane).
+
+___________________
 
 ## [Face Mesh](https://github.com/khanniie/Arkit-github/tree/master/unity-arkit/Assets/UnityARKitPlugin/Examples/FaceMesh)
 ![facemesh demo gif](./tutorial_assets/facemesh.gif)
@@ -271,6 +289,8 @@ Places a mesh upon your face.
 - Change the face mesh somehow, perhaps with a vertex shader or by applying a different material to the mesh under FaceMeshManager->Mesh Renderer.
 - Find other vertices of interest upon the face and use their positions for something.
 
+___________________
+
 ## [Primitives On Face (Face Anchors)](https://github.com/khanniie/Arkit-github/tree/master/unity-arkit/Assets/UnityARKitPlugin/Examples/PrimitivesOnFace)
 ![faceanchors demo gif](./tutorial_assets/faceanchors.gif)
 
@@ -290,6 +310,8 @@ IMPORTANT NOTE: The eye transforms will not work in the remote tool, so you will
 
 ### Possible Next Steps
 - Switch out the anchors for other objects.
+
+___________________
 
 ## [Feature Detector](https://github.com/khanniie/Arkit-github/tree/master/unity-arkit/Assets/UnityARKitPlugin/Examples/FeatureDetector)
 
@@ -319,6 +341,8 @@ If the [Blendshape](https://developer.apple.com/documentation/arkit/arfaceanchor
 
 ### Possible Next Steps
 - Change which blendshape/shapes trigger the interaction: see a [complete list here](https://developer.apple.com/documentation/arkit/arfaceanchor/blendshapelocation).
+
+___________________
 
 # Credit #
 
