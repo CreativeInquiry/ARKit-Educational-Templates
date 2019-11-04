@@ -18855,8 +18855,6 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR NumberFormatInfo_tFDF57037EBC5BC833D0A53EF032
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* Number_FormatDouble_m75CA311327BBDA4F918A84B0C0B689B5C4F84EC2 (double ___value0, String_t* ___format1, NumberFormatInfo_tFDF57037EBC5BC833D0A53EF0327B805994860A8 * ___info2, const RuntimeMethod* method);
 // System.String System.Double::ToString()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* Double_ToString_mEB58879AE04C90A89E1475909F82BF4F8540D8CF (double* __this, const RuntimeMethod* method);
-// System.String System.Double::ToString(System.String)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* Double_ToString_m4A142BE5E5F1EF1434658FC874A19E124D95313F (double* __this, String_t* ___format0, const RuntimeMethod* method);
 // System.Globalization.NumberFormatInfo System.Globalization.NumberFormatInfo::GetInstance(System.IFormatProvider)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR NumberFormatInfo_tFDF57037EBC5BC833D0A53EF0327B805994860A8 * NumberFormatInfo_GetInstance_m713D298B436F3765F059FEA6C446F0A6ABF0A89A (RuntimeObject* ___formatProvider0, const RuntimeMethod* method);
 // System.String System.Double::ToString(System.IFormatProvider)
@@ -30866,22 +30864,6 @@ IL2CPP_EXTERN_C  String_t* Double_ToString_mEB58879AE04C90A89E1475909F82BF4F8540
 {
 	double* _thisAdjusted = reinterpret_cast<double*>(__this + 1);
 	return Double_ToString_mEB58879AE04C90A89E1475909F82BF4F8540D8CF(_thisAdjusted, method);
-}
-// System.String System.Double::ToString(System.String)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* Double_ToString_m4A142BE5E5F1EF1434658FC874A19E124D95313F (double* __this, String_t* ___format0, const RuntimeMethod* method)
-{
-	{
-		double L_0 = *((double*)__this);
-		String_t* L_1 = ___format0;
-		NumberFormatInfo_tFDF57037EBC5BC833D0A53EF0327B805994860A8 * L_2 = NumberFormatInfo_get_CurrentInfo_m595DF03E32E0C5B01F1EC45F7264B2BD09BA61C9(/*hidden argument*/NULL);
-		String_t* L_3 = Number_FormatDouble_m75CA311327BBDA4F918A84B0C0B689B5C4F84EC2(L_0, L_1, L_2, /*hidden argument*/NULL);
-		return L_3;
-	}
-}
-IL2CPP_EXTERN_C  String_t* Double_ToString_m4A142BE5E5F1EF1434658FC874A19E124D95313F_AdjustorThunk (RuntimeObject * __this, String_t* ___format0, const RuntimeMethod* method)
-{
-	double* _thisAdjusted = reinterpret_cast<double*>(__this + 1);
-	return Double_ToString_m4A142BE5E5F1EF1434658FC874A19E124D95313F(_thisAdjusted, ___format0, method);
 }
 // System.String System.Double::ToString(System.IFormatProvider)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* Double_ToString_mBDC030ABB6F09ED7233866009CE02784B1692BC9 (double* __this, RuntimeObject* ___provider0, const RuntimeMethod* method)

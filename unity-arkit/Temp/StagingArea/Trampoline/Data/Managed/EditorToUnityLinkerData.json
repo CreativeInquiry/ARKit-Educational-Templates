@@ -6,7 +6,7 @@
             "fullManagedTypeName": "UnityEngine.Material",
             "moduleName": "Core",
             "usedInScenes": [
-                "Assets/UnityARKitPlugin/C-Samples/FaceMesh/FaceMesh.unity"
+                "Assets/UnityARKitPlugin/Examples/PrimitivesOnFace/PrimitivesOnFace.unity"
             ]
         },
         {
@@ -15,7 +15,7 @@
             "fullManagedTypeName": "UnityEngine.Object",
             "moduleName": "Core",
             "usedInScenes": [
-                "Assets/UnityARKitPlugin/C-Samples/FaceMesh/FaceMesh.unity"
+                "Assets/UnityARKitPlugin/Examples/PrimitivesOnFace/PrimitivesOnFace.unity"
             ]
         },
         {
@@ -24,7 +24,7 @@
             "fullManagedTypeName": "UnityEditor.MonoScript",
             "moduleName": "Core",
             "usedInScenes": [
-                "Assets/UnityARKitPlugin/C-Samples/FaceMesh/FaceMesh.unity"
+                "Assets/UnityARKitPlugin/Examples/PrimitivesOnFace/PrimitivesOnFace.unity"
             ]
         },
         {
@@ -33,7 +33,7 @@
             "fullManagedTypeName": "",
             "moduleName": "Core",
             "usedInScenes": [
-                "Assets/UnityARKitPlugin/C-Samples/FaceMesh/FaceMesh.unity"
+                "Assets/UnityARKitPlugin/Examples/PrimitivesOnFace/PrimitivesOnFace.unity"
             ]
         },
         {
@@ -84,7 +84,7 @@
             "fullManagedTypeName": "UnityEngine.Shader",
             "moduleName": "Core",
             "usedInScenes": [
-                "Assets/UnityARKitPlugin/C-Samples/FaceMesh/FaceMesh.unity"
+                "Assets/UnityARKitPlugin/Examples/PrimitivesOnFace/PrimitivesOnFace.unity"
             ]
         },
         {
@@ -93,7 +93,7 @@
             "fullManagedTypeName": "UnityEngine.TextAsset",
             "moduleName": "Core",
             "usedInScenes": [
-                "Assets/UnityARKitPlugin/C-Samples/FaceMesh/FaceMesh.unity"
+                "Assets/UnityARKitPlugin/Examples/PrimitivesOnFace/PrimitivesOnFace.unity"
             ]
         },
         {
@@ -102,7 +102,7 @@
             "fullManagedTypeName": "",
             "moduleName": "Core",
             "usedInScenes": [
-                "Assets/UnityARKitPlugin/C-Samples/FaceMesh/FaceMesh.unity"
+                "Assets/UnityARKitPlugin/Examples/PrimitivesOnFace/PrimitivesOnFace.unity"
             ]
         },
         {
@@ -146,7 +146,7 @@
             "fullManagedTypeName": "",
             "moduleName": "Core",
             "usedInScenes": [
-                "Assets/UnityARKitPlugin/C-Samples/FaceMesh/FaceMesh.unity"
+                "Assets/UnityARKitPlugin/Examples/PrimitivesOnFace/PrimitivesOnFace.unity"
             ]
         },
         {
@@ -218,7 +218,7 @@
             "fullManagedTypeName": "UnityEngine.AudioBehaviour",
             "moduleName": "Audio",
             "usedInScenes": [
-                "Assets/UnityARKitPlugin/C-Samples/FaceMesh/FaceMesh.unity"
+                "Assets/UnityARKitPlugin/Examples/PrimitivesOnFace/PrimitivesOnFace.unity"
             ]
         },
         {
@@ -227,7 +227,7 @@
             "fullManagedTypeName": "UnityEngine.AudioListener",
             "moduleName": "Audio",
             "usedInScenes": [
-                "Assets/UnityARKitPlugin/C-Samples/FaceMesh/FaceMesh.unity"
+                "Assets/UnityARKitPlugin/Examples/PrimitivesOnFace/PrimitivesOnFace.unity"
             ]
         },
         {
@@ -236,7 +236,7 @@
             "fullManagedTypeName": "UnityEngine.Renderer",
             "moduleName": "Core",
             "usedInScenes": [
-                "Assets/UnityARKitPlugin/C-Samples/FaceMesh/FaceMesh.unity"
+                "Assets/UnityARKitPlugin/Examples/PrimitivesOnFace/PrimitivesOnFace.unity"
             ]
         },
         {
@@ -245,7 +245,7 @@
             "fullManagedTypeName": "UnityEngine.Behaviour",
             "moduleName": "Core",
             "usedInScenes": [
-                "Assets/UnityARKitPlugin/C-Samples/FaceMesh/FaceMesh.unity"
+                "Assets/UnityARKitPlugin/Examples/PrimitivesOnFace/PrimitivesOnFace.unity"
             ]
         },
         {
@@ -254,7 +254,7 @@
             "fullManagedTypeName": "UnityEngine.Component",
             "moduleName": "Core",
             "usedInScenes": [
-                "Assets/UnityARKitPlugin/C-Samples/FaceMesh/FaceMesh.unity"
+                "Assets/UnityARKitPlugin/Examples/PrimitivesOnFace/PrimitivesOnFace.unity"
             ]
         },
         {
@@ -263,7 +263,7 @@
             "fullManagedTypeName": "UnityEngine.GameObject",
             "moduleName": "Core",
             "usedInScenes": [
-                "Assets/UnityARKitPlugin/C-Samples/FaceMesh/FaceMesh.unity"
+                "Assets/UnityARKitPlugin/Examples/PrimitivesOnFace/PrimitivesOnFace.unity"
             ]
         },
         {
@@ -272,7 +272,7 @@
             "fullManagedTypeName": "UnityEngine.Texture2D",
             "moduleName": "Core",
             "usedInScenes": [
-                "Assets/UnityARKitPlugin/C-Samples/FaceMesh/FaceMesh.unity"
+                "Assets/UnityARKitPlugin/Examples/PrimitivesOnFace/PrimitivesOnFace.unity"
             ]
         },
         {
@@ -281,7 +281,7 @@
             "fullManagedTypeName": "UnityEngine.Texture",
             "moduleName": "Core",
             "usedInScenes": [
-                "Assets/UnityARKitPlugin/C-Samples/FaceMesh/FaceMesh.unity"
+                "Assets/UnityARKitPlugin/Examples/PrimitivesOnFace/PrimitivesOnFace.unity"
             ]
         },
         {
@@ -290,7 +290,7 @@
             "fullManagedTypeName": "UnityEngine.Transform",
             "moduleName": "Core",
             "usedInScenes": [
-                "Assets/UnityARKitPlugin/C-Samples/FaceMesh/FaceMesh.unity"
+                "Assets/UnityARKitPlugin/Examples/PrimitivesOnFace/PrimitivesOnFace.unity"
             ]
         },
         {
@@ -299,7 +299,7 @@
             "fullManagedTypeName": "UnityEngine.MeshFilter",
             "moduleName": "Core",
             "usedInScenes": [
-                "Assets/UnityARKitPlugin/C-Samples/FaceMesh/FaceMesh.unity"
+                "Assets/UnityARKitPlugin/Examples/PrimitivesOnFace/PrimitivesOnFace.unity"
             ]
         },
         {
@@ -308,7 +308,7 @@
             "fullManagedTypeName": "UnityEngine.Mesh",
             "moduleName": "Core",
             "usedInScenes": [
-                "Assets/UnityARKitPlugin/C-Samples/FaceMesh/FaceMesh.unity"
+                "Assets/UnityARKitPlugin/Examples/PrimitivesOnFace/PrimitivesOnFace.unity"
             ]
         },
         {
@@ -317,7 +317,7 @@
             "fullManagedTypeName": "UnityEngine.MonoBehaviour",
             "moduleName": "Core",
             "usedInScenes": [
-                "Assets/UnityARKitPlugin/C-Samples/FaceMesh/FaceMesh.unity"
+                "Assets/UnityARKitPlugin/Examples/PrimitivesOnFace/PrimitivesOnFace.unity"
             ]
         },
         {
@@ -326,7 +326,7 @@
             "fullManagedTypeName": "UnityEngine.Camera",
             "moduleName": "Core",
             "usedInScenes": [
-                "Assets/UnityARKitPlugin/C-Samples/FaceMesh/FaceMesh.unity"
+                "Assets/UnityARKitPlugin/Examples/PrimitivesOnFace/PrimitivesOnFace.unity"
             ]
         },
         {
@@ -335,16 +335,7 @@
             "fullManagedTypeName": "UnityEngine.MeshRenderer",
             "moduleName": "Core",
             "usedInScenes": [
-                "Assets/UnityARKitPlugin/C-Samples/FaceMesh/FaceMesh.unity"
-            ]
-        },
-        {
-            "managedAssemblyName": "UnityEngine.dll",
-            "nativeClass": "Font",
-            "fullManagedTypeName": "UnityEngine.Font",
-            "moduleName": "TextRendering",
-            "usedInScenes": [
-                "Assets/UnityARKitPlugin/C-Samples/FaceMesh/FaceMesh.unity"
+                "Assets/UnityARKitPlugin/Examples/PrimitivesOnFace/PrimitivesOnFace.unity"
             ]
         },
         {
@@ -353,7 +344,7 @@
             "fullManagedTypeName": "UnityEngine.Light",
             "moduleName": "Core",
             "usedInScenes": [
-                "Assets/UnityARKitPlugin/C-Samples/FaceMesh/FaceMesh.unity"
+                "Assets/UnityARKitPlugin/Examples/PrimitivesOnFace/PrimitivesOnFace.unity"
             ]
         },
         {
@@ -362,7 +353,7 @@
             "fullManagedTypeName": "UnityEngine.LightmapSettings",
             "moduleName": "Core",
             "usedInScenes": [
-                "Assets/UnityARKitPlugin/C-Samples/FaceMesh/FaceMesh.unity"
+                "Assets/UnityARKitPlugin/Examples/PrimitivesOnFace/PrimitivesOnFace.unity"
             ]
         },
         {
@@ -371,7 +362,7 @@
             "fullManagedTypeName": "UnityEngine.Collider",
             "moduleName": "Physics",
             "usedInScenes": [
-                "Assets/UnityARKitPlugin/C-Samples/FaceMesh/FaceMesh.unity"
+                "Assets/UnityARKitPlugin/Examples/PrimitivesOnFace/PrimitivesOnFace.unity"
             ]
         },
         {
@@ -380,7 +371,7 @@
             "fullManagedTypeName": "",
             "moduleName": "Core",
             "usedInScenes": [
-                "Assets/UnityARKitPlugin/C-Samples/FaceMesh/FaceMesh.unity"
+                "Assets/UnityARKitPlugin/Examples/PrimitivesOnFace/PrimitivesOnFace.unity"
             ]
         },
         {
@@ -389,7 +380,7 @@
             "fullManagedTypeName": "UnityEngine.FlareLayer",
             "moduleName": "Core",
             "usedInScenes": [
-                "Assets/UnityARKitPlugin/C-Samples/FaceMesh/FaceMesh.unity"
+                "Assets/UnityARKitPlugin/Examples/PrimitivesOnFace/PrimitivesOnFace.unity"
             ]
         },
         {
@@ -398,7 +389,7 @@
             "fullManagedTypeName": "UnityEngine.GUILayer",
             "moduleName": "Core",
             "usedInScenes": [
-                "Assets/UnityARKitPlugin/C-Samples/FaceMesh/FaceMesh.unity"
+                "Assets/UnityARKitPlugin/Examples/PrimitivesOnFace/PrimitivesOnFace.unity"
             ]
         },
         {
@@ -407,7 +398,7 @@
             "fullManagedTypeName": "UnityEngine.RenderSettings",
             "moduleName": "Core",
             "usedInScenes": [
-                "Assets/UnityARKitPlugin/C-Samples/FaceMesh/FaceMesh.unity"
+                "Assets/UnityARKitPlugin/Examples/PrimitivesOnFace/PrimitivesOnFace.unity"
             ]
         },
         {
@@ -416,7 +407,7 @@
             "fullManagedTypeName": "UnityEngine.CapsuleCollider",
             "moduleName": "Physics",
             "usedInScenes": [
-                "Assets/UnityARKitPlugin/C-Samples/FaceMesh/FaceMesh.unity"
+                "Assets/UnityARKitPlugin/Examples/PrimitivesOnFace/PrimitivesOnFace.unity"
             ]
         },
         {
@@ -425,7 +416,7 @@
             "fullManagedTypeName": "UnityEngine.BoxCollider",
             "moduleName": "Physics",
             "usedInScenes": [
-                "Assets/UnityARKitPlugin/C-Samples/FaceMesh/FaceMesh.unity"
+                "Assets/UnityARKitPlugin/Examples/PrimitivesOnFace/PrimitivesOnFace.unity"
             ]
         },
         {
@@ -434,16 +425,7 @@
             "fullManagedTypeName": "UnityEngine.SphereCollider",
             "moduleName": "Physics",
             "usedInScenes": [
-                "Assets/UnityARKitPlugin/C-Samples/FaceMesh/FaceMesh.unity"
-            ]
-        },
-        {
-            "managedAssemblyName": "UnityEngine.dll",
-            "nativeClass": "TextMesh",
-            "fullManagedTypeName": "UnityEngine.TextMesh",
-            "moduleName": "TextRendering",
-            "usedInScenes": [
-                "Assets/UnityARKitPlugin/C-Samples/FaceMesh/FaceMesh.unity"
+                "Assets/UnityARKitPlugin/Examples/PrimitivesOnFace/PrimitivesOnFace.unity"
             ]
         },
         {
@@ -456,7 +438,21 @@
         {
             "managedAssemblyName": "Assembly-CSharp.dll",
             "nativeClass": "",
-            "fullManagedTypeName": "MeshManager",
+            "fullManagedTypeName": "ARReferenceImage",
+            "moduleName": "",
+            "usedInScenes": []
+        },
+        {
+            "managedAssemblyName": "Assembly-CSharp.dll",
+            "nativeClass": "",
+            "fullManagedTypeName": "ARReferenceImagesSet",
+            "moduleName": "",
+            "usedInScenes": []
+        },
+        {
+            "managedAssemblyName": "Assembly-CSharp.dll",
+            "nativeClass": "",
+            "fullManagedTypeName": "PrimitivesOnFace",
             "moduleName": "",
             "usedInScenes": []
         },

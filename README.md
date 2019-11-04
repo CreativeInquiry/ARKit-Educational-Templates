@@ -153,6 +153,8 @@ Detects horizontal planes in the scene, draws those planes, and upon tap/click, 
 
 Watches for two specific images, and places game objects upon them if found in camera view.
 
+IMPORTANT NOTE: This demo does not work in the remote tool! You will need to build it to see it work, and to develop with image anchors generally.
+
 ### Generating Custom Reference Image Objects
 1. To generate reference images, go to Assets->Create->UnityArkitPlugin-> ArReferenceImage
 ![ref image path](tutorial_assets/pathtorefimage.png)
@@ -260,7 +262,9 @@ Places a mesh upon your face.
 ## Primitives On Face (Face Anchors)
 ![faceanchors demo gif](./tutorial_assets/faceanchors.gif)
 
-Places anchors upon the "center" of the face, and the eyes.
+Places anchors upon the "center" of the face, and the eyes. 
+
+IMPORTANT NOTE: The eye transforms will not work in the remote tool, so you will need to build to see that part of the app work.
 
 ### Scripts
 - **PrimitivesOnFace.cs:** Uses face anchor data; grabs leftEyePose, rightEyePose, and the anchorData's transform value (representing the center of the face), and places anchors at those points.

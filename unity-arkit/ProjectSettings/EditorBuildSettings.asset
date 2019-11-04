@@ -54,33 +54,33 @@ EditorBuildSettings:
     path: Assets/UnityARKitPlugin/Examples/AddRemoveAnchorExample/AddRemoveAnchorScene.unity
     guid: c59061d8b0a364aa58f20007a956f23a
   - enabled: 0
-    path: Assets/UnityARKitPlugin/C-Samples/AddAnchorToPlane/AddAnchorToPlane.unity
+    path: Assets/UnityARKitPlugin/Examples/AddAnchorToPlane/AddAnchorToPlane.unity
     guid: 39cced9bcbbed4681a6633005bbeb24d
   - enabled: 0
-    path: Assets/UnityARKitPlugin/C-Samples/AddAnchorsEverywhere/AddAnchorsEverywhere.unity
+    path: Assets/UnityARKitPlugin/Examples/AddAnchorsEverywhere/AddAnchorsEverywhere.unity
     guid: a6ee1a436d990498aa4b72d76993feb3
   - enabled: 0
-    path: Assets/UnityARKitPlugin/C-Samples/ImageAnchor/ImageAnchor.unity
+    path: Assets/UnityARKitPlugin/Examples/ImageAnchor/ImageAnchor.unity
     guid: 986ea77e46b3e449580a9db368017b7b
   - enabled: 0
     path: Assets/UnityARKitPlugin/Examples/ARKit2.0/UnityTongueAndEyes/UnityTongueAndEyes.unity
     guid: 16c7209035275422aaed5631de9e5c7c
-  - enabled: 0
-    path: Assets/UnityARKitPlugin/C-Samples/PrimitivesOnFace/PrimitivesOnFace.unity
+  - enabled: 1
+    path: Assets/UnityARKitPlugin/Examples/PrimitivesOnFace/PrimitivesOnFace.unity
     guid: e155750608bf3466c9401ff9f0b1e88c
   - enabled: 0
-    path: Assets/UnityARKitPlugin/C-Samples/ChangeBasedOnDistance/ChangeBasedOnDistance.unity
+    path: Assets/UnityARKitPlugin/Examples/ChangeBasedOnDistance/ChangeBasedOnDistance.unity
     guid: 6f19c3974e85d449386a65b11d5f985f
-  - enabled: 1
-    path: Assets/UnityARKitPlugin/C-Samples/FaceMesh/FaceMesh.unity
+  - enabled: 0
+    path: Assets/UnityARKitPlugin/Examples/FaceMesh/FaceMesh.unity
     guid: 9ce60e9e93f5c4016a8bf44369f406e6
   - enabled: 0
-    path: Assets/UnityARKitPlugin/C-Samples/FeatureDetector/FeatureDetector.unity
+    path: Assets/UnityARKitPlugin/Examples/FeatureDetector/FeatureDetector.unity
     guid: 59c527e6b88a34d61a737bd4385aef33
   - enabled: 0
-    path: Assets/UnityARKitPlugin/C-Samples/PlaneMesh/PlaneMesh.unity
+    path: Assets/UnityARKitPlugin/Examples/PlaneMesh/PlaneMesh.unity
     guid: b0d543580fa6b474c817cb2e9930135e
   - enabled: 0
-    path: Assets/UnityARKitPlugin/C-Samples/PointCloud/PointCloud.unity
+    path: Assets/UnityARKitPlugin/Examples/PointCloud/PointCloud.unity
     guid: f73655e35d7e24e88974f37c6f1322fa
   m_configObjects: {}

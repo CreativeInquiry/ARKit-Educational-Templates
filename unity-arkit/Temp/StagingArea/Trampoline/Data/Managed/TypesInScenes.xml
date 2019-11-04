@@ -31,7 +31,6 @@
 		<type fullname="UnityEngine.MonoBehaviour" preserve="nothing"/>
 		<type fullname="UnityEngine.Camera" preserve="nothing"/>
 		<type fullname="UnityEngine.MeshRenderer" preserve="nothing"/>
-		<type fullname="UnityEngine.Font" preserve="nothing"/>
 		<type fullname="UnityEngine.Light" preserve="nothing"/>
 		<type fullname="UnityEngine.LightmapSettings" preserve="nothing"/>
 		<type fullname="UnityEngine.Collider" preserve="nothing"/>
@@ -41,11 +40,12 @@
 		<type fullname="UnityEngine.CapsuleCollider" preserve="nothing"/>
 		<type fullname="UnityEngine.BoxCollider" preserve="nothing"/>
 		<type fullname="UnityEngine.SphereCollider" preserve="nothing"/>
-		<type fullname="UnityEngine.TextMesh" preserve="nothing"/>
 	</assembly>
 	<assembly fullname="Assembly-CSharp">
 		<type fullname="ARCameraTracker" preserve="nothing"/>
-		<type fullname="MeshManager" preserve="nothing"/>
+		<type fullname="ARReferenceImage" preserve="nothing"/>
+		<type fullname="ARReferenceImagesSet" preserve="nothing"/>
+		<type fullname="PrimitivesOnFace" preserve="nothing"/>
 		<type fullname="UnityARCameraNearFar" preserve="nothing"/>
 		<type fullname="UnityARKitPluginSettings" preserve="nothing"/>
 		<type fullname="UnityEngine.XR.iOS.UnityARUserAnchorComponent" preserve="nothing"/>

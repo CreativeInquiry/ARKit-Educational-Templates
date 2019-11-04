@@ -2,7 +2,9 @@ ScriptsOnlyBuild:
   usedScripts:
     Assembly-CSharp.dll:
     - ARCameraTracker
-    - MeshManager
+    - ARReferenceImage
+    - ARReferenceImagesSet
+    - PrimitivesOnFace
     - UnityARCameraNearFar
     - UnityARKitPluginSettings
     - UnityEngine.XR.iOS.UnityARUserAnchorComponent
@@ -20,7 +22,7 @@ ScriptsOnlyBuild:
     - UnityEngine.Networking.NetworkCallbacks
     - UnityEngine.Networking.NetworkIdentity
   sceneClasses:
-    Assets/UnityARKitPlugin/C-Samples/FaceMesh/FaceMesh.unity:
+    Assets/UnityARKitPlugin/Examples/PrimitivesOnFace/PrimitivesOnFace.unity:
     - Class: 1
       Script: {instanceID: 0}
     - Class: 4
@@ -45,14 +47,10 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 92
       Script: {instanceID: 0}
-    - Class: 102
-      Script: {instanceID: 0}
     - Class: 104
       Script: {instanceID: 0}
     - Class: 108
       Script: {instanceID: 0}
-    - Class: 114
-      Script: {instanceID: 9694}
     - Class: 114
       Script: {instanceID: 9762}
     - Class: 114
@@ -76,14 +74,12 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 11462}
     - Class: 114
-      Script: {instanceID: 11656}
-    - Class: 114
       Script: {instanceID: 12232}
+    - Class: 114
+      Script: {instanceID: 12244}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 124
-      Script: {instanceID: 0}
-    - Class: 128
       Script: {instanceID: 0}
     - Class: 135
       Script: {instanceID: 0}
@@ -136,24 +132,6 @@ ScriptsOnlyBuild:
     className: TMP_Dropdown
   - hash:
       serializedVersion: 2
-      Hash: deaaf7f8c5db9bcdd252b5123ee606e5
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: ModeSwitcher
-  - hash:
-      serializedVersion: 2
-      Hash: 59771897d44b00671b559ca8f335b2b8
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: DetectedObjectManager
-  - hash:
-      serializedVersion: 2
-      Hash: a8702db6a9e2f2326cdab669a8201317
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: ObjectScanSessionManager
-  - hash:
-      serializedVersion: 2
       Hash: 5bd9a19c7b5f76c563418e28f48a561b
     assemblyName: com.unity.multiplayer-hlapi.Runtime.dll
     namespaceName: UnityEngine.Networking
@@ -184,12 +162,6 @@ ScriptsOnlyBuild:
     className: ActivationTrack
   - hash:
       serializedVersion: 2
-      Hash: b1ade44af0b799e9cf2951d561f3fd46
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: ColorPickerTester
-  - hash:
-      serializedVersion: 2
       Hash: fc108ce7d98c40ac0907e8ca7f500c76
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
@@ -206,12 +178,6 @@ ScriptsOnlyBuild:
     assemblyName: com.unity.multiplayer-hlapi.Runtime.dll
     namespaceName: UnityEngine.Networking
     className: NetworkIdentity
-  - hash:
-      serializedVersion: 2
-      Hash: bddc9835509ee6b7a4ac8db532673c7f
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: GenerateObjectAnchor
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
@@ -256,12 +222,6 @@ ScriptsOnlyBuild:
     className: NetworkTransform
   - hash:
       serializedVersion: 2
-      Hash: 649dddd003fb3b1472517ebb21b5a8af
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: ColorLabel
-  - hash:
-      serializedVersion: 2
       Hash: 7ab0e790220bdca831fdd886b339039d
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
@@ -272,12 +232,6 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: PointCloudPositions
-  - hash:
-      serializedVersion: 2
-      Hash: 4ef6539ed83bb9d241cb3a4b7b42c415
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: BallMaker
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
@@ -322,24 +276,6 @@ ScriptsOnlyBuild:
     className: UnityARCameraManager
   - hash:
       serializedVersion: 2
-      Hash: 5c0880dfab6b0790ce0d0ccd3dac0c3f
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: UnityARFaceMeshManager
-  - hash:
-      serializedVersion: 2
-      Hash: 030fa9a1b46f7f2e0f99470d7d28ce64
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: VideoFormatsExample
-  - hash:
-      serializedVersion: 2
-      Hash: 33cb231c693afd78d60581a5cd272781
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: BallMover
-  - hash:
-      serializedVersion: 2
       Hash: bd3cf68c8964d3c66d1c43f4f98508c9
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
@@ -376,12 +312,6 @@ ScriptsOnlyBuild:
     className: TransitionArmModel
   - hash:
       serializedVersion: 2
-      Hash: a72b59fc029116362b3317d54b5ec7e0
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: TiltWindow
-  - hash:
-      serializedVersion: 2
       Hash: 281f258aa5168f989b50d54a0bc89f90
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
@@ -410,12 +340,6 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
     className: Shadow
-  - hash:
-      serializedVersion: 2
-      Hash: ef4cb41fcd9ad2c83c259d89c5a4723f
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: WorldMapManager
   - hash:
       serializedVersion: 2
       Hash: e9f2e0bbf55e2dd4c3da63569760821f
@@ -484,12 +408,6 @@ ScriptsOnlyBuild:
     className: Selectable
   - hash:
       serializedVersion: 2
-      Hash: d503acfddebcac788dcc909ceb751f71
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: GenerateImageAnchor
-  - hash:
-      serializedVersion: 2
       Hash: 265cf27ba050d55ff33a8acab4ded6c0
     assemblyName: com.unity.multiplayer-hlapi.Runtime.dll
     namespaceName: UnityEngine.Networking
@@ -506,12 +424,6 @@ ScriptsOnlyBuild:
     assemblyName: com.unity.multiplayer-hlapi.Runtime.dll
     namespaceName: UnityEngine.Networking
     className: NetworkTransformVisualizer
-  - hash:
-      serializedVersion: 2
-      Hash: 35fa1eced6c5453850fd77f820d57527
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: UnityEyeManager
   - hash:
       serializedVersion: 2
       Hash: 7a41f064335c23fc6ebd8e0447657faf
@@ -544,12 +456,6 @@ ScriptsOnlyBuild:
     className: ScrollRect
   - hash:
       serializedVersion: 2
-      Hash: 239843a6df6201b4c0e6abb3a2f01450
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: RelocalizationControl
-  - hash:
-      serializedVersion: 2
       Hash: 2cd35ebae3db4154d9fd79871066abfa
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
@@ -566,18 +472,6 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: SignalTrack
-  - hash:
-      serializedVersion: 2
-      Hash: 81a231bcb5007010c269ce4e4a5c4335
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: Ballz
-  - hash:
-      serializedVersion: 2
-      Hash: 57be11eff65fbb17c758d8a374cc5cec
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: UpdateWorldMappingStatus
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
@@ -604,22 +498,10 @@ ScriptsOnlyBuild:
     className: BlendshapeDriver
   - hash:
       serializedVersion: 2
-      Hash: e80052be6f994349516ef119502d9146
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: SVBoxSlider
-  - hash:
-      serializedVersion: 2
       Hash: 21e871d89bbce53c038fc75ad1b7c7f3
     assemblyName: com.unity.multiplayer-hlapi.Runtime.dll
     namespaceName: UnityEngine.Networking
     className: NetworkManager
-  - hash:
-      serializedVersion: 2
-      Hash: 3ad5f53ce814676a5bba4633d35a5683
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: UnityARFaceAnchorManager
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
@@ -640,12 +522,6 @@ ScriptsOnlyBuild:
     className: EditorHitTest
   - hash:
       serializedVersion: 2
-      Hash: fea2d676bca3c708f6b399119fa3ca3f
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: UnityARUserAnchorExample
-  - hash:
-      serializedVersion: 2
       Hash: 7ce83f89c4fb0c9ca8cba9912b23dcdc
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
@@ -656,12 +532,6 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.TestRunner.dll
     namespaceName: UnityEngine.TestTools.TestRunner.Callbacks
     className: RemoteTestResultSender
-  - hash:
-      serializedVersion: 2
-      Hash: acd6e9b47d9eb18143f0e406b1e68787
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: ParticlePainter
   - hash:
       serializedVersion: 2
       Hash: 4fd8bf02e3089425d3502e26c44ba31a
@@ -676,12 +546,6 @@ ScriptsOnlyBuild:
     className: Button
   - hash:
       serializedVersion: 2
-      Hash: efee04fd7a8b900e85d693e88d5b5f35
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: ColorPicker
-  - hash:
-      serializedVersion: 2
       Hash: 92da9881aed190e8bb74661bcd74aa2c
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
@@ -692,12 +556,6 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: UnityARKitPluginSettings
-  - hash:
-      serializedVersion: 2
-      Hash: 7949738ace4f5cbe3f21484e8391d331
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: ObjectScanManager
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
@@ -716,30 +574,6 @@ ScriptsOnlyBuild:
     assemblyName: com.unity.multiplayer-hlapi.Runtime.dll
     namespaceName: UnityEngine.Networking
     className: NetworkStartPosition
-  - hash:
-      serializedVersion: 2
-      Hash: 0f6166d470dde5b49513d21e07517ec4
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: UnityEngine.UI
-    className: BoxSlider
-  - hash:
-      serializedVersion: 2
-      Hash: d9835af5ce701547af1a2a63c5a25090
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: UnityEngine.XR.iOS
-    className: PrintBounds
-  - hash:
-      serializedVersion: 2
-      Hash: fc01441e5d5b69ef149be4f22a897c42
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: ColorSliderImage
-  - hash:
-      serializedVersion: 2
-      Hash: 4cab82781bb30249a7f539990ff43f1d
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: EyeManagerModified
   - hash:
       serializedVersion: 2
       Hash: 12e64d607873da15ad3f833620350d51
@@ -784,12 +618,6 @@ ScriptsOnlyBuild:
     className: Physics2DRaycaster
   - hash:
       serializedVersion: 2
-      Hash: f347306e1327508175f82d7fdaf6a91d
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: SetWorldOriginControl
-  - hash:
-      serializedVersion: 2
       Hash: 318c6c13a19c9fac98135ae14889de1b
     assemblyName: com.unity.multiplayer-hlapi.Runtime.dll
     namespaceName: UnityEngine.Networking
@@ -808,36 +636,6 @@ ScriptsOnlyBuild:
     className: TimelineAsset
   - hash:
       serializedVersion: 2
-      Hash: 35275a61dce450d06c485424be28bd5f
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: ObjectText
-  - hash:
-      serializedVersion: 2
-      Hash: fcf8670fcab5e098ab49f7a9d975506e
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: HitCreateEnvironmentProbe
-  - hash:
-      serializedVersion: 2
-      Hash: e483bf600be1c0c43c778f81975cd000
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: HexColorField
-  - hash:
-      serializedVersion: 2
-      Hash: 030fa9a1b46f7f2e0f99470d7d28ce64
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: FaceTrackingVideoFormatsExample
-  - hash:
-      serializedVersion: 2
-      Hash: 344c74b3abf2e69061c6763dbfbabcea
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: FocusSquare
-  - hash:
-      serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: com.unity.multiplayer-hlapi.Runtime.dll
     namespaceName: UnityEngine.Networking
@@ -850,22 +648,10 @@ ScriptsOnlyBuild:
     className: TextMeshProUGUI
   - hash:
       serializedVersion: 2
-      Hash: e80052be6f994349516ef119502d9146
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: ColorImage
-  - hash:
-      serializedVersion: 2
       Hash: 516824a435828eadd660ef2f1658a48e
     assemblyName: Unity.Analytics.DataPrivacy.dll
     namespaceName: UnityEngine.Analytics
     className: DataPrivacyButton
-  - hash:
-      serializedVersion: 2
-      Hash: bfacedbd2d0a7ae7ec6cb5689bcd2e8f
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: VideoFormatButton
   - hash:
       serializedVersion: 2
       Hash: f336e086360abe49a3323e5f1583c35a
@@ -916,12 +702,6 @@ ScriptsOnlyBuild:
     className: TMP_StyleSheet
   - hash:
       serializedVersion: 2
-      Hash: fbb893a04802c41965b5af370fe237f2
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: UnityEngine.XR.iOS
-    className: PickBoundingBox
-  - hash:
-      serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
@@ -940,28 +720,10 @@ ScriptsOnlyBuild:
     className: UnityARGeneratePlane
   - hash:
       serializedVersion: 2
-      Hash: 4bc3701a5a0528400fe2743c92380ca2
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: ColorSlider
-  - hash:
-      serializedVersion: 2
-      Hash: 3dfaa02886b930262fc04c4f05a0301a
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: ColorPresets
-  - hash:
-      serializedVersion: 2
       Hash: 70d3712bc26215c596eb4fd4d572666f
     assemblyName: Assembly-CSharp.dll
     namespaceName: UnityEngine.XR.iOS
     className: ARKitFaceTrackingRemoteConnection
-  - hash:
-      serializedVersion: 2
-      Hash: 3d964e92af1b2cefee80a49a08caea9c
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: GenerateEnvironmentProbeAnchors
   - hash:
       serializedVersion: 2
       Hash: 5372ed2ce39229b1ac910757999a8be2
@@ -1036,12 +798,6 @@ ScriptsOnlyBuild:
     className: StandaloneInputModule
   - hash:
       serializedVersion: 2
-      Hash: 9e24e0b4d00416469d68b2fa3c9a7a3c
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: ReflectionProbeGameObject
-  - hash:
-      serializedVersion: 2
       Hash: 3ab7272a8b7d3ea5a142e0c9b6aae63b
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
@@ -1069,12 +825,6 @@ ScriptsOnlyBuild:
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
-    className: PointCloudIdsExample
-  - hash:
-      serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
     className: UnityARKitLightManager
   - hash:
       serializedVersion: 2
@@ -1096,12 +846,6 @@ ScriptsOnlyBuild:
     className: UnityPointCloudExample
   - hash:
       serializedVersion: 2
-      Hash: 96f116540b6ff5918aa2c65dfa89ec40
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: TongueDetector
-  - hash:
-      serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
@@ -1120,5 +864,5 @@ ScriptsOnlyBuild:
     className: PrimitivesOnFace
   platform: 9
   scenePathNames:
-  - Assets/UnityARKitPlugin/C-Samples/FaceMesh/FaceMesh.unity
-  playerPath: /Users/crabbage/Documents/golan-AR foundation/facemesh
+  - Assets/UnityARKitPlugin/Examples/PrimitivesOnFace/PrimitivesOnFace.unity
+  playerPath: /Users/crabbage/Documents/golan-AR foundation/primitivesonface

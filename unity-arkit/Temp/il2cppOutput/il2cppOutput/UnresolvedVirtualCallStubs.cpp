@@ -90,7 +90,7 @@ struct ValueType_t4D0C27076F7C36E76190FB3328E232BCB1CD1FFF_marshaled_com
 };
 
 // Collections.Hybrid.Generic.LinkedListDictionary`2_LLEntry<System.Object,System.Object>
-struct  LLEntry_t039167D5D7D673EF578B353419F9C47D2CA9BF7A 
+struct  LLEntry_t361DD0A4531B37B15CBBBFC99CF730FA9658CC88 
 {
 public:
 	// TV Collections.Hybrid.Generic.LinkedListDictionary`2_LLEntry::v
@@ -99,7 +99,7 @@ public:
 	LinkedListNode_1_t29FE2977C490DD49F9F19A1FCBD4B2510F580683 * ___vNode_1;
 
 public:
-	inline static int32_t get_offset_of_v_0() { return static_cast<int32_t>(offsetof(LLEntry_t039167D5D7D673EF578B353419F9C47D2CA9BF7A, ___v_0)); }
+	inline static int32_t get_offset_of_v_0() { return static_cast<int32_t>(offsetof(LLEntry_t361DD0A4531B37B15CBBBFC99CF730FA9658CC88, ___v_0)); }
 	inline RuntimeObject * get_v_0() const { return ___v_0; }
 	inline RuntimeObject ** get_address_of_v_0() { return &___v_0; }
 	inline void set_v_0(RuntimeObject * value)
@@ -108,7 +108,7 @@ public:
 		Il2CppCodeGenWriteBarrier((void**)(&___v_0), (void*)value);
 	}
 
-	inline static int32_t get_offset_of_vNode_1() { return static_cast<int32_t>(offsetof(LLEntry_t039167D5D7D673EF578B353419F9C47D2CA9BF7A, ___vNode_1)); }
+	inline static int32_t get_offset_of_vNode_1() { return static_cast<int32_t>(offsetof(LLEntry_t361DD0A4531B37B15CBBBFC99CF730FA9658CC88, ___vNode_1)); }
 	inline LinkedListNode_1_t29FE2977C490DD49F9F19A1FCBD4B2510F580683 * get_vNode_1() const { return ___vNode_1; }
 	inline LinkedListNode_1_t29FE2977C490DD49F9F19A1FCBD4B2510F580683 ** get_address_of_vNode_1() { return &___vNode_1; }
 	inline void set_vNode_1(LinkedListNode_1_t29FE2977C490DD49F9F19A1FCBD4B2510F580683 * value)
@@ -2792,16 +2792,16 @@ public:
 
 
 // System.Collections.Generic.KeyValuePair`2<System.Object,Collections.Hybrid.Generic.LinkedListDictionary`2_LLEntry<System.Object,System.Object>>
-struct  KeyValuePair_2_t8B0AA3B6C77B14DD5527DBBDC934C5FA3978BC41 
+struct  KeyValuePair_2_t26B74852A8280F423115AE987AD28AEE8FE88FA4 
 {
 public:
 	// TKey System.Collections.Generic.KeyValuePair`2::key
 	RuntimeObject * ___key_0;
 	// TValue System.Collections.Generic.KeyValuePair`2::value
-	LLEntry_t039167D5D7D673EF578B353419F9C47D2CA9BF7A  ___value_1;
+	LLEntry_t361DD0A4531B37B15CBBBFC99CF730FA9658CC88  ___value_1;
 
 public:
-	inline static int32_t get_offset_of_key_0() { return static_cast<int32_t>(offsetof(KeyValuePair_2_t8B0AA3B6C77B14DD5527DBBDC934C5FA3978BC41, ___key_0)); }
+	inline static int32_t get_offset_of_key_0() { return static_cast<int32_t>(offsetof(KeyValuePair_2_t26B74852A8280F423115AE987AD28AEE8FE88FA4, ___key_0)); }
 	inline RuntimeObject * get_key_0() const { return ___key_0; }
 	inline RuntimeObject ** get_address_of_key_0() { return &___key_0; }
 	inline void set_key_0(RuntimeObject * value)
@@ -2810,10 +2810,10 @@ public:
 		Il2CppCodeGenWriteBarrier((void**)(&___key_0), (void*)value);
 	}
 
-	inline static int32_t get_offset_of_value_1() { return static_cast<int32_t>(offsetof(KeyValuePair_2_t8B0AA3B6C77B14DD5527DBBDC934C5FA3978BC41, ___value_1)); }
-	inline LLEntry_t039167D5D7D673EF578B353419F9C47D2CA9BF7A  get_value_1() const { return ___value_1; }
-	inline LLEntry_t039167D5D7D673EF578B353419F9C47D2CA9BF7A * get_address_of_value_1() { return &___value_1; }
-	inline void set_value_1(LLEntry_t039167D5D7D673EF578B353419F9C47D2CA9BF7A  value)
+	inline static int32_t get_offset_of_value_1() { return static_cast<int32_t>(offsetof(KeyValuePair_2_t26B74852A8280F423115AE987AD28AEE8FE88FA4, ___value_1)); }
+	inline LLEntry_t361DD0A4531B37B15CBBBFC99CF730FA9658CC88  get_value_1() const { return ___value_1; }
+	inline LLEntry_t361DD0A4531B37B15CBBBFC99CF730FA9658CC88 * get_address_of_value_1() { return &___value_1; }
+	inline void set_value_1(LLEntry_t361DD0A4531B37B15CBBBFC99CF730FA9658CC88  value)
 	{
 		___value_1 = value;
 		Il2CppCodeGenWriteBarrier((void**)&(((&___value_1))->___v_0), (void*)NULL);
@@ -8178,13 +8178,13 @@ static  int8_t UnresolvedVirtualCall_301 (RuntimeObject * __this, ConnectionPend
 	il2cpp_codegen_no_return();
 }
 
-static  KeyValuePair_2_t8B0AA3B6C77B14DD5527DBBDC934C5FA3978BC41  UnresolvedVirtualCall_302 (RuntimeObject * __this, const RuntimeMethod* method)
+static  KeyValuePair_2_t26B74852A8280F423115AE987AD28AEE8FE88FA4  UnresolvedVirtualCall_302 (RuntimeObject * __this, const RuntimeMethod* method)
 {
 	il2cpp_codegen_raise_execution_engine_exception(method);
 	il2cpp_codegen_no_return();
 }
 
-static  int8_t UnresolvedVirtualCall_303 (RuntimeObject * __this, LLEntry_t039167D5D7D673EF578B353419F9C47D2CA9BF7A  ___LLEntry1, LLEntry_t039167D5D7D673EF578B353419F9C47D2CA9BF7A  ___LLEntry2, const RuntimeMethod* method)
+static  int8_t UnresolvedVirtualCall_303 (RuntimeObject * __this, LLEntry_t361DD0A4531B37B15CBBBFC99CF730FA9658CC88  ___LLEntry1, LLEntry_t361DD0A4531B37B15CBBBFC99CF730FA9658CC88  ___LLEntry2, const RuntimeMethod* method)
 {
 	il2cpp_codegen_raise_execution_engine_exception(method);
 	il2cpp_codegen_no_return();
@@ -8322,7 +8322,7 @@ static  int8_t UnresolvedVirtualCall_325 (RuntimeObject * __this, NetworkSceneId
 	il2cpp_codegen_no_return();
 }
 
-static  int32_t UnresolvedVirtualCall_326 (RuntimeObject * __this, LLEntry_t039167D5D7D673EF578B353419F9C47D2CA9BF7A  ___LLEntry1, const RuntimeMethod* method)
+static  int32_t UnresolvedVirtualCall_326 (RuntimeObject * __this, LLEntry_t361DD0A4531B37B15CBBBFC99CF730FA9658CC88  ___LLEntry1, const RuntimeMethod* method)
 {
 	il2cpp_codegen_raise_execution_engine_exception(method);
 	il2cpp_codegen_no_return();
@@ -10050,26 +10050,20 @@ static  void UnresolvedVirtualCall_613 (RuntimeObject * __this, Scene_t942E02378
 	il2cpp_codegen_no_return();
 }
 
-static  void UnresolvedVirtualCall_614 (RuntimeObject * __this, float ___Single1, float ___Single2, float ___Single3, const RuntimeMethod* method)
+static  void UnresolvedVirtualCall_614 (RuntimeObject * __this, int8_t ___SByte1, RuntimeObject * ___Object2, RuntimeObject * ___Object3, const RuntimeMethod* method)
 {
 	il2cpp_codegen_raise_execution_engine_exception(method);
 	il2cpp_codegen_no_return();
 }
 
-static  void UnresolvedVirtualCall_615 (RuntimeObject * __this, int8_t ___SByte1, RuntimeObject * ___Object2, RuntimeObject * ___Object3, const RuntimeMethod* method)
-{
-	il2cpp_codegen_raise_execution_engine_exception(method);
-	il2cpp_codegen_no_return();
-}
-
-static  void UnresolvedVirtualCall_616 (RuntimeObject * __this, RuntimeObject * ___Object1, float ___Single2, const RuntimeMethod* method)
+static  void UnresolvedVirtualCall_615 (RuntimeObject * __this, RuntimeObject * ___Object1, float ___Single2, const RuntimeMethod* method)
 {
 	il2cpp_codegen_raise_execution_engine_exception(method);
 	il2cpp_codegen_no_return();
 }
 
 extern const Il2CppMethodPointer g_UnresolvedVirtualMethodPointers[];
-const Il2CppMethodPointer g_UnresolvedVirtualMethodPointers[617] = 
+const Il2CppMethodPointer g_UnresolvedVirtualMethodPointers[616] = 
 {
 	(const Il2CppMethodPointer) UnresolvedVirtualCall_0,
 	(const Il2CppMethodPointer) UnresolvedVirtualCall_1,
@@ -10687,5 +10681,4 @@ const Il2CppMethodPointer g_UnresolvedVirtualMethodPointers[617] =
 	(const Il2CppMethodPointer) UnresolvedVirtualCall_613,
 	(const Il2CppMethodPointer) UnresolvedVirtualCall_614,
 	(const Il2CppMethodPointer) UnresolvedVirtualCall_615,
-	(const Il2CppMethodPointer) UnresolvedVirtualCall_616,
 };

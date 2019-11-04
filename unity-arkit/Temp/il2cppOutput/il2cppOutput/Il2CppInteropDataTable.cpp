@@ -818,10 +818,8 @@ IL2CPP_EXTERN_C void DelegatePInvokeWrapper_internal_ARUserAnchorUpdated_t5879DD
 IL2CPP_EXTERN_C_CONST RuntimeType internal_ARUserAnchorUpdated_t5879DD34C76E50F20701BECA2A05680D1CDE15E9_0_0_0;
 IL2CPP_EXTERN_C void DelegatePInvokeWrapper_VideoFormatEnumerator_tE8B6480DBDEBDC141AA932D8696673C644A2006D();
 IL2CPP_EXTERN_C_CONST RuntimeType VideoFormatEnumerator_tE8B6480DBDEBDC141AA932D8696673C644A2006D_0_0_0;
-IL2CPP_EXTERN_C void DelegatePInvokeWrapper_VideoFormatButtonPressed_tE2EB379E3E66B4C8D84030EA0FE11BE4714820CC();
-IL2CPP_EXTERN_C_CONST RuntimeType VideoFormatButtonPressed_tE2EB379E3E66B4C8D84030EA0FE11BE4714820CC_0_0_0;
 extern Il2CppInteropData g_Il2CppInteropData[];
-Il2CppInteropData g_Il2CppInteropData[236] = 
+Il2CppInteropData g_Il2CppInteropData[235] = 
 {
 	{ DelegatePInvokeWrapper_EtwEnableCallback_tE661421A2F149DA151D5A519A09E09448E396A4A, NULL, NULL, NULL, NULL, NULL, &EtwEnableCallback_tE661421A2F149DA151D5A519A09E09448E396A4A_0_0_0 } /* Microsoft.Win32.UnsafeNativeMethods/ManifestEtw/EtwEnableCallback */,
 	{ NULL, Escape_t7D205DCBE40F7D5FE25F443E2DBF79A63870C5C6_marshal_pinvoke, Escape_t7D205DCBE40F7D5FE25F443E2DBF79A63870C5C6_marshal_pinvoke_back, Escape_t7D205DCBE40F7D5FE25F443E2DBF79A63870C5C6_marshal_pinvoke_cleanup, NULL, NULL, &Escape_t7D205DCBE40F7D5FE25F443E2DBF79A63870C5C6_0_0_0 } /* Mono.Globalization.Unicode.SimpleCollator/Escape */,
@@ -1057,6 +1055,5 @@ Il2CppInteropData g_Il2CppInteropData[236] =
 	{ DelegatePInvokeWrapper_internal_ARUserAnchorRemoved_t35E6F1259D940FFE1325AF4346824A5DCDA7F3F2, NULL, NULL, NULL, NULL, NULL, &internal_ARUserAnchorRemoved_t35E6F1259D940FFE1325AF4346824A5DCDA7F3F2_0_0_0 } /* UnityEngine.XR.iOS.UnityARSessionNativeInterface/internal_ARUserAnchorRemoved */,
 	{ DelegatePInvokeWrapper_internal_ARUserAnchorUpdated_t5879DD34C76E50F20701BECA2A05680D1CDE15E9, NULL, NULL, NULL, NULL, NULL, &internal_ARUserAnchorUpdated_t5879DD34C76E50F20701BECA2A05680D1CDE15E9_0_0_0 } /* UnityEngine.XR.iOS.UnityARSessionNativeInterface/internal_ARUserAnchorUpdated */,
 	{ DelegatePInvokeWrapper_VideoFormatEnumerator_tE8B6480DBDEBDC141AA932D8696673C644A2006D, NULL, NULL, NULL, NULL, NULL, &VideoFormatEnumerator_tE8B6480DBDEBDC141AA932D8696673C644A2006D_0_0_0 } /* UnityEngine.XR.iOS.VideoFormatEnumerator */,
-	{ DelegatePInvokeWrapper_VideoFormatButtonPressed_tE2EB379E3E66B4C8D84030EA0FE11BE4714820CC, NULL, NULL, NULL, NULL, NULL, &VideoFormatButtonPressed_tE2EB379E3E66B4C8D84030EA0FE11BE4714820CC_0_0_0 } /* VideoFormatButton/VideoFormatButtonPressed */,
 	NULL,
 };
