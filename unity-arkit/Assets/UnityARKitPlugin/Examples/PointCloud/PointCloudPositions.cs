@@ -32,17 +32,20 @@ public class PointCloudPositions : MonoBehaviour
     {
         if (camera.pointCloud != null)
         {
-            m_PointCloudData = camera.pointCloud.Points;
+            m_PointCloudData = camera.pointCloud.Points; //fill the PointCloudData array with values
         }
         frameUpdated = true;
     }
 
     void OnGUI()
     {
+        //if the object is null, then the length is 0
         int seenThisFrame = (m_PointCloudData != null) ? m_PointCloudData.Length : 0;
+        //display the number of points seen in this frame
         string formattedMessage = String.Format("{0} points total", seenThisFrame);
         GUI.Label(new Rect(100, 200, 200, 40), formattedMessage, GStyle);
 
+        //if we've seen more than 3 points this frame, lets display the positions of the first 3
         if (seenThisFrame >= 3)
         {
             string pointPositions = String.Format("{0}, {1}, {2}, ....", m_PointCloudData[0], m_PointCloudData[1], m_PointCloudData[2]);
@@ -58,7 +61,7 @@ public class PointCloudPositions : MonoBehaviour
         {
             if (m_PointCloudData != null && m_PointCloudData.Length > 0 && maxPointsToShow > 0)
             {
-                int numParticles = Mathf.Min(m_PointCloudData.Length, maxPointsToShow);
+                int numParticles = Mathf.Min(m_PointCloudData.Length, maxPointsToShow); //decide how many particles to show
                 ParticleSystem.Particle[] particles = new ParticleSystem.Particle[numParticles];
                 int index = 0;
                 foreach (Vector3 currentPoint in m_PointCloudData)
