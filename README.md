@@ -1,8 +1,8 @@
 # Arkit tutorials
 
 ## Table of Contents
-1. [Downloading Unity Hub](https://github.com/khanniie/Arkit-github#download-unity-hub)
-2. Building to Xcode 
+1. [Downloading Unity Hub](https://github.com/khanniie/Arkit-github#downloading-this-project)
+2. [Building to Xcode](https://github.com/khanniie/Arkit-github#building-to-xcode) 
 3. [ARkit 2](https://github.com/khanniie/Arkit-github#unity-arkit-2)
     - [General Notes](https://github.com/khanniie/Arkit-github#general-notes)
     - [ARkit Remote](https://github.com/khanniie/Arkit-github#arkit-remote)
@@ -17,16 +17,6 @@
     - [Feature Detector demo](https://github.com/khanniie/Arkit-github#feature-detector)
 
 # Downloading This Project #
-<!-- -> install liscence if they ask
-![1]( tutorial_assets/note1.png)
-->I would put the install location as Applications if on mac
-![1]( tutorial_assets/note2.png)
--> don't download unity just yet
-
-git clone https://github.com/khanniie/arfoundation-samples
-
-![1]( tutorial_assets/note4.png)
-![1]( tutorial_assets/note5.gif) -->
 
 Download the package from Github,
 
