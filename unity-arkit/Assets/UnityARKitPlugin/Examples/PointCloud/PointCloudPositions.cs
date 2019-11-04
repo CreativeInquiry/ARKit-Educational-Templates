@@ -64,6 +64,7 @@ public class PointCloudPositions : MonoBehaviour
                 int numParticles = Mathf.Min(m_PointCloudData.Length, maxPointsToShow); //decide how many particles to show
                 ParticleSystem.Particle[] particles = new ParticleSystem.Particle[numParticles];
                 int index = 0;
+                //populate the particle system with actual particles using the positions in the pointCloud
                 foreach (Vector3 currentPoint in m_PointCloudData)
                 {
                     particles[index].position = currentPoint;
