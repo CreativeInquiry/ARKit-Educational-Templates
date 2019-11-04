@@ -7,6 +7,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1186787012349198, guid: 2c5f8d679f3e64a40a967471f4fa7030, type: 3}
+      propertyPath: m_Name
+      value: RandomCube Variant
+      objectReference: {fileID: 0}
     - target: {fileID: 4049466131849386, guid: 2c5f8d679f3e64a40a967471f4fa7030, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -37,6 +41,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4049466131849386, guid: 2c5f8d679f3e64a40a967471f4fa7030, type: 3}
       propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114190960555266974, guid: 2c5f8d679f3e64a40a967471f4fa7030,
+        type: 3}
+      propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []

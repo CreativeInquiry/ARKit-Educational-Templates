@@ -1,11 +1,12 @@
 ScriptsOnlyBuild:
   usedScripts:
     Assembly-CSharp.dll:
+    - ARCameraTracker
+    - MeshManager
+    - UnityARCameraNearFar
     - UnityARKitPluginSettings
-    - UnityEngine.XR.iOS.ConnectToEditor
     - UnityEngine.XR.iOS.UnityARUserAnchorComponent
     - UnityEngine.XR.iOS.UnityARVideo
-    - UnityEngine.XR.iOS.UnityRemoteVideo
     Unity.2D.Tilemap.Editor.dll:
     - UnityEditor.Tilemaps.GridPaintingState
     - UnityEditor.Tilemaps.GridPaletteBrushes
@@ -19,7 +20,7 @@ ScriptsOnlyBuild:
     - UnityEngine.Networking.NetworkCallbacks
     - UnityEngine.Networking.NetworkIdentity
   sceneClasses:
-    Assets/UnityARKitPlugin/ARKitRemote/UnityARKitRemote.unity:
+    Assets/UnityARKitPlugin/C-Samples/FaceMesh/FaceMesh.unity:
     - Class: 1
       Script: {instanceID: 0}
     - Class: 4
@@ -51,6 +52,8 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
+      Script: {instanceID: 9694}
+    - Class: 114
       Script: {instanceID: 9762}
     - Class: 114
       Script: {instanceID: 9870}
@@ -63,9 +66,7 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 10220}
     - Class: 114
-      Script: {instanceID: 10666}
-    - Class: 114
-      Script: {instanceID: 10766}
+      Script: {instanceID: 10328}
     - Class: 114
       Script: {instanceID: 10908}
     - Class: 114
@@ -76,6 +77,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 11462}
     - Class: 114
       Script: {instanceID: 11656}
+    - Class: 114
+      Script: {instanceID: 12232}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 124
@@ -91,7 +94,7 @@ ScriptsOnlyBuild:
   scriptHashData:
   - hash:
       serializedVersion: 2
-      Hash: 5c0880dfab6b0790ce0d0ccd3dac0c3f
+      Hash: a0c508df528bff1ebe1ba57dd3b9f07e
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: MeshManager
@@ -1117,5 +1120,5 @@ ScriptsOnlyBuild:
     className: PrimitivesOnFace
   platform: 9
   scenePathNames:
-  - Assets/UnityARKitPlugin/ARKitRemote/UnityARKitRemote.unity
-  playerPath: /Users/crabbage/Documents/golan-AR foundation/remote-original
+  - Assets/UnityARKitPlugin/C-Samples/FaceMesh/FaceMesh.unity
+  playerPath: /Users/crabbage/Documents/golan-AR foundation/facemesh

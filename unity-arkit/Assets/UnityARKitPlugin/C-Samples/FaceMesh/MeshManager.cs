@@ -8,6 +8,9 @@ public class MeshManager : MonoBehaviour {
 	[SerializeField]
 	private MeshFilter meshFilter;
 
+	[SerializeField]
+	private Transform noseObject;
+
 	private UnityARSessionNativeInterface m_session;
 	private Mesh faceMesh;
 
@@ -44,6 +47,8 @@ public class MeshManager : MonoBehaviour {
 		faceMesh.uv = anchorData.faceGeometry.textureCoordinates;
 		faceMesh.triangles = anchorData.faceGeometry.triangleIndices;
 
+		noseObject.position = anchorData.faceGeometry.vertices[9];
+
 		// Assign the mesh object and update it.
 		faceMesh.RecalculateBounds();
 		faceMesh.RecalculateNormals();
@@ -60,6 +65,8 @@ public class MeshManager : MonoBehaviour {
 			faceMesh.triangles = anchorData.faceGeometry.triangleIndices;
 			faceMesh.RecalculateBounds();
 			faceMesh.RecalculateNormals();
+
+			noseObject.localPosition = anchorData.faceGeometry.vertices[9];
 		}
 
 	}

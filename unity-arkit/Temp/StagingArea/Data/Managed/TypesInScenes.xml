@@ -44,11 +44,12 @@
 		<type fullname="UnityEngine.TextMesh" preserve="nothing"/>
 	</assembly>
 	<assembly fullname="Assembly-CSharp">
+		<type fullname="ARCameraTracker" preserve="nothing"/>
+		<type fullname="MeshManager" preserve="nothing"/>
+		<type fullname="UnityARCameraNearFar" preserve="nothing"/>
 		<type fullname="UnityARKitPluginSettings" preserve="nothing"/>
-		<type fullname="UnityEngine.XR.iOS.ConnectToEditor" preserve="nothing"/>
 		<type fullname="UnityEngine.XR.iOS.UnityARUserAnchorComponent" preserve="nothing"/>
 		<type fullname="UnityEngine.XR.iOS.UnityARVideo" preserve="nothing"/>
-		<type fullname="UnityEngine.XR.iOS.UnityRemoteVideo" preserve="nothing"/>
 	</assembly>
 	<assembly fullname="com.unity.multiplayer-hlapi.Runtime">
 		<type fullname="UnityEngine.Networking.NetworkCallbacks" preserve="nothing"/>

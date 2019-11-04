@@ -23,17 +23,6 @@
 #include "icalls/mscorlib/System.Diagnostics/StackTrace.h"
 #include "il2cpp-object-internals.h"
 
-template <typename R, typename T1, typename T2, typename T3>
-struct VirtFuncInvoker3
-{
-	typedef R (*Func)(void*, T1, T2, T3, const RuntimeMethod*);
-
-	static inline R Invoke (Il2CppMethodSlot slot, RuntimeObject* obj, T1 p1, T2 p2, T3 p3)
-	{
-		const VirtualInvokeData& invokeData = il2cpp_codegen_get_virtual_invoke_data(slot, obj);
-		return ((Func)invokeData.methodPtr)(obj, p1, p2, p3, invokeData.method);
-	}
-};
 template <typename R>
 struct VirtFuncInvoker0
 {
@@ -78,6 +67,17 @@ struct VirtActionInvoker1
 		((Action)invokeData.methodPtr)(obj, p1, invokeData.method);
 	}
 };
+template <typename R, typename T1, typename T2, typename T3>
+struct VirtFuncInvoker3
+{
+	typedef R (*Func)(void*, T1, T2, T3, const RuntimeMethod*);
+
+	static inline R Invoke (Il2CppMethodSlot slot, RuntimeObject* obj, T1 p1, T2 p2, T3 p3)
+	{
+		const VirtualInvokeData& invokeData = il2cpp_codegen_get_virtual_invoke_data(slot, obj);
+		return ((Func)invokeData.methodPtr)(obj, p1, p2, p3, invokeData.method);
+	}
+};
 template <typename T1, typename T2, typename T3, typename T4>
 struct VirtActionInvoker4
 {
@@ -109,29 +109,6 @@ struct VirtActionInvoker3
 	{
 		const VirtualInvokeData& invokeData = il2cpp_codegen_get_virtual_invoke_data(slot, obj);
 		((Action)invokeData.methodPtr)(obj, p1, p2, p3, invokeData.method);
-	}
-};
-template <typename R, typename T1, typename T2, typename T3>
-struct GenericVirtFuncInvoker3
-{
-	typedef R (*Func)(void*, T1, T2, T3, const RuntimeMethod*);
-
-	static inline R Invoke (const RuntimeMethod* method, RuntimeObject* obj, T1 p1, T2 p2, T3 p3)
-	{
-		VirtualInvokeData invokeData;
-		il2cpp_codegen_get_generic_virtual_invoke_data(method, obj, &invokeData);
-		return ((Func)invokeData.methodPtr)(obj, p1, p2, p3, invokeData.method);
-	}
-};
-template <typename R, typename T1, typename T2, typename T3>
-struct InterfaceFuncInvoker3
-{
-	typedef R (*Func)(void*, T1, T2, T3, const RuntimeMethod*);
-
-	static inline R Invoke (Il2CppMethodSlot slot, RuntimeClass* declaringInterface, RuntimeObject* obj, T1 p1, T2 p2, T3 p3)
-	{
-		const VirtualInvokeData& invokeData = il2cpp_codegen_get_interface_invoke_data(slot, obj, declaringInterface);
-		return ((Func)invokeData.methodPtr)(obj, p1, p2, p3, invokeData.method);
 	}
 };
 template <typename R>
@@ -186,18 +163,6 @@ struct InterfaceActionInvoker0
 	{
 		const VirtualInvokeData& invokeData = il2cpp_codegen_get_interface_invoke_data(slot, obj, declaringInterface);
 		((Action)invokeData.methodPtr)(obj, invokeData.method);
-	}
-};
-template <typename R, typename T1, typename T2, typename T3>
-struct GenericInterfaceFuncInvoker3
-{
-	typedef R (*Func)(void*, T1, T2, T3, const RuntimeMethod*);
-
-	static inline R Invoke (const RuntimeMethod* method, RuntimeObject* obj, T1 p1, T2 p2, T3 p3)
-	{
-		VirtualInvokeData invokeData;
-		il2cpp_codegen_get_generic_interface_invoke_data(method, obj, &invokeData);
-		return ((Func)invokeData.methodPtr)(obj, p1, p2, p3, invokeData.method);
 	}
 };
 
@@ -341,8 +306,6 @@ struct ReadOnlyCollection_1_t5D996E967221C71E4EC5CC11210C3076432D5A50;
 struct ReadOnlyCollection_1_tB9E469CEA1A95F21BDF5C8594323E208E5454BE0;
 // System.Comparison`1<System.Collections.Generic.KeyValuePair`2<System.Guid,System.Int32>>
 struct Comparison_1_tFF069E66928AE228EF6258700B9FE7F074C67CD8;
-// System.DateTimeParse/MatchNumberDelegate
-struct MatchNumberDelegate_t15412AE1CF0D1909CB05C7DBB8079E9281CCA05D;
 // System.DefaultBinder
 struct DefaultBinder_tFFCBC1B63C1667920094F68AB261486C13814AEC;
 // System.DefaultBinder/<>c
@@ -553,8 +516,6 @@ struct IConvertible_tB52671A602A64FCCFD27EA5817E2A6C2B693D380;
 struct IFormatProvider_t4247E13AE2D97A079B88D594B7ABABF313259901;
 // System.IndexOutOfRangeException
 struct IndexOutOfRangeException_tEC7665FC66525AB6A6916A7EB505E5591683F0CF;
-// System.Int32
-struct Int32_t585191389E07734F19F3156FF88FB3EF4800D102;
 // System.Int32[]
 struct Int32U5BU5D_t2B9E4FDDDB9F0A00EC0AC631BA2DA915EB1ECF83;
 // System.IntPtr[]
@@ -855,7 +816,6 @@ IL2CPP_EXTERN_C RuntimeClass* UInt64_tA02DF3B59C8FC4A849BD207DA11038CC64E4CB4E_i
 IL2CPP_EXTERN_C RuntimeClass* UIntPtr_t_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* WeakReference_1_t873076F0E617BCC31EB3C0C9D10324B896FB644C_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* WeakReference_t0495CC81CD6403E662B7700B802443F6F730E39D_il2cpp_TypeInfo_var;
-IL2CPP_EXTERN_C RuntimeClass* __DTString_t6E7DE2A99E4F15F384EC29CC6CD5185F46818DD9_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeField* U3CPrivateImplementationDetailsU3E_t5BA0C21499B7A4F7CBCB87805E61EF52DF22771A____3E4BBF9D0CDD2E34F78AA7A9A3979DCE1F7B02BD_20_FieldInfo_var;
 IL2CPP_EXTERN_C RuntimeField* U3CPrivateImplementationDetailsU3E_t5BA0C21499B7A4F7CBCB87805E61EF52DF22771A____6CEE45445AFD150B047A5866FFA76AA651CDB7B7_41_FieldInfo_var;
 IL2CPP_EXTERN_C RuntimeField* U3CPrivateImplementationDetailsU3E_t5BA0C21499B7A4F7CBCB87805E61EF52DF22771A____704939CD172085D1295FCE3F1D92431D685D7AA2_43_FieldInfo_var;
@@ -1519,7 +1479,6 @@ IL2CPP_EXTERN_C const uint32_t EventSource__cctor_m4929B950E6F969BE9565F18F477E7
 IL2CPP_EXTERN_C const uint32_t EventSource__ctor_mF8965DE244C1780B06C51E727B299E74A0798A4B_MetadataUsageId;
 IL2CPP_EXTERN_C const uint32_t EventSource_get_FallbackActivityId_m64F92C11C652C9E1AC7F8818CBC77700BC949940_MetadataUsageId;
 IL2CPP_EXTERN_C const uint32_t EventSource_get_InternalCurrentThreadActivityId_m8620A6D4474016C5B1C8E067E0483D431AFB15B5_MetadataUsageId;
-IL2CPP_EXTERN_C const uint32_t MatchNumberDelegate_BeginInvoke_m5A60BA102F7AAD41A7B3B81CD6DF864C3C87785F_MetadataUsageId;
 IL2CPP_EXTERN_C const uint32_t StackFrame_GetSecureFileName_m70617D4D68A1202A794040045930720D63B00BA7_MetadataUsageId;
 IL2CPP_EXTERN_C const uint32_t StackFrame_ToString_m205044F382A04F9B05D7A2718DE7A7692EF38580_MetadataUsageId;
 IL2CPP_EXTERN_C const uint32_t StackTrace_AddFrames_m899073F7BC69218AE0A2ED6367EC3118490EF60A_MetadataUsageId;
@@ -7936,113 +7895,6 @@ public:
 };
 
 
-// System.__DTString
-struct  __DTString_t6E7DE2A99E4F15F384EC29CC6CD5185F46818DD9 
-{
-public:
-	// System.String System.__DTString::Value
-	String_t* ___Value_0;
-	// System.Int32 System.__DTString::Index
-	int32_t ___Index_1;
-	// System.Int32 System.__DTString::len
-	int32_t ___len_2;
-	// System.Char System.__DTString::m_current
-	Il2CppChar ___m_current_3;
-	// System.Globalization.CompareInfo System.__DTString::m_info
-	CompareInfo_tB9A071DBC11AC00AF2EA2066D0C2AE1DCB1865D1 * ___m_info_4;
-	// System.Boolean System.__DTString::m_checkDigitToken
-	bool ___m_checkDigitToken_5;
-
-public:
-	inline static int32_t get_offset_of_Value_0() { return static_cast<int32_t>(offsetof(__DTString_t6E7DE2A99E4F15F384EC29CC6CD5185F46818DD9, ___Value_0)); }
-	inline String_t* get_Value_0() const { return ___Value_0; }
-	inline String_t** get_address_of_Value_0() { return &___Value_0; }
-	inline void set_Value_0(String_t* value)
-	{
-		___Value_0 = value;
-		Il2CppCodeGenWriteBarrier((void**)(&___Value_0), (void*)value);
-	}
-
-	inline static int32_t get_offset_of_Index_1() { return static_cast<int32_t>(offsetof(__DTString_t6E7DE2A99E4F15F384EC29CC6CD5185F46818DD9, ___Index_1)); }
-	inline int32_t get_Index_1() const { return ___Index_1; }
-	inline int32_t* get_address_of_Index_1() { return &___Index_1; }
-	inline void set_Index_1(int32_t value)
-	{
-		___Index_1 = value;
-	}
-
-	inline static int32_t get_offset_of_len_2() { return static_cast<int32_t>(offsetof(__DTString_t6E7DE2A99E4F15F384EC29CC6CD5185F46818DD9, ___len_2)); }
-	inline int32_t get_len_2() const { return ___len_2; }
-	inline int32_t* get_address_of_len_2() { return &___len_2; }
-	inline void set_len_2(int32_t value)
-	{
-		___len_2 = value;
-	}
-
-	inline static int32_t get_offset_of_m_current_3() { return static_cast<int32_t>(offsetof(__DTString_t6E7DE2A99E4F15F384EC29CC6CD5185F46818DD9, ___m_current_3)); }
-	inline Il2CppChar get_m_current_3() const { return ___m_current_3; }
-	inline Il2CppChar* get_address_of_m_current_3() { return &___m_current_3; }
-	inline void set_m_current_3(Il2CppChar value)
-	{
-		___m_current_3 = value;
-	}
-
-	inline static int32_t get_offset_of_m_info_4() { return static_cast<int32_t>(offsetof(__DTString_t6E7DE2A99E4F15F384EC29CC6CD5185F46818DD9, ___m_info_4)); }
-	inline CompareInfo_tB9A071DBC11AC00AF2EA2066D0C2AE1DCB1865D1 * get_m_info_4() const { return ___m_info_4; }
-	inline CompareInfo_tB9A071DBC11AC00AF2EA2066D0C2AE1DCB1865D1 ** get_address_of_m_info_4() { return &___m_info_4; }
-	inline void set_m_info_4(CompareInfo_tB9A071DBC11AC00AF2EA2066D0C2AE1DCB1865D1 * value)
-	{
-		___m_info_4 = value;
-		Il2CppCodeGenWriteBarrier((void**)(&___m_info_4), (void*)value);
-	}
-
-	inline static int32_t get_offset_of_m_checkDigitToken_5() { return static_cast<int32_t>(offsetof(__DTString_t6E7DE2A99E4F15F384EC29CC6CD5185F46818DD9, ___m_checkDigitToken_5)); }
-	inline bool get_m_checkDigitToken_5() const { return ___m_checkDigitToken_5; }
-	inline bool* get_address_of_m_checkDigitToken_5() { return &___m_checkDigitToken_5; }
-	inline void set_m_checkDigitToken_5(bool value)
-	{
-		___m_checkDigitToken_5 = value;
-	}
-};
-
-struct __DTString_t6E7DE2A99E4F15F384EC29CC6CD5185F46818DD9_StaticFields
-{
-public:
-	// System.Char[] System.__DTString::WhiteSpaceChecks
-	CharU5BU5D_t4CC6ABF0AD71BEC97E3C2F1E9C5677E46D3A75C2* ___WhiteSpaceChecks_6;
-
-public:
-	inline static int32_t get_offset_of_WhiteSpaceChecks_6() { return static_cast<int32_t>(offsetof(__DTString_t6E7DE2A99E4F15F384EC29CC6CD5185F46818DD9_StaticFields, ___WhiteSpaceChecks_6)); }
-	inline CharU5BU5D_t4CC6ABF0AD71BEC97E3C2F1E9C5677E46D3A75C2* get_WhiteSpaceChecks_6() const { return ___WhiteSpaceChecks_6; }
-	inline CharU5BU5D_t4CC6ABF0AD71BEC97E3C2F1E9C5677E46D3A75C2** get_address_of_WhiteSpaceChecks_6() { return &___WhiteSpaceChecks_6; }
-	inline void set_WhiteSpaceChecks_6(CharU5BU5D_t4CC6ABF0AD71BEC97E3C2F1E9C5677E46D3A75C2* value)
-	{
-		___WhiteSpaceChecks_6 = value;
-		Il2CppCodeGenWriteBarrier((void**)(&___WhiteSpaceChecks_6), (void*)value);
-	}
-};
-
-// Native definition for P/Invoke marshalling of System.__DTString
-struct __DTString_t6E7DE2A99E4F15F384EC29CC6CD5185F46818DD9_marshaled_pinvoke
-{
-	char* ___Value_0;
-	int32_t ___Index_1;
-	int32_t ___len_2;
-	uint8_t ___m_current_3;
-	CompareInfo_tB9A071DBC11AC00AF2EA2066D0C2AE1DCB1865D1 * ___m_info_4;
-	int32_t ___m_checkDigitToken_5;
-};
-// Native definition for COM marshalling of System.__DTString
-struct __DTString_t6E7DE2A99E4F15F384EC29CC6CD5185F46818DD9_marshaled_com
-{
-	Il2CppChar* ___Value_0;
-	int32_t ___Index_1;
-	int32_t ___len_2;
-	uint8_t ___m_current_3;
-	CompareInfo_tB9A071DBC11AC00AF2EA2066D0C2AE1DCB1865D1 * ___m_info_4;
-	int32_t ___m_checkDigitToken_5;
-};
-
 // <PrivateImplementationDetails>
 struct  U3CPrivateImplementationDetailsU3E_t5BA0C21499B7A4F7CBCB87805E61EF52DF22771A  : public RuntimeObject
 {
@@ -9576,24 +9428,6 @@ public:
 };
 
 
-// System.DateTimeParse_DS
-struct  DS_t79917654E7C7DD9C4B85FC70179677948A467675 
-{
-public:
-	// System.Int32 System.DateTimeParse_DS::value__
-	int32_t ___value___2;
-
-public:
-	inline static int32_t get_offset_of_value___2() { return static_cast<int32_t>(offsetof(DS_t79917654E7C7DD9C4B85FC70179677948A467675, ___value___2)); }
-	inline int32_t get_value___2() const { return ___value___2; }
-	inline int32_t* get_address_of_value___2() { return &___value___2; }
-	inline void set_value___2(int32_t value)
-	{
-		___value___2 = value;
-	}
-};
-
-
 // System.DateTimeParse_DTT
 struct  DTT_t64CF841467D9194B8D66F5FAAC5484C4F4BE09F0 
 {
@@ -9603,24 +9437,6 @@ public:
 
 public:
 	inline static int32_t get_offset_of_value___2() { return static_cast<int32_t>(offsetof(DTT_t64CF841467D9194B8D66F5FAAC5484C4F4BE09F0, ___value___2)); }
-	inline int32_t get_value___2() const { return ___value___2; }
-	inline int32_t* get_address_of_value___2() { return &___value___2; }
-	inline void set_value___2(int32_t value)
-	{
-		___value___2 = value;
-	}
-};
-
-
-// System.DateTimeParse_TM
-struct  TM_t88131D3D9CB467F2A2E92B7ED840638B1DDA1DA7 
-{
-public:
-	// System.Int32 System.DateTimeParse_TM::value__
-	int32_t ___value___2;
-
-public:
-	inline static int32_t get_offset_of_value___2() { return static_cast<int32_t>(offsetof(TM_t88131D3D9CB467F2A2E92B7ED840638B1DDA1DA7, ___value___2)); }
 	inline int32_t get_value___2() const { return ___value___2; }
 	inline int32_t* get_address_of_value___2() { return &___value___2; }
 	inline void set_value___2(int32_t value)
@@ -11395,142 +11211,6 @@ public:
 	}
 };
 
-
-// System.DateTimeRawInfo
-struct  DateTimeRawInfo_t9FCF0836569E074269DCA1D04061D8E3720D451E 
-{
-public:
-	// System.Int32* System.DateTimeRawInfo::num
-	int32_t* ___num_0;
-	// System.Int32 System.DateTimeRawInfo::numCount
-	int32_t ___numCount_1;
-	// System.Int32 System.DateTimeRawInfo::month
-	int32_t ___month_2;
-	// System.Int32 System.DateTimeRawInfo::year
-	int32_t ___year_3;
-	// System.Int32 System.DateTimeRawInfo::dayOfWeek
-	int32_t ___dayOfWeek_4;
-	// System.Int32 System.DateTimeRawInfo::era
-	int32_t ___era_5;
-	// System.DateTimeParse_TM System.DateTimeRawInfo::timeMark
-	int32_t ___timeMark_6;
-	// System.Double System.DateTimeRawInfo::fraction
-	double ___fraction_7;
-	// System.Boolean System.DateTimeRawInfo::hasSameDateAndTimeSeparators
-	bool ___hasSameDateAndTimeSeparators_8;
-	// System.Boolean System.DateTimeRawInfo::timeZone
-	bool ___timeZone_9;
-
-public:
-	inline static int32_t get_offset_of_num_0() { return static_cast<int32_t>(offsetof(DateTimeRawInfo_t9FCF0836569E074269DCA1D04061D8E3720D451E, ___num_0)); }
-	inline int32_t* get_num_0() const { return ___num_0; }
-	inline int32_t** get_address_of_num_0() { return &___num_0; }
-	inline void set_num_0(int32_t* value)
-	{
-		___num_0 = value;
-	}
-
-	inline static int32_t get_offset_of_numCount_1() { return static_cast<int32_t>(offsetof(DateTimeRawInfo_t9FCF0836569E074269DCA1D04061D8E3720D451E, ___numCount_1)); }
-	inline int32_t get_numCount_1() const { return ___numCount_1; }
-	inline int32_t* get_address_of_numCount_1() { return &___numCount_1; }
-	inline void set_numCount_1(int32_t value)
-	{
-		___numCount_1 = value;
-	}
-
-	inline static int32_t get_offset_of_month_2() { return static_cast<int32_t>(offsetof(DateTimeRawInfo_t9FCF0836569E074269DCA1D04061D8E3720D451E, ___month_2)); }
-	inline int32_t get_month_2() const { return ___month_2; }
-	inline int32_t* get_address_of_month_2() { return &___month_2; }
-	inline void set_month_2(int32_t value)
-	{
-		___month_2 = value;
-	}
-
-	inline static int32_t get_offset_of_year_3() { return static_cast<int32_t>(offsetof(DateTimeRawInfo_t9FCF0836569E074269DCA1D04061D8E3720D451E, ___year_3)); }
-	inline int32_t get_year_3() const { return ___year_3; }
-	inline int32_t* get_address_of_year_3() { return &___year_3; }
-	inline void set_year_3(int32_t value)
-	{
-		___year_3 = value;
-	}
-
-	inline static int32_t get_offset_of_dayOfWeek_4() { return static_cast<int32_t>(offsetof(DateTimeRawInfo_t9FCF0836569E074269DCA1D04061D8E3720D451E, ___dayOfWeek_4)); }
-	inline int32_t get_dayOfWeek_4() const { return ___dayOfWeek_4; }
-	inline int32_t* get_address_of_dayOfWeek_4() { return &___dayOfWeek_4; }
-	inline void set_dayOfWeek_4(int32_t value)
-	{
-		___dayOfWeek_4 = value;
-	}
-
-	inline static int32_t get_offset_of_era_5() { return static_cast<int32_t>(offsetof(DateTimeRawInfo_t9FCF0836569E074269DCA1D04061D8E3720D451E, ___era_5)); }
-	inline int32_t get_era_5() const { return ___era_5; }
-	inline int32_t* get_address_of_era_5() { return &___era_5; }
-	inline void set_era_5(int32_t value)
-	{
-		___era_5 = value;
-	}
-
-	inline static int32_t get_offset_of_timeMark_6() { return static_cast<int32_t>(offsetof(DateTimeRawInfo_t9FCF0836569E074269DCA1D04061D8E3720D451E, ___timeMark_6)); }
-	inline int32_t get_timeMark_6() const { return ___timeMark_6; }
-	inline int32_t* get_address_of_timeMark_6() { return &___timeMark_6; }
-	inline void set_timeMark_6(int32_t value)
-	{
-		___timeMark_6 = value;
-	}
-
-	inline static int32_t get_offset_of_fraction_7() { return static_cast<int32_t>(offsetof(DateTimeRawInfo_t9FCF0836569E074269DCA1D04061D8E3720D451E, ___fraction_7)); }
-	inline double get_fraction_7() const { return ___fraction_7; }
-	inline double* get_address_of_fraction_7() { return &___fraction_7; }
-	inline void set_fraction_7(double value)
-	{
-		___fraction_7 = value;
-	}
-
-	inline static int32_t get_offset_of_hasSameDateAndTimeSeparators_8() { return static_cast<int32_t>(offsetof(DateTimeRawInfo_t9FCF0836569E074269DCA1D04061D8E3720D451E, ___hasSameDateAndTimeSeparators_8)); }
-	inline bool get_hasSameDateAndTimeSeparators_8() const { return ___hasSameDateAndTimeSeparators_8; }
-	inline bool* get_address_of_hasSameDateAndTimeSeparators_8() { return &___hasSameDateAndTimeSeparators_8; }
-	inline void set_hasSameDateAndTimeSeparators_8(bool value)
-	{
-		___hasSameDateAndTimeSeparators_8 = value;
-	}
-
-	inline static int32_t get_offset_of_timeZone_9() { return static_cast<int32_t>(offsetof(DateTimeRawInfo_t9FCF0836569E074269DCA1D04061D8E3720D451E, ___timeZone_9)); }
-	inline bool get_timeZone_9() const { return ___timeZone_9; }
-	inline bool* get_address_of_timeZone_9() { return &___timeZone_9; }
-	inline void set_timeZone_9(bool value)
-	{
-		___timeZone_9 = value;
-	}
-};
-
-// Native definition for P/Invoke marshalling of System.DateTimeRawInfo
-struct DateTimeRawInfo_t9FCF0836569E074269DCA1D04061D8E3720D451E_marshaled_pinvoke
-{
-	int32_t* ___num_0;
-	int32_t ___numCount_1;
-	int32_t ___month_2;
-	int32_t ___year_3;
-	int32_t ___dayOfWeek_4;
-	int32_t ___era_5;
-	int32_t ___timeMark_6;
-	double ___fraction_7;
-	int32_t ___hasSameDateAndTimeSeparators_8;
-	int32_t ___timeZone_9;
-};
-// Native definition for COM marshalling of System.DateTimeRawInfo
-struct DateTimeRawInfo_t9FCF0836569E074269DCA1D04061D8E3720D451E_marshaled_com
-{
-	int32_t* ___num_0;
-	int32_t ___numCount_1;
-	int32_t ___month_2;
-	int32_t ___year_3;
-	int32_t ___dayOfWeek_4;
-	int32_t ___era_5;
-	int32_t ___timeMark_6;
-	double ___fraction_7;
-	int32_t ___hasSameDateAndTimeSeparators_8;
-	int32_t ___timeZone_9;
-};
 
 // System.DateTimeResult
 struct  DateTimeResult_tF71BA2895BFBF33241086E9BDF836567EBD2F6AB 
@@ -14697,26 +14377,8 @@ public:
 };
 
 
-// System.AsyncCallback
-struct  AsyncCallback_t3F3DA3BEDAEE81DD1D24125DF8EB30E85EE14DA4  : public MulticastDelegate_t
-{
-public:
-
-public:
-};
-
-
 // System.Comparison`1<System.Collections.Generic.KeyValuePair`2<System.Guid,System.Int32>>
 struct  Comparison_1_tFF069E66928AE228EF6258700B9FE7F074C67CD8  : public MulticastDelegate_t
-{
-public:
-
-public:
-};
-
-
-// System.DateTimeParse_MatchNumberDelegate
-struct  MatchNumberDelegate_t15412AE1CF0D1909CB05C7DBB8079E9281CCA05D  : public MulticastDelegate_t
 {
 public:
 
@@ -15625,43 +15287,6 @@ public:
 #ifdef __clang__
 #pragma clang diagnostic pop
 #endif
-// System.Delegate[]
-struct DelegateU5BU5D_tDFCDEE2A6322F96C0FE49AF47E9ADB8C4B294E86  : public RuntimeArray
-{
-public:
-	ALIGN_FIELD (8) Delegate_t * m_Items[1];
-
-public:
-	inline Delegate_t * GetAt(il2cpp_array_size_t index) const
-	{
-		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
-		return m_Items[index];
-	}
-	inline Delegate_t ** GetAddressAt(il2cpp_array_size_t index)
-	{
-		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
-		return m_Items + index;
-	}
-	inline void SetAt(il2cpp_array_size_t index, Delegate_t * value)
-	{
-		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
-		m_Items[index] = value;
-		Il2CppCodeGenWriteBarrier((void**)m_Items + index, (void*)value);
-	}
-	inline Delegate_t * GetAtUnchecked(il2cpp_array_size_t index) const
-	{
-		return m_Items[index];
-	}
-	inline Delegate_t ** GetAddressAtUnchecked(il2cpp_array_size_t index)
-	{
-		return m_Items + index;
-	}
-	inline void SetAtUnchecked(il2cpp_array_size_t index, Delegate_t * value)
-	{
-		m_Items[index] = value;
-		Il2CppCodeGenWriteBarrier((void**)m_Items + index, (void*)value);
-	}
-};
 // System.Int32[]
 struct Int32U5BU5D_t2B9E4FDDDB9F0A00EC0AC631BA2DA915EB1ECF83  : public RuntimeArray
 {
@@ -16133,6 +15758,43 @@ public:
 	inline void SetAtUnchecked(il2cpp_array_size_t index, bool value)
 	{
 		m_Items[index] = value;
+	}
+};
+// System.Delegate[]
+struct DelegateU5BU5D_tDFCDEE2A6322F96C0FE49AF47E9ADB8C4B294E86  : public RuntimeArray
+{
+public:
+	ALIGN_FIELD (8) Delegate_t * m_Items[1];
+
+public:
+	inline Delegate_t * GetAt(il2cpp_array_size_t index) const
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		return m_Items[index];
+	}
+	inline Delegate_t ** GetAddressAt(il2cpp_array_size_t index)
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		return m_Items + index;
+	}
+	inline void SetAt(il2cpp_array_size_t index, Delegate_t * value)
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		m_Items[index] = value;
+		Il2CppCodeGenWriteBarrier((void**)m_Items + index, (void*)value);
+	}
+	inline Delegate_t * GetAtUnchecked(il2cpp_array_size_t index) const
+	{
+		return m_Items[index];
+	}
+	inline Delegate_t ** GetAddressAtUnchecked(il2cpp_array_size_t index)
+	{
+		return m_Items + index;
+	}
+	inline void SetAtUnchecked(il2cpp_array_size_t index, Delegate_t * value)
+	{
+		m_Items[index] = value;
+		Il2CppCodeGenWriteBarrier((void**)m_Items + index, (void*)value);
 	}
 };
 // System.Diagnostics.StackFrame[]
@@ -16776,12 +16438,6 @@ IL2CPP_EXTERN_C inline IL2CPP_METHOD_ATTR int32_t Tuple_2_get_Item1_m4E3939973A5
 // T2 System.Tuple`2<System.Int32,System.Int32>::get_Item2()
 IL2CPP_EXTERN_C inline IL2CPP_METHOD_ATTR int32_t Tuple_2_get_Item2_m0BD6FCE9669911470B4320204CCF717DC8BBE09F_gshared_inline (Tuple_2_t28940D9AA109CFB8C1D8CAEDD0EAF70EAD2F7C63 * __this, const RuntimeMethod* method);
 
-// System.Void System.DateTimeRawInfo::Init(System.Int32*)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DateTimeRawInfo_Init_m24B8BAAD8B05676BEA0A3BBBE97279EFECA8FACD (DateTimeRawInfo_t9FCF0836569E074269DCA1D04061D8E3720D451E * __this, int32_t* ___numberBuffer0, const RuntimeMethod* method);
-// System.Void System.DateTimeRawInfo::AddNumber(System.Int32)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DateTimeRawInfo_AddNumber_m2E5EFAF94BCBCEA2B72C78B5D109377BB97D69F4 (DateTimeRawInfo_t9FCF0836569E074269DCA1D04061D8E3720D451E * __this, int32_t ___value0, const RuntimeMethod* method);
-// System.Int32 System.DateTimeRawInfo::GetNumber(System.Int32)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t DateTimeRawInfo_GetNumber_mDBE60CA39776210991124099CF150BCF4FA6EE3D (DateTimeRawInfo_t9FCF0836569E074269DCA1D04061D8E3720D451E * __this, int32_t ___index0, const RuntimeMethod* method);
 // System.Void System.DateTimeResult::Init()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DateTimeResult_Init_m6CA70DCCC2BF43E42B46A3275082E2E89726869D (DateTimeResult_tF71BA2895BFBF33241086E9BDF836567EBD2F6AB * __this, const RuntimeMethod* method);
 // System.Void System.DateTimeResult::SetDate(System.Int32,System.Int32,System.Int32)
@@ -18591,311 +18247,6 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void EventSource_WriteStringToListener_m1AD36
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* String_Format_m453C2840536781B718FF4D0F5C7EEC8E5481C435 (RuntimeObject* ___provider0, String_t* ___format1, RuntimeObject * ___arg02, RuntimeObject * ___arg13, const RuntimeMethod* method);
 // System.Void System.ThrowHelper::ThrowArgumentOutOfRangeException()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ThrowHelper_ThrowArgumentOutOfRangeException_mBA2AF20A35144E0C43CD721A22EAC9FCA15D6550 (const RuntimeMethod* method);
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-// System.Void System.DateTimeParse_MatchNumberDelegate::.ctor(System.Object,System.IntPtr)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MatchNumberDelegate__ctor_m9E0CFF7DE8D941AD5D703F3F76E387EF5E5E4DC2 (MatchNumberDelegate_t15412AE1CF0D1909CB05C7DBB8079E9281CCA05D * __this, RuntimeObject * ___object0, intptr_t ___method1, const RuntimeMethod* method)
-{
-	__this->set_method_ptr_0(il2cpp_codegen_get_method_pointer((RuntimeMethod*)___method1));
-	__this->set_method_3(___method1);
-	__this->set_m_target_2(___object0);
-}
-// System.Boolean System.DateTimeParse_MatchNumberDelegate::Invoke(System.__DTString&,System.Int32,System.Int32&)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool MatchNumberDelegate_Invoke_mD58C3725D11C533D85FA5D0F3C7CA924F3897CEF (MatchNumberDelegate_t15412AE1CF0D1909CB05C7DBB8079E9281CCA05D * __this, __DTString_t6E7DE2A99E4F15F384EC29CC6CD5185F46818DD9 * ___str0, int32_t ___digitLen1, int32_t* ___result2, const RuntimeMethod* method)
-{
-	bool result = false;
-	DelegateU5BU5D_tDFCDEE2A6322F96C0FE49AF47E9ADB8C4B294E86* delegateArrayToInvoke = __this->get_delegates_11();
-	Delegate_t** delegatesToInvoke;
-	il2cpp_array_size_t length;
-	if (delegateArrayToInvoke != NULL)
-	{
-		length = delegateArrayToInvoke->max_length;
-		delegatesToInvoke = reinterpret_cast<Delegate_t**>(delegateArrayToInvoke->GetAddressAtUnchecked(0));
-	}
-	else
-	{
-		length = 1;
-		delegatesToInvoke = reinterpret_cast<Delegate_t**>(&__this);
-	}
-
-	for (il2cpp_array_size_t i = 0; i < length; i++)
-	{
-		Delegate_t* currentDelegate = delegatesToInvoke[i];
-		Il2CppMethodPointer targetMethodPointer = currentDelegate->get_method_ptr_0();
-		RuntimeObject* targetThis = currentDelegate->get_m_target_2();
-		RuntimeMethod* targetMethod = (RuntimeMethod*)(currentDelegate->get_method_3());
-		if (!il2cpp_codegen_method_is_virtual(targetMethod))
-		{
-			il2cpp_codegen_raise_execution_engine_exception_if_method_is_not_found(targetMethod);
-		}
-		bool ___methodIsStatic = MethodIsStatic(targetMethod);
-		int ___parameterCount = il2cpp_codegen_method_parameter_count(targetMethod);
-		if (___methodIsStatic)
-		{
-			if (___parameterCount == 3)
-			{
-				// open
-				typedef bool (*FunctionPointerType) (__DTString_t6E7DE2A99E4F15F384EC29CC6CD5185F46818DD9 *, int32_t, int32_t*, const RuntimeMethod*);
-				result = ((FunctionPointerType)targetMethodPointer)(___str0, ___digitLen1, ___result2, targetMethod);
-			}
-			else
-			{
-				// closed
-				typedef bool (*FunctionPointerType) (void*, __DTString_t6E7DE2A99E4F15F384EC29CC6CD5185F46818DD9 *, int32_t, int32_t*, const RuntimeMethod*);
-				result = ((FunctionPointerType)targetMethodPointer)(targetThis, ___str0, ___digitLen1, ___result2, targetMethod);
-			}
-		}
-		else
-		{
-			// closed
-			if (il2cpp_codegen_method_is_virtual(targetMethod) && !il2cpp_codegen_object_is_of_sealed_type(targetThis) && il2cpp_codegen_delegate_has_invoker((Il2CppDelegate*)__this))
-			{
-				if (targetThis == NULL)
-				{
-					typedef bool (*FunctionPointerType) (__DTString_t6E7DE2A99E4F15F384EC29CC6CD5185F46818DD9 *, int32_t, int32_t*, const RuntimeMethod*);
-					result = ((FunctionPointerType)targetMethodPointer)(___str0, ___digitLen1, ___result2, targetMethod);
-				}
-				else if (il2cpp_codegen_method_is_generic_instance(targetMethod))
-				{
-					if (il2cpp_codegen_method_is_interface_method(targetMethod))
-						result = GenericInterfaceFuncInvoker3< bool, __DTString_t6E7DE2A99E4F15F384EC29CC6CD5185F46818DD9 *, int32_t, int32_t* >::Invoke(targetMethod, targetThis, ___str0, ___digitLen1, ___result2);
-					else
-						result = GenericVirtFuncInvoker3< bool, __DTString_t6E7DE2A99E4F15F384EC29CC6CD5185F46818DD9 *, int32_t, int32_t* >::Invoke(targetMethod, targetThis, ___str0, ___digitLen1, ___result2);
-				}
-				else
-				{
-					if (il2cpp_codegen_method_is_interface_method(targetMethod))
-						result = InterfaceFuncInvoker3< bool, __DTString_t6E7DE2A99E4F15F384EC29CC6CD5185F46818DD9 *, int32_t, int32_t* >::Invoke(il2cpp_codegen_method_get_slot(targetMethod), il2cpp_codegen_method_get_declaring_type(targetMethod), targetThis, ___str0, ___digitLen1, ___result2);
-					else
-						result = VirtFuncInvoker3< bool, __DTString_t6E7DE2A99E4F15F384EC29CC6CD5185F46818DD9 *, int32_t, int32_t* >::Invoke(il2cpp_codegen_method_get_slot(targetMethod), targetThis, ___str0, ___digitLen1, ___result2);
-				}
-			}
-			else
-			{
-				typedef bool (*FunctionPointerType) (void*, __DTString_t6E7DE2A99E4F15F384EC29CC6CD5185F46818DD9 *, int32_t, int32_t*, const RuntimeMethod*);
-				result = ((FunctionPointerType)targetMethodPointer)(targetThis, ___str0, ___digitLen1, ___result2, targetMethod);
-			}
-		}
-	}
-	return result;
-}
-// System.IAsyncResult System.DateTimeParse_MatchNumberDelegate::BeginInvoke(System.__DTString&,System.Int32,System.Int32&,System.AsyncCallback,System.Object)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* MatchNumberDelegate_BeginInvoke_m5A60BA102F7AAD41A7B3B81CD6DF864C3C87785F (MatchNumberDelegate_t15412AE1CF0D1909CB05C7DBB8079E9281CCA05D * __this, __DTString_t6E7DE2A99E4F15F384EC29CC6CD5185F46818DD9 * ___str0, int32_t ___digitLen1, int32_t* ___result2, AsyncCallback_t3F3DA3BEDAEE81DD1D24125DF8EB30E85EE14DA4 * ___callback3, RuntimeObject * ___object4, const RuntimeMethod* method)
-{
-	static bool s_Il2CppMethodInitialized;
-	if (!s_Il2CppMethodInitialized)
-	{
-		il2cpp_codegen_initialize_method (MatchNumberDelegate_BeginInvoke_m5A60BA102F7AAD41A7B3B81CD6DF864C3C87785F_MetadataUsageId);
-		s_Il2CppMethodInitialized = true;
-	}
-	void *__d_args[4] = {0};
-	__d_args[0] = Box(__DTString_t6E7DE2A99E4F15F384EC29CC6CD5185F46818DD9_il2cpp_TypeInfo_var, &*___str0);
-	__d_args[1] = Box(Int32_t585191389E07734F19F3156FF88FB3EF4800D102_il2cpp_TypeInfo_var, &___digitLen1);
-	__d_args[2] = Box(Int32_t585191389E07734F19F3156FF88FB3EF4800D102_il2cpp_TypeInfo_var, &*___result2);
-	return (RuntimeObject*)il2cpp_codegen_delegate_begin_invoke((RuntimeDelegate*)__this, __d_args, (RuntimeDelegate*)___callback3, (RuntimeObject*)___object4);
-}
-// System.Boolean System.DateTimeParse_MatchNumberDelegate::EndInvoke(System.__DTString&,System.Int32&,System.IAsyncResult)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool MatchNumberDelegate_EndInvoke_mF7A1BC1D513EA6AB37CA0ED60CC5A4206FA9BED0 (MatchNumberDelegate_t15412AE1CF0D1909CB05C7DBB8079E9281CCA05D * __this, __DTString_t6E7DE2A99E4F15F384EC29CC6CD5185F46818DD9 * ___str0, int32_t* ___result1, RuntimeObject* _____result2, const RuntimeMethod* method)
-{
-	void* ___out_args[] = {
-	___str0,
-	___result1,
-	};
-	RuntimeObject *__result = il2cpp_codegen_delegate_end_invoke((Il2CppAsyncResult*) _____result2, ___out_args);
-	return *(bool*)UnBox ((RuntimeObject*)__result);
-}
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-// Conversion methods for marshalling of: System.DateTimeRawInfo
-IL2CPP_EXTERN_C void DateTimeRawInfo_t9FCF0836569E074269DCA1D04061D8E3720D451E_marshal_pinvoke(const DateTimeRawInfo_t9FCF0836569E074269DCA1D04061D8E3720D451E& unmarshaled, DateTimeRawInfo_t9FCF0836569E074269DCA1D04061D8E3720D451E_marshaled_pinvoke& marshaled)
-{
-	marshaled.___num_0 = unmarshaled.get_num_0();
-	marshaled.___numCount_1 = unmarshaled.get_numCount_1();
-	marshaled.___month_2 = unmarshaled.get_month_2();
-	marshaled.___year_3 = unmarshaled.get_year_3();
-	marshaled.___dayOfWeek_4 = unmarshaled.get_dayOfWeek_4();
-	marshaled.___era_5 = unmarshaled.get_era_5();
-	marshaled.___timeMark_6 = unmarshaled.get_timeMark_6();
-	marshaled.___fraction_7 = unmarshaled.get_fraction_7();
-	marshaled.___hasSameDateAndTimeSeparators_8 = static_cast<int32_t>(unmarshaled.get_hasSameDateAndTimeSeparators_8());
-	marshaled.___timeZone_9 = static_cast<int32_t>(unmarshaled.get_timeZone_9());
-}
-IL2CPP_EXTERN_C void DateTimeRawInfo_t9FCF0836569E074269DCA1D04061D8E3720D451E_marshal_pinvoke_back(const DateTimeRawInfo_t9FCF0836569E074269DCA1D04061D8E3720D451E_marshaled_pinvoke& marshaled, DateTimeRawInfo_t9FCF0836569E074269DCA1D04061D8E3720D451E& unmarshaled)
-{
-	unmarshaled.set_num_0(marshaled.___num_0);
-	int32_t unmarshaled_numCount_temp_1 = 0;
-	unmarshaled_numCount_temp_1 = marshaled.___numCount_1;
-	unmarshaled.set_numCount_1(unmarshaled_numCount_temp_1);
-	int32_t unmarshaled_month_temp_2 = 0;
-	unmarshaled_month_temp_2 = marshaled.___month_2;
-	unmarshaled.set_month_2(unmarshaled_month_temp_2);
-	int32_t unmarshaled_year_temp_3 = 0;
-	unmarshaled_year_temp_3 = marshaled.___year_3;
-	unmarshaled.set_year_3(unmarshaled_year_temp_3);
-	int32_t unmarshaled_dayOfWeek_temp_4 = 0;
-	unmarshaled_dayOfWeek_temp_4 = marshaled.___dayOfWeek_4;
-	unmarshaled.set_dayOfWeek_4(unmarshaled_dayOfWeek_temp_4);
-	int32_t unmarshaled_era_temp_5 = 0;
-	unmarshaled_era_temp_5 = marshaled.___era_5;
-	unmarshaled.set_era_5(unmarshaled_era_temp_5);
-	int32_t unmarshaled_timeMark_temp_6 = 0;
-	unmarshaled_timeMark_temp_6 = marshaled.___timeMark_6;
-	unmarshaled.set_timeMark_6(unmarshaled_timeMark_temp_6);
-	double unmarshaled_fraction_temp_7 = 0.0;
-	unmarshaled_fraction_temp_7 = marshaled.___fraction_7;
-	unmarshaled.set_fraction_7(unmarshaled_fraction_temp_7);
-	bool unmarshaled_hasSameDateAndTimeSeparators_temp_8 = false;
-	unmarshaled_hasSameDateAndTimeSeparators_temp_8 = static_cast<bool>(marshaled.___hasSameDateAndTimeSeparators_8);
-	unmarshaled.set_hasSameDateAndTimeSeparators_8(unmarshaled_hasSameDateAndTimeSeparators_temp_8);
-	bool unmarshaled_timeZone_temp_9 = false;
-	unmarshaled_timeZone_temp_9 = static_cast<bool>(marshaled.___timeZone_9);
-	unmarshaled.set_timeZone_9(unmarshaled_timeZone_temp_9);
-}
-// Conversion method for clean up from marshalling of: System.DateTimeRawInfo
-IL2CPP_EXTERN_C void DateTimeRawInfo_t9FCF0836569E074269DCA1D04061D8E3720D451E_marshal_pinvoke_cleanup(DateTimeRawInfo_t9FCF0836569E074269DCA1D04061D8E3720D451E_marshaled_pinvoke& marshaled)
-{
-}
-// Conversion methods for marshalling of: System.DateTimeRawInfo
-IL2CPP_EXTERN_C void DateTimeRawInfo_t9FCF0836569E074269DCA1D04061D8E3720D451E_marshal_com(const DateTimeRawInfo_t9FCF0836569E074269DCA1D04061D8E3720D451E& unmarshaled, DateTimeRawInfo_t9FCF0836569E074269DCA1D04061D8E3720D451E_marshaled_com& marshaled)
-{
-	marshaled.___num_0 = unmarshaled.get_num_0();
-	marshaled.___numCount_1 = unmarshaled.get_numCount_1();
-	marshaled.___month_2 = unmarshaled.get_month_2();
-	marshaled.___year_3 = unmarshaled.get_year_3();
-	marshaled.___dayOfWeek_4 = unmarshaled.get_dayOfWeek_4();
-	marshaled.___era_5 = unmarshaled.get_era_5();
-	marshaled.___timeMark_6 = unmarshaled.get_timeMark_6();
-	marshaled.___fraction_7 = unmarshaled.get_fraction_7();
-	marshaled.___hasSameDateAndTimeSeparators_8 = static_cast<int32_t>(unmarshaled.get_hasSameDateAndTimeSeparators_8());
-	marshaled.___timeZone_9 = static_cast<int32_t>(unmarshaled.get_timeZone_9());
-}
-IL2CPP_EXTERN_C void DateTimeRawInfo_t9FCF0836569E074269DCA1D04061D8E3720D451E_marshal_com_back(const DateTimeRawInfo_t9FCF0836569E074269DCA1D04061D8E3720D451E_marshaled_com& marshaled, DateTimeRawInfo_t9FCF0836569E074269DCA1D04061D8E3720D451E& unmarshaled)
-{
-	unmarshaled.set_num_0(marshaled.___num_0);
-	int32_t unmarshaled_numCount_temp_1 = 0;
-	unmarshaled_numCount_temp_1 = marshaled.___numCount_1;
-	unmarshaled.set_numCount_1(unmarshaled_numCount_temp_1);
-	int32_t unmarshaled_month_temp_2 = 0;
-	unmarshaled_month_temp_2 = marshaled.___month_2;
-	unmarshaled.set_month_2(unmarshaled_month_temp_2);
-	int32_t unmarshaled_year_temp_3 = 0;
-	unmarshaled_year_temp_3 = marshaled.___year_3;
-	unmarshaled.set_year_3(unmarshaled_year_temp_3);
-	int32_t unmarshaled_dayOfWeek_temp_4 = 0;
-	unmarshaled_dayOfWeek_temp_4 = marshaled.___dayOfWeek_4;
-	unmarshaled.set_dayOfWeek_4(unmarshaled_dayOfWeek_temp_4);
-	int32_t unmarshaled_era_temp_5 = 0;
-	unmarshaled_era_temp_5 = marshaled.___era_5;
-	unmarshaled.set_era_5(unmarshaled_era_temp_5);
-	int32_t unmarshaled_timeMark_temp_6 = 0;
-	unmarshaled_timeMark_temp_6 = marshaled.___timeMark_6;
-	unmarshaled.set_timeMark_6(unmarshaled_timeMark_temp_6);
-	double unmarshaled_fraction_temp_7 = 0.0;
-	unmarshaled_fraction_temp_7 = marshaled.___fraction_7;
-	unmarshaled.set_fraction_7(unmarshaled_fraction_temp_7);
-	bool unmarshaled_hasSameDateAndTimeSeparators_temp_8 = false;
-	unmarshaled_hasSameDateAndTimeSeparators_temp_8 = static_cast<bool>(marshaled.___hasSameDateAndTimeSeparators_8);
-	unmarshaled.set_hasSameDateAndTimeSeparators_8(unmarshaled_hasSameDateAndTimeSeparators_temp_8);
-	bool unmarshaled_timeZone_temp_9 = false;
-	unmarshaled_timeZone_temp_9 = static_cast<bool>(marshaled.___timeZone_9);
-	unmarshaled.set_timeZone_9(unmarshaled_timeZone_temp_9);
-}
-// Conversion method for clean up from marshalling of: System.DateTimeRawInfo
-IL2CPP_EXTERN_C void DateTimeRawInfo_t9FCF0836569E074269DCA1D04061D8E3720D451E_marshal_com_cleanup(DateTimeRawInfo_t9FCF0836569E074269DCA1D04061D8E3720D451E_marshaled_com& marshaled)
-{
-}
-// System.Void System.DateTimeRawInfo::Init(System.Int32*)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DateTimeRawInfo_Init_m24B8BAAD8B05676BEA0A3BBBE97279EFECA8FACD (DateTimeRawInfo_t9FCF0836569E074269DCA1D04061D8E3720D451E * __this, int32_t* ___numberBuffer0, const RuntimeMethod* method)
-{
-	{
-		__this->set_month_2((-1));
-		__this->set_year_3((-1));
-		__this->set_dayOfWeek_4((-1));
-		__this->set_era_5((-1));
-		__this->set_timeMark_6((-1));
-		__this->set_fraction_7((-1.0));
-		int32_t* L_0 = ___numberBuffer0;
-		__this->set_num_0((int32_t*)L_0);
-		return;
-	}
-}
-IL2CPP_EXTERN_C  void DateTimeRawInfo_Init_m24B8BAAD8B05676BEA0A3BBBE97279EFECA8FACD_AdjustorThunk (RuntimeObject * __this, int32_t* ___numberBuffer0, const RuntimeMethod* method)
-{
-	DateTimeRawInfo_t9FCF0836569E074269DCA1D04061D8E3720D451E * _thisAdjusted = reinterpret_cast<DateTimeRawInfo_t9FCF0836569E074269DCA1D04061D8E3720D451E *>(__this + 1);
-	DateTimeRawInfo_Init_m24B8BAAD8B05676BEA0A3BBBE97279EFECA8FACD(_thisAdjusted, ___numberBuffer0, method);
-}
-// System.Void System.DateTimeRawInfo::AddNumber(System.Int32)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DateTimeRawInfo_AddNumber_m2E5EFAF94BCBCEA2B72C78B5D109377BB97D69F4 (DateTimeRawInfo_t9FCF0836569E074269DCA1D04061D8E3720D451E * __this, int32_t ___value0, const RuntimeMethod* method)
-{
-	int32_t V_0 = 0;
-	{
-		int32_t* L_0 = __this->get_num_0();
-		int32_t L_1 = __this->get_numCount_1();
-		V_0 = L_1;
-		int32_t L_2 = V_0;
-		__this->set_numCount_1(((int32_t)il2cpp_codegen_add((int32_t)L_2, (int32_t)1)));
-		int32_t L_3 = V_0;
-		int32_t L_4 = ___value0;
-		*((int32_t*)((int32_t*)il2cpp_codegen_add((intptr_t)L_0, (intptr_t)((intptr_t)il2cpp_codegen_multiply((intptr_t)(((intptr_t)L_3)), (int32_t)4))))) = (int32_t)L_4;
-		return;
-	}
-}
-IL2CPP_EXTERN_C  void DateTimeRawInfo_AddNumber_m2E5EFAF94BCBCEA2B72C78B5D109377BB97D69F4_AdjustorThunk (RuntimeObject * __this, int32_t ___value0, const RuntimeMethod* method)
-{
-	DateTimeRawInfo_t9FCF0836569E074269DCA1D04061D8E3720D451E * _thisAdjusted = reinterpret_cast<DateTimeRawInfo_t9FCF0836569E074269DCA1D04061D8E3720D451E *>(__this + 1);
-	DateTimeRawInfo_AddNumber_m2E5EFAF94BCBCEA2B72C78B5D109377BB97D69F4(_thisAdjusted, ___value0, method);
-}
-// System.Int32 System.DateTimeRawInfo::GetNumber(System.Int32)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t DateTimeRawInfo_GetNumber_mDBE60CA39776210991124099CF150BCF4FA6EE3D (DateTimeRawInfo_t9FCF0836569E074269DCA1D04061D8E3720D451E * __this, int32_t ___index0, const RuntimeMethod* method)
-{
-	{
-		int32_t* L_0 = __this->get_num_0();
-		int32_t L_1 = ___index0;
-		int32_t L_2 = *((int32_t*)((int32_t*)il2cpp_codegen_add((intptr_t)L_0, (intptr_t)((intptr_t)il2cpp_codegen_multiply((intptr_t)(((intptr_t)L_1)), (int32_t)4)))));
-		return L_2;
-	}
-}
-IL2CPP_EXTERN_C  int32_t DateTimeRawInfo_GetNumber_mDBE60CA39776210991124099CF150BCF4FA6EE3D_AdjustorThunk (RuntimeObject * __this, int32_t ___index0, const RuntimeMethod* method)
-{
-	DateTimeRawInfo_t9FCF0836569E074269DCA1D04061D8E3720D451E * _thisAdjusted = reinterpret_cast<DateTimeRawInfo_t9FCF0836569E074269DCA1D04061D8E3720D451E *>(__this + 1);
-	return DateTimeRawInfo_GetNumber_mDBE60CA39776210991124099CF150BCF4FA6EE3D(_thisAdjusted, ___index0, method);
-}
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
 #ifdef __clang__
 #pragma clang diagnostic push
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
@@ -29437,24 +28788,6 @@ IL_001d:
 	{
 		__this->set_name_0(_stringLiteralDA39A3EE5E6B4B0D3255BFEF95601890AFD80709);
 		__this->set_type_2(_stringLiteralDA39A3EE5E6B4B0D3255BFEF95601890AFD80709);
-		return;
-	}
-}
-// System.Void System.Diagnostics.DebuggerDisplayAttribute::set_Name(System.String)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DebuggerDisplayAttribute_set_Name_mF4EDFE6F08C86D400A5992E116C965CDB749638A (DebuggerDisplayAttribute_t4217FA369BB3F9B415423539B4A08882480836A0 * __this, String_t* ___value0, const RuntimeMethod* method)
-{
-	{
-		String_t* L_0 = ___value0;
-		__this->set_name_0(L_0);
-		return;
-	}
-}
-// System.Void System.Diagnostics.DebuggerDisplayAttribute::set_Type(System.String)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DebuggerDisplayAttribute_set_Type_mFC51F59EC59812C4772C20C048D3B1B929BBA0DF (DebuggerDisplayAttribute_t4217FA369BB3F9B415423539B4A08882480836A0 * __this, String_t* ___value0, const RuntimeMethod* method)
-{
-	{
-		String_t* L_0 = ___value0;
-		__this->set_type_2(L_0);
 		return;
 	}
 }

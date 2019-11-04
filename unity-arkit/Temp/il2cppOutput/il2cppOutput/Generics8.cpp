@@ -7256,11 +7256,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t UInt64_GetHashCode_mCBB4031BF70D0CBD0
 // System.Boolean UnityEngine.Networking.NetworkInstanceId::Equals(UnityEngine.Networking.NetworkInstanceId)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool NetworkInstanceId_Equals_m546D4D175FCA20ACE27120D238513C131C83686B (NetworkInstanceId_tB6492FD2B3B2062582F787801BF7C0457271F615 * __this, NetworkInstanceId_tB6492FD2B3B2062582F787801BF7C0457271F615  ___other0, const RuntimeMethod* method);
 // System.Int32 UnityEngine.Networking.NetworkInstanceId::GetHashCode()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t NetworkInstanceId_GetHashCode_mD35193AF805A2C3CC9F7F8B22738583BF80230A7 (NetworkInstanceId_tB6492FD2B3B2062582F787801BF7C0457271F615 * __this, const RuntimeMethod* method);
+IL2CPP_EXTERN_C inline  IL2CPP_METHOD_ATTR int32_t NetworkInstanceId_GetHashCode_mD35193AF805A2C3CC9F7F8B22738583BF80230A7_inline (NetworkInstanceId_tB6492FD2B3B2062582F787801BF7C0457271F615 * __this, const RuntimeMethod* method);
 // System.Boolean UnityEngine.Networking.NetworkSceneId::Equals(UnityEngine.Networking.NetworkSceneId)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool NetworkSceneId_Equals_mBEB4B8026FD218D71A1A65E69A536C93030CA57A (NetworkSceneId_t462EC62A23A1B7AF60637C48CD916A09BC493340 * __this, NetworkSceneId_t462EC62A23A1B7AF60637C48CD916A09BC493340  ___other0, const RuntimeMethod* method);
 // System.Int32 UnityEngine.Networking.NetworkSceneId::GetHashCode()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t NetworkSceneId_GetHashCode_mF517AA5ADB1727E237A5556427DF29FDDDB35337 (NetworkSceneId_t462EC62A23A1B7AF60637C48CD916A09BC493340 * __this, const RuntimeMethod* method);
+IL2CPP_EXTERN_C inline  IL2CPP_METHOD_ATTR int32_t NetworkSceneId_GetHashCode_mF517AA5ADB1727E237A5556427DF29FDDDB35337_inline (NetworkSceneId_t462EC62A23A1B7AF60637C48CD916A09BC493340 * __this, const RuntimeMethod* method);
 // System.Boolean UnityEngine.UI.ColorBlock::Equals(UnityEngine.UI.ColorBlock)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool ColorBlock_Equals_m3768CE3E85F9FD55FCA305EA20FF33983B4DB26C (ColorBlock_t93B54DF6E8D65D24CEA9726CA745E48C53E3B1EA * __this, ColorBlock_t93B54DF6E8D65D24CEA9726CA745E48C53E3B1EA  ___other0, const RuntimeMethod* method);
 // System.Int32 UnityEngine.UI.ColorBlock::GetHashCode()
@@ -20550,7 +20550,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t GenericEqualityComparer_1_GetHashCode
 
 IL_000a:
 	{
-		int32_t L_1 = NetworkInstanceId_GetHashCode_mD35193AF805A2C3CC9F7F8B22738583BF80230A7((NetworkInstanceId_tB6492FD2B3B2062582F787801BF7C0457271F615 *)(NetworkInstanceId_tB6492FD2B3B2062582F787801BF7C0457271F615 *)(&___obj0), /*hidden argument*/NULL);
+		int32_t L_1 = NetworkInstanceId_GetHashCode_mD35193AF805A2C3CC9F7F8B22738583BF80230A7_inline((NetworkInstanceId_tB6492FD2B3B2062582F787801BF7C0457271F615 *)(NetworkInstanceId_tB6492FD2B3B2062582F787801BF7C0457271F615 *)(&___obj0), /*hidden argument*/NULL);
 		return L_1;
 	}
 }
@@ -20840,7 +20840,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t GenericEqualityComparer_1_GetHashCode
 
 IL_000a:
 	{
-		int32_t L_1 = NetworkSceneId_GetHashCode_mF517AA5ADB1727E237A5556427DF29FDDDB35337((NetworkSceneId_t462EC62A23A1B7AF60637C48CD916A09BC493340 *)(NetworkSceneId_t462EC62A23A1B7AF60637C48CD916A09BC493340 *)(&___obj0), /*hidden argument*/NULL);
+		int32_t L_1 = NetworkSceneId_GetHashCode_mF517AA5ADB1727E237A5556427DF29FDDDB35337_inline((NetworkSceneId_t462EC62A23A1B7AF60637C48CD916A09BC493340 *)(NetworkSceneId_t462EC62A23A1B7AF60637C48CD916A09BC493340 *)(&___obj0), /*hidden argument*/NULL);
 		return L_1;
 	}
 }
@@ -30284,6 +30284,20 @@ IL_000a:
 #ifdef __clang__
 #pragma clang diagnostic pop
 #endif
+IL2CPP_EXTERN_C inline  IL2CPP_METHOD_ATTR int32_t NetworkInstanceId_GetHashCode_mD35193AF805A2C3CC9F7F8B22738583BF80230A7_inline (NetworkInstanceId_tB6492FD2B3B2062582F787801BF7C0457271F615 * __this, const RuntimeMethod* method)
+{
+	{
+		uint32_t L_0 = __this->get_m_Value_0();
+		return L_0;
+	}
+}
+IL2CPP_EXTERN_C inline  IL2CPP_METHOD_ATTR int32_t NetworkSceneId_GetHashCode_mF517AA5ADB1727E237A5556427DF29FDDDB35337_inline (NetworkSceneId_t462EC62A23A1B7AF60637C48CD916A09BC493340 * __this, const RuntimeMethod* method)
+{
+	{
+		uint32_t L_0 = __this->get_m_Value_0();
+		return L_0;
+	}
+}
 IL2CPP_EXTERN_C inline IL2CPP_METHOD_ATTR int32_t Enumerator_get_Current_m47B51F85B7324026D19B7DA7A69CC2CF0709E9B0_gshared_inline (Enumerator_t054B51453CDEC820A259810890100462714A4687 * __this, const RuntimeMethod* method)
 {
 	{
