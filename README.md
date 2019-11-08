@@ -6,15 +6,15 @@
 3. [ARkit 2](#unity-arkit-2)
     - [General Notes](#general-notes)
     - [ARkit Remote](#arkit-remote)
-    - [Add Anchors Everywhere demo](#add-anchors-everywheres)
-    - [Add Anchors to Plane demo](#add-anchors-to-plane)
-    - [Image Anchors demo](#image-anchors)
-    - [Change Based on Distance demo](#change-based-on-distance-from-camera)
-    - [Points of Interest demo](#particles-on-points-of-interest)
-    - [Plane Mesh demo](#plane-mesh)
-    - [Face Mesh demo](#face-mesh)
-    - [Face Anchors demo](#face-anchors)
-    - [Feature Detector demo](#feature-detector)
+    - [Demo: Add Anchors Everywhere](#Demo:-add-anchors-everywheres)
+    - [Demo: Add Anchors to Plane](#add-anchors-to-plane)
+    - [Demo: Image Anchors](#image-anchors)
+    - [Demo: Change Based on Distance](#change-based-on-distance-from-camera)
+    - [Demo: Points of Interest](#particles-on-points-of-interest)
+    - [Demo: Plane Mesh](#plane-mesh)
+    - [Demo: Face Mesh](#face-mesh)
+    - [Demo: Face Anchors](#face-anchors)
+    - [Demo: Feature Detector](#feature-detector)
 
 # Downloading This Project #
 
@@ -63,7 +63,7 @@ These demos are built with [Unity's Arkit2 Plugin. Their code repository](https:
 
 A lot of demos use anchors, which are defined by Apple's documentation as "A position and orientation of something of interest in the physical environment."
 
-These demos exist with the acknowledgement that the ARkit 2 Plugin is deprecated in favor of AR Foundation; however, Arkit 2 has a functional AR Remote tool, and AR Foundation does not have a reliable one yet, so we are using ARkit 2 here for ease of development. See these slides for [a more complete analysis](https://docs.google.com/presentation/d/1n9gmlFR2trCwu9m41-IdlOhBGr88aBHQTgWS3Q7y8ZU/edit?usp=sharing).
+**These demos exist with the acknowledgement that the ARkit 2 Plugin was recently deprecated in favor of AR Foundation, which integrates ARKit 3 (there is no separate ARkit 3 plugin for Unity)**; however, Arkit 2 has a functional [AR Remote tool](#arkit-remote), and AR Foundation does not have a reliable one yet, so we are using ARkit 2 here for ease of development. See these slides for [a more complete analysis](https://docs.google.com/presentation/d/1n9gmlFR2trCwu9m41-IdlOhBGr88aBHQTgWS3Q7y8ZU/edit?usp=sharing).
 
 ### Requirements
 - Unity v2017.4+
@@ -126,7 +126,7 @@ There is more detailed information, along with videos, on the [Unity site](https
 
 ___________________
 
-## [Add Anchors Everywhere](./unity-arkit/Assets/UnityARKitPlugin/Examples/AddAnchorsEverywhere)
+## [Demo: Add Anchors Everywhere](./unity-arkit/Assets/UnityARKitPlugin/Examples/AddAnchorsEverywhere)
 ![everywhere demo gif](./tutorial_assets/everywhere.gif)
 
 Places a GameObject upon user click/touch. The oldest GameObject will be deleted after "timeuntilremove" number of seconds, which is set to 10 as the default.
@@ -149,7 +149,7 @@ Places a GameObject upon user click/touch. The oldest GameObject will be deleted
 
 ___________________
 
-## [Add Anchors to Plane](./unity-arkit/Assets/UnityARKitPlugin/Examples/AddAnchorToPlane)
+## [Demo: Add Anchors to Plane](./unity-arkit/Assets/UnityARKitPlugin/Examples/AddAnchorToPlane)
 ![placeonplane demo gif](./tutorial_assets/placeonplane.gif)
 
 Detects horizontal planes in the scene, draws those planes, and upon tap/click, uses [raycasting](https://docs.unity3d.com/ScriptReference/Physics.Raycast.html) to check if and where your tap collides with the AR planes. If there is a collision, it places a new GameObject at that point. 
@@ -170,7 +170,7 @@ Detects horizontal planes in the scene, draws those planes, and upon tap/click, 
 
 ___________________
 
-## [Image Anchors](./unity-arkit/Assets/UnityARKitPlugin/Examples/ImageAnchor)
+## [Demo: Image Anchors](./unity-arkit/Assets/UnityARKitPlugin/Examples/ImageAnchor)
 ![imageanchors demo gif](./tutorial_assets/imageanchors.gif)
 
 Watches for two specific images, and places game objects upon them if found in camera view.
@@ -206,7 +206,7 @@ IMPORTANT NOTE: This demo does not work in the remote tool! You will need to bui
 
 ___________________
 
-## [Change Based on Distance from Camera](./unity-arkit/Assets/UnityARKitPlugin/Examples/ChangeBasedOnDistance)
+## [Demo: Change Based on Distance from Camera](./unity-arkit/Assets/UnityARKitPlugin/Examples/ChangeBasedOnDistance)
 ![distance demo gif](./tutorial_assets/distance.gif) ![rotate demo gif](./tutorial_assets/rotate.gif)
 
 The cube in the scene changes size, color and rotation (in the second gif) based on the distance between it and the camera.
@@ -231,7 +231,7 @@ The cube in the scene changes size, color and rotation (in the second gif) based
 
 ___________________
 
-## [Points of Interest](./unity-arkit/Assets/UnityARKitPlugin/Examples/PointCloud)
+## [Demo: Points of Interest](./unity-arkit/Assets/UnityARKitPlugin/Examples/PointCloud)
 ![points1 demo gif](./tutorial_assets/points1.gif)![points2 demo gif](./tutorial_assets/points2.gif)
 
 Places glowing points on [points in the world space found through scene analysis during the AR Session](https://developer.apple.com/documentation/arkit/arpointcloud). 
@@ -254,7 +254,7 @@ Places glowing points on [points in the world space found through scene analysis
 
 ___________________
 
-## [Plane Mesh](./unity-arkit/Assets/UnityARKitPlugin/Examples/PlaneMesh)
+## [Demo: Plane Mesh](./unity-arkit/Assets/UnityARKitPlugin/Examples/PlaneMesh)
 ![planemesh demo gif](./tutorial_assets/planemesh.gif)
 
 ### Scene Objects
@@ -270,7 +270,7 @@ ___________________
 
 ___________________
 
-## [Face Mesh](./unity-arkit/Assets/UnityARKitPlugin/Examples/FaceMesh)
+## [Demo: Face Mesh](./unity-arkit/Assets/UnityARKitPlugin/Examples/FaceMesh)
 ![facemesh demo gif](./tutorial_assets/facemesh.gif)
 
 Places a mesh upon your face.
@@ -291,7 +291,7 @@ Places a mesh upon your face.
 
 ___________________
 
-## [Primitives On Face (Face Anchors)](./unity-arkit/Assets/UnityARKitPlugin/Examples/PrimitivesOnFace)
+## [Demo: Primitives On Face (Face Anchors)](./unity-arkit/Assets/UnityARKitPlugin/Examples/PrimitivesOnFace)
 ![faceanchors demo gif](./tutorial_assets/faceanchors.gif)
 
 Places anchors upon the "center" of the face, and the eyes. 
@@ -313,7 +313,7 @@ IMPORTANT NOTE: The eye transforms will not work in the remote tool, so you will
 
 ___________________
 
-## [Feature Detector](./unity-arkit/Assets/UnityARKitPlugin/Examples/FeatureDetector)
+## [Demo: Feature Detector](./unity-arkit/Assets/UnityARKitPlugin/Examples/FeatureDetector)
 
 ![cheek demo gif](./tutorial_assets/cheek.gif) ![pucker demo gif](./tutorial_assets/pucker.gif) ![tongue demo gif](./tutorial_assets/tongue.gif) ![nose demo gif](./tutorial_assets/nose.gif) 
 
