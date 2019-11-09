@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/UnityARKitPlugin/Examples/AddAnchorToPlane/AddAnchorToPlane.unity
+- path: Assets/UnityARKitPlugin/ARKitRemote/EditorTestScene.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0
