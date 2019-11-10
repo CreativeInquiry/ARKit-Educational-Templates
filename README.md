@@ -25,7 +25,7 @@ Download the package from Github,
 
 Or, in the terminal, run
 ```
-git clone https://github.com/khanniie/Arkit-github
+git clone https://github.com/CreativeInquiry/ARKit-Educational-Templates
 ```
 Then, **open the `unity-arkit` folder** within the downloaded folder using Unity Hub (the project uses Unity 2019.2.3f1, but any Unity v2017.4+ will probably work as well). You can open it in Unity Hub by selecting the "ADD" button and choosing the correct folder. Note that the folder to open is not the root directory! It is a folder called `unity-arkit` within the downloaded folder.
 
