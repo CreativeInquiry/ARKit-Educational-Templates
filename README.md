@@ -1,4 +1,4 @@
-# Arkit tutorials
+# ARKit Educational Templates
 
 *IMPORTANT note for students in 60-212:* If you are using a STUDIO iPhone, turn off automatic software updates and DO NOT update to iOS 13 if you plan on using the [AR remote](#arkit-remote) tool, which is highly suggested.
 
