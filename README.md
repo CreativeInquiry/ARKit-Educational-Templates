@@ -1,9 +1,9 @@
 # ARKit Educational Templates
 
 ## About
-This repository contains a collection of simple template projects and tutorials for developing augmented reality (AR) iPhone apps using Unity and Apple's ARKit technology. These projects and their documentation were developed in October 2019 by [Connie Ye](https://github.com/khanniie)/[@crabbage_](https://twitter.com/crabbage_), with support from the [Frank-Ratchye STUDIO for Creative Inquiry](http://studioforcreativeinquiry), for undergraduate new-media arts courses taught by [Golan Levin](http://flong.com) at Carnegie Mellon University. These templates are intended for students with introductory programming experience and introductory familiarity with Unity. We welcome your contributions and corrections. If you use these templates in your curriculum, please acknowledge Connie's work. 
+This repository contains a collection of simple template projects and tutorials for developing augmented reality (AR) iPhone apps using Unity and Apple's ARKit technology. These projects and their documentation were developed in October 2019 by [Connie Ye](https://github.com/khanniie) ([@crabbage_](https://twitter.com/crabbage_)), with support from the [Frank-Ratchye STUDIO for Creative Inquiry](http://studioforcreativeinquiry), for undergraduate media arts courses taught by [Golan Levin](http://flong.com) at Carnegie Mellon University. These templates are intended for students with introductory programming experience and introductory familiarity with Unity. We welcome your contributions and corrections. If you use these templates in your curriculum, please acknowledge Connie's work. 
 
-***IMPORTANT NOTE:*** As of November 11th, 2019, the Unity [AR remote](#arkit-remote) tool, which is highly recommended for development and debugging, is not working in iOS 13. For this reason, these tutorials are intended iPhones running iOS 12. We recommend that you turn off automatic software updates and *DO NOT* update to iOS 13, if you plan on using the AR Remote tool. This information is subject to change.   
+***IMPORTANT NOTE:*** As of November 11th, 2019, the Unity [AR remote](#arkit-remote) tool, which is highly recommended for development and debugging, is not working in iOS 13. For this reason, these tutorials are intended for iPhones running iOS 12. We recommend that you turn off automatic software updates, and *DO NOT* update to iOS 13, if you plan on using the AR Remote tool. This information is subject to change.   
 
 ## Table of Contents
 1. [Downloading This Project](#downloading-this-project)
@@ -88,10 +88,10 @@ A lot of demos use anchors, which are defined by Apple's documentation as "A pos
 
 ### Requirements
 - Unity v2017.4+
-- Apple XCode 10.0+ with latest iOS SDK that contains ARKit Framework
+- Apple Xcode 10.0+ with latest iOS SDK that contains ARKit Framework
 - Apple iOS device that supports ARKit (iPhone 6S or later, iPad (2017) or later)
 - Apple iOS 12+ installed on device
-- For iOS 13+, you will need the latest XCode build. However, be warned that Arkit's remote tool breaks on iOS 13.1.3.
+- For iOS 13+, you will need the latest Xcode build. However, be warned that Arkit's remote tool breaks on iOS 13.1.3.
 
 ### Glossary of Common GameObjects
 - **CameraParent:** A container for the main camera object.
@@ -107,8 +107,8 @@ ___________________
 
 ## ARKit Remote
 
-### What is Arkit Remote? 
-Arkit remote allows you to test your AR code in the Unity editor, without having to build the entire app. Building an app might take a few minutes, so having a remote tool saves you a lot of time while developing! With Arkit remote, you build the app to your phone, and open the app to stream your phone's camera view to Unity. Then, the editor shows the AR view using the camera information. 
+### What is ARKit Remote? 
+ARKit remote allows you to test your AR code in the Unity editor, without having to build the entire app. Building an app might take a few minutes, so having a remote tool saves you a lot of time while developing! With Arkit remote, you build the app to your phone, and open the app to stream your phone's camera view to Unity. Then, the editor shows the AR view using the camera information. 
 
 ![remote button](tutorial_assets/remote.jpg)
 
