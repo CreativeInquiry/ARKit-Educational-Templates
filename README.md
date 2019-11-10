@@ -1,6 +1,9 @@
 # ARKit Educational Templates
 
-*IMPORTANT note for students in 60-212:* If you are using a STUDIO iPhone, turn off automatic software updates and DO NOT update to iOS 13 if you plan on using the [AR remote](#arkit-remote) tool, which is highly suggested.
+## About
+This repository contains a collection of simple template projects and tutorials for developing augmented reality (AR) iPhone apps using Unity and Apple's ARKit technology. These projects and their documentation were developed in October 2019 by [Connie Ye](https://github.com/khanniie)/[@crabbage_](https://twitter.com/crabbage_), with support from the [Frank-Ratchye STUDIO for Creative Inquiry](http://studioforcreativeinquiry), for undergraduate new-media arts courses taught by [Golan Levin](http://flong.com) at Carnegie Mellon University. These templates are intended for students with introductory programming experience and introductory familiarity with Unity. We welcome your contributions and corrections. If you use these templates in your curriculum, please acknowledge Connie's work. 
+
+***IMPORTANT NOTE:*** As of November 11th, 2019, the Unity [AR remote](#arkit-remote) tool, which is highly recommended for development and debugging, is not working in iOS 13. For this reason, these tutorials are intended iPhones running iOS 12. We recommend that you turn off automatic software updates and *DO NOT* update to iOS 13, if you plan on using the AR Remote tool. This information is subject to change.   
 
 ## Table of Contents
 1. [Downloading This Project](#downloading-this-project)
@@ -21,13 +24,13 @@
 
 # Downloading This Project #
 
-Download the package from Github,
+Download this repository from Github by clicking on the green "Clone or Download" button above,
 
 Or, in the terminal, run
 ```
 git clone https://github.com/CreativeInquiry/ARKit-Educational-Templates
 ```
-Then, **open the `unity-arkit` folder** within the downloaded folder using Unity Hub (the project uses Unity 2019.2.3f1, but any Unity v2017.4+ will probably work as well). You can open it in Unity Hub by selecting the "ADD" button and choosing the correct folder. Note that the folder to open is not the root directory! It is a folder called `unity-arkit` within the downloaded folder.
+Then, **open the `unity-arkit` folder** within the downloaded folder using Unity Hub (these projects use **Unity 2019.2.3f1**, but any Unity v2017.4+ will probably work as well). You can open it in Unity Hub by selecting the "ADD" button and choosing the correct folder. Note that the folder to open is not the root directory! It is a folder called `unity-arkit` within the downloaded folder.
 
 It might ask for iOS support, which you will have to install if you haven't already. You can install iOS support within Unity hub with `Installs->Add Modules`
 
@@ -85,10 +88,10 @@ A lot of demos use anchors, which are defined by Apple's documentation as "A pos
 
 ### Requirements
 - Unity v2017.4+
-- Apple Xcode 10.0+ with latest iOS SDK that contains ARKit Framework
+- Apple XCode 10.0+ with latest iOS SDK that contains ARKit Framework
 - Apple iOS device that supports ARKit (iPhone 6S or later, iPad (2017) or later)
 - Apple iOS 12+ installed on device
-- For iOS 13+, you will need the latest Xcode build. However, be warned that Arkit's remote tool breaks on iOS 13.1.3.
+- For iOS 13+, you will need the latest XCode build. However, be warned that Arkit's remote tool breaks on iOS 13.1.3.
 
 ### Glossary of Common GameObjects
 - **CameraParent:** A container for the main camera object.
