@@ -4,9 +4,9 @@
 
 ## Table of Contents
 1. [Downloading This Project](#downloading-this-project)
-2. [Getting Started](#quickstart)
+2. [Getting Started](#getting-started)
 3. [Building to Xcode](#building-to-xcode) 
-4. [ARkit 2](#unity-arkit-2)
+4. [Unity ARkit 2](#unity-arkit-2)
     - [General Notes](#general-notes)
     - [ARkit Remote](#arkit-remote)
     - [Demo: Add Anchors Everywhere](#demo-add-anchors-everywheres)
