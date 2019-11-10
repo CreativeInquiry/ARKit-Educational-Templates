@@ -3,15 +3,13 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.XR.iOS;
 
-public class PrimitivesOnFace : MonoBehaviour
-{
+public class PrimitivesOnFace : MonoBehaviour {
 
     [SerializeField]
     private GameObject faceCenterPrefab;
 
     [SerializeField]
     private GameObject eyePrefab;
-
     private GameObject leftEyeGo;
     private GameObject rightEyeGo;
     private GameObject faceCenterGo;
@@ -19,8 +17,7 @@ public class PrimitivesOnFace : MonoBehaviour
     private UnityARSessionNativeInterface m_session;
 
     // Use this for initialization
-    void Start()
-    {
+    void Start() {
         m_session = UnityARSessionNativeInterface.GetARSessionNativeInterface();
 
         Application.targetFrameRate = 60;
@@ -28,11 +25,9 @@ public class PrimitivesOnFace : MonoBehaviour
         config.alignment = UnityARAlignment.UnityARAlignmentGravity;
         config.enableLightEstimation = true;
 
-        if (config.IsSupported)
-        {
+        if (config.IsSupported) {
             m_session.RunWithConfig(config);
-
-            UnityARSessionNativeInterface.ARFaceAnchorAddedEvent += FaceAdded;
+            UnityARSessionNativeInterface.ARFaceAnchorAddedEvent   += FaceAdded;
             UnityARSessionNativeInterface.ARFaceAnchorUpdatedEvent += FaceUpdated;
             UnityARSessionNativeInterface.ARFaceAnchorRemovedEvent += FaceRemoved;
         }
@@ -46,37 +41,34 @@ public class PrimitivesOnFace : MonoBehaviour
         faceCenterGo.SetActive(false);
     }
 
-    void FaceAdded(ARFaceAnchor anchorData)
-    {
-		//set the left eye gameobject transform position to the current position
+    void FaceAdded(ARFaceAnchor anchorData){
+        //set the left eye gameobject transform position to the current position
         leftEyeGo.transform.position = anchorData.leftEyePose.position;
         leftEyeGo.transform.rotation = anchorData.leftEyePose.rotation;
 
-		//set the right eye gameobject transform position to the current position
+        //set the right eye gameobject transform position to the current position
         rightEyeGo.transform.position = anchorData.rightEyePose.position;
         rightEyeGo.transform.rotation = anchorData.rightEyePose.rotation;
 
-		//activate them so you can see them
+        //activate them so you can see them
         leftEyeGo.SetActive(true);
         rightEyeGo.SetActive(true);
 
-		//set the center face gameobject to the current position
+        //set the center face gameobject to the current position
         faceCenterGo.transform.position = UnityARMatrixOps.GetPosition(anchorData.transform);
         faceCenterGo.transform.rotation = UnityARMatrixOps.GetRotation(anchorData.transform);
-		//activate so you can see it
+        
+        //activate so you can see it
         faceCenterGo.SetActive(true);
     }
 
-    void FaceUpdated(ARFaceAnchor anchorData)
-    {
-        if (faceCenterGo.activeSelf != anchorData.isTracked)
-        {
+    void FaceUpdated(ARFaceAnchor anchorData) {
+        if (faceCenterGo.activeSelf != anchorData.isTracked) {
             faceCenterGo.SetActive(anchorData.isTracked);
         }
 
-        if (anchorData.isTracked)
-        {
-			//set the center face gameobject to the current position
+        if (anchorData.isTracked) {
+            //set the center face gameobject to the current position
             faceCenterGo.transform.position = UnityARMatrixOps.GetPosition(anchorData.transform);
             faceCenterGo.transform.rotation = UnityARMatrixOps.GetRotation(anchorData.transform);
 
@@ -88,22 +80,17 @@ public class PrimitivesOnFace : MonoBehaviour
         }
     }
 
-    void FaceRemoved(ARFaceAnchor anchorData)
-    {
-		//deactivate when the face anchor is gone
+    void FaceRemoved(ARFaceAnchor anchorData) {
+        //deactivate when the face anchor is gone
         faceCenterGo.SetActive(false);
         leftEyeGo.SetActive(false);
         rightEyeGo.SetActive(false);
     }
 
     // Update is called once per frame
-    void Update()
-    {
-
+    void Update() {
     }
 
-    void OnDestroy()
-    {
-
+    void OnDestroy() {
     }
 }
