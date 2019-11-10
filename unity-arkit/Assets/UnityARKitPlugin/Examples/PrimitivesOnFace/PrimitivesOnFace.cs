@@ -41,24 +41,24 @@ public class PrimitivesOnFace : MonoBehaviour {
         faceCenterGo.SetActive(false);
     }
 
-    void FaceAdded(ARFaceAnchor anchorData){
-        //set the left eye gameobject transform position to the current position
+    void FaceAdded(ARFaceAnchor anchorData) {
+        // Set the left eye gameobject transform position to the current position
         leftEyeGo.transform.position = anchorData.leftEyePose.position;
         leftEyeGo.transform.rotation = anchorData.leftEyePose.rotation;
 
-        //set the right eye gameobject transform position to the current position
+        // Set the right eye gameobject transform position to the current position
         rightEyeGo.transform.position = anchorData.rightEyePose.position;
         rightEyeGo.transform.rotation = anchorData.rightEyePose.rotation;
 
-        //activate them so you can see them
+        // Activate them so you can see them
         leftEyeGo.SetActive(true);
         rightEyeGo.SetActive(true);
 
-        //set the center face gameobject to the current position
+        // Set the center face gameobject to the current position
         faceCenterGo.transform.position = UnityARMatrixOps.GetPosition(anchorData.transform);
         faceCenterGo.transform.rotation = UnityARMatrixOps.GetRotation(anchorData.transform);
         
-        //activate so you can see it
+        // Activate so you can see it
         faceCenterGo.SetActive(true);
     }
 
@@ -68,11 +68,11 @@ public class PrimitivesOnFace : MonoBehaviour {
         }
 
         if (anchorData.isTracked) {
-            //set the center face gameobject to the current position
+            // Set the center face gameobject to the current position
             faceCenterGo.transform.position = UnityARMatrixOps.GetPosition(anchorData.transform);
             faceCenterGo.transform.rotation = UnityARMatrixOps.GetRotation(anchorData.transform);
 
-            //set the eye gameobjects transform positions to the current positions
+            // Set the eye gameobjects transform positions to the current positions
             leftEyeGo.transform.position = anchorData.leftEyePose.position;
             leftEyeGo.transform.rotation = anchorData.leftEyePose.rotation;
             rightEyeGo.transform.position = anchorData.rightEyePose.position;
@@ -81,7 +81,7 @@ public class PrimitivesOnFace : MonoBehaviour {
     }
 
     void FaceRemoved(ARFaceAnchor anchorData) {
-        //deactivate when the face anchor is gone
+        // Deactivate when the face anchor is gone
         faceCenterGo.SetActive(false);
         leftEyeGo.SetActive(false);
         rightEyeGo.SetActive(false);
