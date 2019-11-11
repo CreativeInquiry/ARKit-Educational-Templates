@@ -202,9 +202,10 @@ ___________________
 ## [Demo: Image Anchors](./unity-arkit/Assets/UnityARKitPlugin/Examples/ImageAnchor)
 ![imageanchors demo gif](./tutorial_assets/imageanchors.gif)
 
-Watches for two specific images, and places game objects upon them if found in camera view.
-
+Watches for two the specific images below, and places game objects upon them if found in camera view.
 IMPORTANT NOTE: This demo does not work in the remote tool! You will need to build it to see it work.
+
+![image anchor 1](./tutorial_assets/imageanchor1.jpg)![anchor 2](./tutorial_assets/imageanchor2.jpg)
 
 ### Generating Custom Reference Image Objects
 1. To generate reference images, go to Assets->Create->UnityArkitPlugin-> ArReferenceImage
