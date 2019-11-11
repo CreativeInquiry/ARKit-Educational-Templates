@@ -47,7 +47,11 @@ Once you have the project downloaded, try building one of the scenes in the Exam
 6. Test out a few of the other example scenes using the remote tool, see what looks interesting and build your own AR app!
 
 # Building to Xcode
-When you're done developing in Unity and want to build the app to your phone, you need to use Xcode to actually build the app on your phone. Xcode is Apple's development tool for their products. Unity can build you an Xcode project, and you can open the folder that is built, open the Xcode project, and build using Xcode, signing with your free account. 
+There are two different workflows to test your app: 
+* Use Unity to generate an Xcode project. Then use that project in Xcode to build and run your app onto your phone. **OR**
+* In Unity, use your tethered phone's camera(s) to preview your app *on your laptop*. This requires the ARKit Remote tool, described later.
+
+Let's start with the process for building the Xcode project. When you're done developing in Unity and want to build the app to your phone, you need to use Xcode to actually build the app on your phone. Xcode is Apple's development tool for their products. Unity can build you an Xcode project, and you can open the folder that is built, open the Xcode project, and build using Xcode, signing with your free account. 
 
 These are the steps you will roughly follow:
 1. Open the scene you want to build.
