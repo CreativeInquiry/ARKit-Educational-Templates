@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/UnityARKitPlugin/ARKitRemote/EditorTestScene.unity
+- path: Assets/UnityARKitPlugin/Examples/AddAnchorsEverywhere/AddAnchorsEverywhere.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0

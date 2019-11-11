@@ -510,7 +510,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 43728926c2ad04489b08475165ba1e86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  prefabObject: {fileID: 7413321270081276435, guid: 53c01602426714e42aa4aa1bf5b94b38,
+  prefabObject: {fileID: 1042879265023537981, guid: cf5f7cd1eef9243a4a31b20907a4d58a,
     type: 3}
   maxRayDistance: 30
   collisionLayerMask:
