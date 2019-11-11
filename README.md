@@ -39,25 +39,26 @@ It might ask for iOS support, which you will have to install if you haven't alre
 # Getting Started #
 
 Once you have the project downloaded, try building one of the scenes in the Examples folder to test that everything is working as expected.
-1. Once the project is open in Unity, select any of the scenes in the Examples folder.
-2. Click on the scene to open it (it will have a thumbnail that looks like the Unity logo).
-3. Once your scene is open, you can follow the steps in [Building to Xcode](#building-to-xcode) to build to your phone.
-4. Once you've built to your phone and have confirmed that the app built runs, you can start developing your own apps!
-5. It's highly recommended that you follow the steps in [building ARkit Remote](#building-the-app) to build the arkit remote app to your phone so that you can develop more efficiently.
-6. Test out a few of the other example scenes using the remote tool, see what looks interesting and build your own AR app!
+1. Once the project is open in Unity, select any of the scenes in the Examples folder (you can see the folder structure under the Project tab, which is usually in the bottom left area). 
+2. Click on the scene to open it (it will have a thumbnail that looks like the Unity logo). You will know it's open because the name of that scene will be shown in the Hierarchy tab.
+3. If you'd like to learn more about that demo, please note that this README contains detailed descriptions of all of the scenes under the [Unity ARkit 2](#unity-arkit-2) section.
+4. Once your scene is open, you can follow the steps in [Building to Xcode](#building-to-xcode) to build to your phone.
+5. Once you've built to your phone and have confirmed that the app built runs, you can start developing your own apps!
+6. It's highly recommended that you follow the steps in [building ARkit Remote](#building-the-app) to build the arkit remote app to your phone so that you can develop more efficiently.
+7. Test out a few of the other example scenes using the remote tool, see what looks interesting and build your own AR app!
 
 # Building to Xcode
 There are two different workflows to test your app: 
 * Use Unity to generate an Xcode project. Then use that project in Xcode to build and run your app onto your phone. **OR**
 * In Unity, use your tethered phone's camera(s) to preview your app *on your laptop*. This requires the ARKit Remote tool, described later.
 
-Let's start with the process for building the Xcode project. When you're done developing in Unity and want to build the app to your phone, you need to use Xcode to actually build the app on your phone. Xcode is Apple's development tool for their products. Unity can build you an Xcode project, and you can open the folder that is built, open the Xcode project, and build using Xcode, signing with your free account. 
+Let's start with the process for building the Xcode project. When you're done developing in Unity and want to build the app to your phone, you need to use Xcode to actually build the app on your phone. Xcode is Apple's development tool for their products. Unity can build you an Xcode project, and you can open the folder that is built, open the Xcode project, and build using Xcode, signing with your Apple account. 
 
 These are the steps you will roughly follow:
 1. Open the scene you want to build.
 2. Open File->Build Settings, and navigate to the iOS panel.
 3. Make sure your scene is checked (it should probably be the only one checked, unless you have some sort of navigation between scenes already built.) If you can't find it in the list, try clicking "Add Open Scenes."
-4. Then, hit Build on the bottom right.
+4. Then, hit Build on the bottom right. It's advised to save this the resulting build folder in a preferred location somewhere outside of the Unity project, perhaps in a special folder called Build.
 ![remote button](tutorial_assets/buildpage.png)
 5. Once your project has been built to a folder, open the file with the .xcodeproj extension.
 6. Xcode should launch! At this point you can minimize Unity, because you won't need it for the rest of the building process.
@@ -160,7 +161,7 @@ ___________________
 Places a GameObject upon user click/touch. The oldest GameObject will be deleted after "timeuntilremove" number of seconds, which is set to 10 as the default.
 
 ### Scripts
-- **[AddAnchorsEverywhere.cs:](./unity-arkit/Assets/UnityARKitPlugin/Examples/AddAnchorsEverywhere/AddAnchorsEverywhere.cs)** Clones the specified PrefabOject a distance of distanceFromCamera meters forwards, tracks existing objects, and then deletes the oldest one after 10 seconds of inactivity. See inline comments for more specific implementation details. 
+- **[AddAnchorsEverywhere.cs:](./unity-arkit/Assets/UnityARKitPlugin/Examples/AddAnchorsEverywhere/AddAnchorsEverywhere.cs)** Clones the specified PrefabOject a distance of distanceFromCamera meters forwards, tracks existing objects, and then deletes the oldest one after 10 seconds of inactivity. See inline comments for more specific implementation details. Note that the tap on the screen does not affect the position of the result on the screen, it is merely a trigger. The clone's position is calculated based on the main camera.
 
 ### Scene Objects
 - **Directional Light:** Adds light to the scene. This illuminates the GameObjects that you put in the scene.
