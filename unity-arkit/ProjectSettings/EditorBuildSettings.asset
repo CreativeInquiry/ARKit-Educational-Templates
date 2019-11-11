@@ -11,13 +11,13 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/UnityARKitPlugin/Examples/AddAnchorToPlane/AddAnchorToPlane.unity
     guid: 39cced9bcbbed4681a6633005bbeb24d
-  - enabled: 0
+  - enabled: 1
     path: Assets/UnityARKitPlugin/Examples/AddAnchorsEverywhere/AddAnchorsEverywhere.unity
     guid: a6ee1a436d990498aa4b72d76993feb3
   - enabled: 0
     path: Assets/UnityARKitPlugin/Examples/ImageAnchor/ImageAnchor.unity
     guid: 986ea77e46b3e449580a9db368017b7b
-  - enabled: 1
+  - enabled: 0
     path: Assets/UnityARKitPlugin/Examples/PrimitivesOnFace/PrimitivesOnFace.unity
     guid: e155750608bf3466c9401ff9f0b1e88c
   - enabled: 0

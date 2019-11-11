@@ -1,12 +1,12 @@
 ScriptsOnlyBuild:
   usedScripts:
     Assembly-CSharp.dll:
-    - ARCameraTracker
-    - ARReferenceImage
-    - ARReferenceImagesSet
-    - PrimitivesOnFace
+    - AddAnchorsEverywhere
+    - UnityARCameraManager
     - UnityARCameraNearFar
     - UnityARKitPluginSettings
+    - UnityEngine.XR.iOS.UnityARAmbient
+    - UnityEngine.XR.iOS.UnityARGeneratePlane
     - UnityEngine.XR.iOS.UnityARUserAnchorComponent
     - UnityEngine.XR.iOS.UnityARVideo
     Unity.2D.Tilemap.Editor.dll:
@@ -18,11 +18,15 @@ ScriptsOnlyBuild:
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
     - UnityEditor.TestTools.TestRunner.TestListCacheData
+    UnityEngine.UI.dll:
+    - UnityEngine.UI.CanvasScaler
+    - UnityEngine.UI.GraphicRaycaster
+    - UnityEngine.UI.Text
     com.unity.multiplayer-hlapi.Runtime.dll:
     - UnityEngine.Networking.NetworkCallbacks
     - UnityEngine.Networking.NetworkIdentity
   sceneClasses:
-    Assets/UnityARKitPlugin/Examples/PrimitivesOnFace/PrimitivesOnFace.unity:
+    Assets/UnityARKitPlugin/Examples/AddAnchorsEverywhere/AddAnchorsEverywhere.unity:
     - Class: 1
       Script: {instanceID: 0}
     - Class: 4
@@ -41,6 +45,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 48
       Script: {instanceID: 0}
+    - Class: 64
+      Script: {instanceID: 0}
     - Class: 65
       Script: {instanceID: 0}
     - Class: 81
@@ -52,40 +58,62 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 9762}
+      Script: {instanceID: 9714}
     - Class: 114
-      Script: {instanceID: 9870}
+      Script: {instanceID: 9760}
     - Class: 114
-      Script: {instanceID: 9872}
+      Script: {instanceID: 9862}
     - Class: 114
-      Script: {instanceID: 9944}
+      Script: {instanceID: 9864}
     - Class: 114
-      Script: {instanceID: 9974}
+      Script: {instanceID: 9922}
     - Class: 114
-      Script: {instanceID: 10220}
+      Script: {instanceID: 9934}
     - Class: 114
-      Script: {instanceID: 10328}
+      Script: {instanceID: 9962}
     - Class: 114
-      Script: {instanceID: 10908}
+      Script: {instanceID: 10142}
     - Class: 114
-      Script: {instanceID: 10980}
+      Script: {instanceID: 10198}
     - Class: 114
-      Script: {instanceID: 11130}
+      Script: {instanceID: 10740}
     - Class: 114
-      Script: {instanceID: 11462}
+      Script: {instanceID: 10812}
     - Class: 114
-      Script: {instanceID: 12232}
+      Script: {instanceID: 10864}
     - Class: 114
-      Script: {instanceID: 12244}
+      Script: {instanceID: 10932}
+    - Class: 114
+      Script: {instanceID: 11080}
+    - Class: 114
+      Script: {instanceID: 11398}
+    - Class: 114
+      Script: {instanceID: 11580}
+    - Class: 114
+      Script: {instanceID: 11586}
+    - Class: 114
+      Script: {instanceID: 11834}
+    - Class: 114
+      Script: {instanceID: 12136}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 124
+      Script: {instanceID: 0}
+    - Class: 128
+      Script: {instanceID: 0}
+    - Class: 134
       Script: {instanceID: 0}
     - Class: 135
       Script: {instanceID: 0}
     - Class: 136
       Script: {instanceID: 0}
     - Class: 157
+      Script: {instanceID: 0}
+    - Class: 222
+      Script: {instanceID: 0}
+    - Class: 223
+      Script: {instanceID: 0}
+    - Class: 224
       Script: {instanceID: 0}
   scriptHashData:
   - hash:
@@ -864,5 +892,5 @@ ScriptsOnlyBuild:
     className: PrimitivesOnFace
   platform: 9
   scenePathNames:
-  - Assets/UnityARKitPlugin/Examples/PrimitivesOnFace/PrimitivesOnFace.unity
-  playerPath: /Users/crabbage/Documents/golan-AR foundation/primitivesonface
+  - Assets/UnityARKitPlugin/Examples/AddAnchorsEverywhere/AddAnchorsEverywhere.unity
+  playerPath: /Users/crabbage/Documents/everywhere
