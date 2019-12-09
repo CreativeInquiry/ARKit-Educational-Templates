@@ -3,6 +3,8 @@
 ## About
 This repository contains a collection of simple template projects and tutorials for developing augmented reality (AR) iPhone apps using Unity and Apple's ARKit technology. These materials are intended for students with introductory programming experience, and introductory familiarity with Unity. 
 
+**For a similar repository of ARCore templates and tutorials for Android devices, [please click here](https://github.com/CreativeInquiry/ARCore-Educational-Templates/).**
+
 These projects and their documentation were developed in October 2019 by [Connie Ye](https://github.com/khanniie) ([@crabbage_](https://twitter.com/crabbage_)), with support from the [Frank-Ratchye STUDIO for Creative Inquiry](http://studioforcreativeinquiry), for undergraduate media arts courses taught by [Golan Levin](http://flong.com) at Carnegie Mellon University. Portions of these tutorials have been adapted from [the Arkit 2 plugin examples, which fall under the MIT license](https://bitbucket.org/Unity-Technologies/unity-arkit-plugin/src/default/LICENSES/MIT_LICENSE). We welcome your contributions and corrections. If you use these templates in your curriculum, please acknowledge this resource as: `Connie Ye, ARKit Educational Templates, (2019), GitHub repository, https://github.com/CreativeInquiry/ARKit-Educational-Templates`.
 
 ***IMPORTANT NOTE:*** As of November 11th, 2019, the Unity [AR remote](#arkit-remote) tool, which is highly recommended for development and debugging, is not working in iOS 13. For this reason, these tutorials are intended for iPhones running iOS 12. We recommend that you turn off automatic software updates, and *DO NOT* update to iOS 13, if you plan on using the AR Remote tool. This information is subject to change.   
